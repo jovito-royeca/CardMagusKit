@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "CardMagusKit"
-  s.version      = "0.7.0"
+  s.version      = "0.7.1"
   s.summary      = "Core Data source from MTGJSON"
 
   # This description is used to generate tags and improve search results.
@@ -56,7 +56,7 @@ Pod::Spec.new do |s|
   s.author             = { "Jovito Royeca" => "jovit.royeca@gmail.com" }
   # Or just: s.author    = "Jovito Royeca"
   # s.authors            = { "Jovito Royeca" => "jovit.royeca@gmail.com" }
-  # s.social_media_url   = "http://twitter.com/Jovito Royeca"
+  s.social_media_url   = "http://twitter.com/JovitoRoyeca"
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -80,7 +80,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/jovito-royeca/CardMagus.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/jovito-royeca/CardMagus.git", :tag => s.version.to_s }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
