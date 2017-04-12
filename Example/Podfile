@@ -1,0 +1,15 @@
+use_frameworks!
+
+target 'CardMagusKit_Example' do
+  pod 'CardMagusKit', :path => '../'
+
+  target 'CardMagusKit_Tests' do
+    inherit! :search_paths
+
+    pod 'Sync'#, '~> 2'
+  	pod 'DATASource'#, '~> 5.8'
+	pod 'DATAStack', '~> 6'
+	pod 'Networking'
+  
+  end
+end

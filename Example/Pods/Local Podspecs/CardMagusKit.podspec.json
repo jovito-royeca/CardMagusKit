@@ -1,0 +1,29 @@
+{
+  "name": "CardMagusKit",
+  "version": "0.7.4",
+  "summary": "Core Data and utilities for Card Magus.",
+  "description": "Core Data classes, database, and utilities for Card Magus.",
+  "homepage": "https://github.com/jovito-royeca/CardMagusKit",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "jovito-royeca": "jovit.royeca@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/jovito-royeca/CardMagusKit.git",
+    "tag": "0.7.4"
+  },
+  "social_media_url": "https://twitter.com/JovitoRoyeca",
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "CardMagusKit/Classes/**/*",
+  "resource_bundles": {
+    "CardMagusKit": [
+      "CardMagusKit/Assets/**/*"
+    ]
+  },
+  "public_header_files": "Pod/Classes/**/*.h"
+}

@@ -1,0 +1,6 @@
+framework module CardMagusKit {
+  umbrella header "CardMagusKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

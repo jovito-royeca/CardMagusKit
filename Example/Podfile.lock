@@ -1,0 +1,28 @@
+PODS:
+  - CardMagusKit (0.7.4)
+  - DATASource (6.1.5)
+  - DATAStack (6.2.0)
+  - Networking (3.0.3)
+  - Sync (3.2.1)
+
+DEPENDENCIES:
+  - CardMagusKit (from `../`)
+  - DATASource
+  - DATAStack (~> 6)
+  - Networking
+  - Sync
+
+EXTERNAL SOURCES:
+  CardMagusKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  CardMagusKit: 06be68024ccf4b3eb887f2bdf89ee7a8780b3611
+  DATASource: 52b86cfff6c7ac3db45192c01f7839c7473576c3
+  DATAStack: 06d6a00f4fe84f11afdae2a6f47558f1087000e5
+  Networking: e2c42013296d093e4249f8247acb08e36958a11a
+  Sync: 70ba21675235ea8960e9033611cd2ebd0131adf2
+
+PODFILE CHECKSUM: ead51a2137cd0cc9bedd4be9f8443fb86ee37eed
+
+COCOAPODS: 1.2.0

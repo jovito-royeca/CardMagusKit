@@ -1,0 +1,29 @@
+{
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "235EF329AA2A8EF0D0465DE61BF9F15C6B23E3E1" : 9223372036854775807,
+    "20482C318E80F31318733663C161907B85F55FDF" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "42CF60FD-F2FD-45FF-B217-D2ABD35C8B0B",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "235EF329AA2A8EF0D0465DE61BF9F15C6B23E3E1" : "",
+    "20482C318E80F31318733663C161907B85F55FDF" : ".."
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "CardMagusKit",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Example\/CardMagusKit.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/jovito-royeca\/CardMagus.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "20482C318E80F31318733663C161907B85F55FDF"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/jovito-royeca\/CardMagusKit.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "235EF329AA2A8EF0D0465DE61BF9F15C6B23E3E1"
+    }
+  ]
+}
