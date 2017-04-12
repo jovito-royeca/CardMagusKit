@@ -29,7 +29,7 @@ tmp/
 #Python modules
 MANIFEST
 dist/
-build/
+#build/
  
 # Backup files
 *~.nib
