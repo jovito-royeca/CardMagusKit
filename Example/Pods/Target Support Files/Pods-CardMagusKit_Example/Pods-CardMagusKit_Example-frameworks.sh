@@ -90,9 +90,17 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/CardMagusKit/CardMagusKit.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/DATASource/DATASource.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/DATAStack/DATAStack.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/Networking/Networking.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/Sync/Sync.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/CardMagusKit/CardMagusKit.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/DATASource/DATASource.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/DATAStack/DATAStack.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/Networking/Networking.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/Sync/Sync.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait

@@ -7,12 +7,15 @@
 //
 
 import UIKit
+import CardMagusKit
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        CardMagus.sharedInstance.json2CoreData()
     }
 
     override func didReceiveMemoryWarning() {

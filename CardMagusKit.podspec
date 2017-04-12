@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CardMagusKit'
-  s.version          = '0.7.5'
+  s.version          = '0.7.6'
   s.summary          = 'Core Data and utilities for Card Magus.'
 
 # This description is used to generate tags and improve search results.
@@ -36,7 +36,10 @@ Core Data classes, database, and utilities for Card Magus.
     'CardMagusKit' => ['CardMagusKit/Assets/**/*']
   }
 
-  s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'Sync', 'DATASource', 'DATAStack', '~> 6', 'Networking'
+  # s.public_header_files = 'Pod/Classes/**/*.h'
+  # s.frameworks = 'UIKit', 'MapKit', 'Sync', 'DATASource', 'DATAStack', 'Networking'
+  s.dependency 'Sync'
+  s.dependency 'DATASource'
+  s.dependency 'DATAStack', '~> 6'
+  s.dependency 'Networking'
 end
