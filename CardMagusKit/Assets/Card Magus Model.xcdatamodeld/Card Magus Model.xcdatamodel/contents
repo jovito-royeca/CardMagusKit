@@ -9,6 +9,19 @@
         </attribute>
         <relationship name="cards" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CMCard" inverseName="artist" inverseEntity="CMCard" syncable="YES"/>
     </entity>
+    <entity name="CMBlock" representedClassName="CMBlock" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="sets" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CMSet" inverseName="block_" inverseEntity="CMSet" syncable="YES"/>
+    </entity>
+    <entity name="CMBooster" representedClassName="CMBooster" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="sets" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CMSet" inverseName="booster_" inverseEntity="CMSet" syncable="YES"/>
+    </entity>
+    <entity name="CMBorder" representedClassName="CMBorder" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="cards" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CMCard" inverseName="border_" inverseEntity="CMCard" syncable="YES"/>
+        <relationship name="sets" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CMSet" inverseName="border_" inverseEntity="CMSet" syncable="YES"/>
+    </entity>
     <entity name="CMCard" representedClassName="CMCard" syncable="YES">
         <attribute name="border" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="cmc" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
@@ -54,6 +67,7 @@
         <attribute name="variations" optional="YES" attributeType="Binary" syncable="YES"/>
         <attribute name="watermark" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="artist" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CMArtist" inverseName="cards" inverseEntity="CMArtist" syncable="YES"/>
+        <relationship name="border_" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CMBorder" inverseName="cards" inverseEntity="CMBorder" syncable="YES"/>
         <relationship name="cardLegalities_" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CMCardLegality" inverseName="card" inverseEntity="CMCardLegality" syncable="YES"/>
         <relationship name="foreignNames_" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CMForeignName" inverseName="card" inverseEntity="CMForeignName" syncable="YES"/>
         <relationship name="printings_" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CMSet" inverseName="printings_" inverseEntity="CMSet" syncable="YES"/>
@@ -104,17 +118,29 @@
         <attribute name="onlineOnly" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="releaseDate" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="block_" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CMBlock" inverseName="sets" inverseEntity="CMBlock" syncable="YES"/>
+        <relationship name="booster_" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CMBooster" inverseName="sets" inverseEntity="CMBooster" syncable="YES"/>
+        <relationship name="border_" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CMBorder" inverseName="sets" inverseEntity="CMBorder" syncable="YES"/>
         <relationship name="cards" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CMCard" inverseName="set" inverseEntity="CMCard" syncable="YES"/>
         <relationship name="printings_" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CMCard" inverseName="printings_" inverseEntity="CMCard" syncable="YES"/>
+        <relationship name="type_" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CMSetType" inverseName="sets" inverseEntity="CMSetType" syncable="YES"/>
+    </entity>
+    <entity name="CMSetType" representedClassName="CMSetType" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="sets" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CMSet" inverseName="type_" inverseEntity="CMSet" syncable="YES"/>
     </entity>
     <elements>
         <element name="CMArtist" positionX="-45" positionY="153" width="128" height="75"/>
-        <element name="CMCard" positionX="-54" positionY="72" width="128" height="690"/>
+        <element name="CMCard" positionX="-54" positionY="72" width="128" height="705"/>
         <element name="CMCardLegality" positionX="-27" positionY="135" width="128" height="90"/>
         <element name="CMForeignName" positionX="-27" positionY="162" width="128" height="105"/>
         <element name="CMFormat" positionX="18" positionY="189" width="128" height="75"/>
         <element name="CMLanguage" positionX="-18" positionY="171" width="128" height="75"/>
         <element name="CMLegality" positionX="9" positionY="180" width="128" height="75"/>
-        <element name="CMSet" positionX="-63" positionY="-18" width="128" height="240"/>
+        <element name="CMSet" positionX="-63" positionY="-18" width="128" height="300"/>
+        <element name="CMSetType" positionX="-27" positionY="135" width="128" height="75"/>
+        <element name="CMBlock" positionX="-18" positionY="144" width="128" height="75"/>
+        <element name="CMBorder" positionX="-9" positionY="153" width="128" height="90"/>
+        <element name="CMBooster" positionX="0" positionY="162" width="128" height="75"/>
     </elements>
 </model>

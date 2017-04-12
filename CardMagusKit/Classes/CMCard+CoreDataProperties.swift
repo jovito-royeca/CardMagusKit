@@ -2,7 +2,7 @@
 //  CMCard+CoreDataProperties.swift
 //  
 //
-//  Created by Jovito Royeca on 11/04/2017.
+//  Created by Jovito Royeca on 12/04/2017.
 //
 //
 
@@ -59,6 +59,7 @@ extension CMCard {
     @NSManaged public var foreignNames_: NSSet?
     @NSManaged public var printings_: NSSet?
     @NSManaged public var set: CMSet?
+    @NSManaged public var border_: CMBorder?
 
 }
 

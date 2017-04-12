@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		008B62FC547E16948E2023FE5553C46D /* NSPropertyDescription+Sync.m in Sources */ = {isa = PBXBuildFile; fileRef = 9313AF58DF688C8A01E8A1C6B6C79B1B /* NSPropertyDescription+Sync.m */; };
 		019FB49ACACB5A11F98570B0D8DAB92F /* PropertyMapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D723D2F4F24D577B3248849E2962B1B /* PropertyMapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		04E0C53EC96F69567058E4D577F48F1C /* CMArtist+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3136DEFDB261817984A8991E8316BF /* CMArtist+CoreDataClass.swift */; };
 		0A42DC7C754FB31D39B28A6AF67865DE /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FA074D8D47D46EFDD91B587A06F154 /* JSON.swift */; };
 		0C12411427ED5C57409D4FDB2E490E89 /* Pods-CardMagusKit_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BAF2EFB35CFDCCF104C4E2A952B4A364 /* Pods-CardMagusKit_Tests-dummy.m */; };
 		11828D832F71989E8CE0B0A2C72A2E09 /* NSPropertyDescription+Sync.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E9733B1B3D02895C6177E1FF068FD9E /* NSPropertyDescription+Sync.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -19,7 +18,6 @@
 		1D7773528435467E2F23692D51CEE4D8 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 045EA09DAE130005FFF59F81CA5531F1 /* MapKit.framework */; };
 		1DBC43FBDCDA3F9A9D2DF8A5737C0F55 /* DATASourceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E9ADEC89AFF02F12C3BB6F61B543E1 /* DATASourceDelegate.swift */; };
 		230B057F4C4DF4A5ACE98B9C0008CF8D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E69A8689D46B32E1BE4C0E6582A60380 /* Foundation.framework */; };
-		23593C70E00C4687227B5E14A047D971 /* CMLanguage+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAD5F214A6A6AB6CE1999254B655C56 /* CMLanguage+CoreDataProperties.swift */; };
 		290A31F0B064920C343325FA67D2ECA3 /* CardMagusKit.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5588952EA2C12B45F3A99BE348D39261 /* CardMagusKit.bundle */; };
 		2D51A6D3AF5E20BD0B24503C59473BF8 /* DATASource.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BD970011FF2137B1C7CB5DEFA791A6E /* DATASource.framework */; };
 		30EC3C3D147CB78837316DDF39E2F462 /* CardMagusKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 28A3FBB26B54D4C491DE922797B6CF33 /* CardMagusKit-dummy.m */; };
@@ -32,20 +30,16 @@
 		3B61C0017F0E035DFA086B2A169A53D3 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A4A0F3C4F82A2EF1D4E7332CDD64477 /* CoreData.framework */; };
 		3FA04DC049919D3302277DBA004DB706 /* NSManagedObjectContext+Sync.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E27AB97DABE852EDA9D9F13DF2C99C6 /* NSManagedObjectContext+Sync.swift */; };
 		3FA12F5F5B2B71BA932F2C782E8615FB /* NSArray+Sync.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD239787783844F967053921052BE9E5 /* NSArray+Sync.swift */; };
-		3FE41438F525C1A8494CA79218AC1655 /* CMCardLegality+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC5BAE6F8A7790EF70F0CF98AA8AFAC /* CMCardLegality+CoreDataClass.swift */; };
 		439AF8950CAEDD238C2066CC9AB56823 /* Sync.swift in Sources */ = {isa = PBXBuildFile; fileRef = F163A1FCFCFC116EC355C6933A285815 /* Sync.swift */; };
-		44B88F35FB2E54F9D26C5DF8A7D0E86B /* CMSet+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378A52D130B0070967F313990FE21104 /* CMSet+CoreDataClass.swift */; };
 		491867B05E6260213237F36F3F69A56B /* Networking.h in Headers */ = {isa = PBXBuildFile; fileRef = 25C6ADA036DB0556A689755E6684F38F /* Networking.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4D1EBF314934896C3D2792F7D08D480C /* NSManagedObject+Sync.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526CA8ACF8F456D940B6D509FA6F5472 /* NSManagedObject+Sync.swift */; };
 		508D850A3C28347946073184548276CB /* Sync.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AD8FA3FFF3CC7C66A74A1708D8EAAE9 /* Sync.framework */; };
-		50CC7738F0517717C55E7AA28B319B2C /* CMFormat+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2B0EA9FB423130F1DE3F32F01D7D19 /* CMFormat+CoreDataProperties.swift */; };
 		54234B9B14812CAB12BC8E5FB5BE42FE /* NSManagedObject+Export.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585D533001F446EEE7FF41944E8FCC3F /* NSManagedObject+Export.swift */; };
 		551AC8F167DD3CE26F749D6D14682391 /* DATASourceCollectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7770B52C1E3F7723B87746F8E28D2524 /* DATASourceCollectionHeaderView.swift */; };
 		55B90AD35D23111C5F255A4D898E9A2F /* CardMagusKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F16A3ABCCE721945BCEF7A0D825AB337 /* CardMagusKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		563D28E9C703785F45B5723C37EC934D /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A1487075A2C625494BC453F1743CD8 /* Result.swift */; };
 		5C120E3F1FF1558E93584AD9DED3F99C /* Inflections.m in Sources */ = {isa = PBXBuildFile; fileRef = E3BA927E8C3217820AC85C0F48FB1B2E /* Inflections.m */; };
 		5F8516F529E550AC0E5124A3AF16F207 /* Sync+DataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48625264DD70CF9434601463D9ABE49 /* Sync+DataStack.swift */; };
-		6223BD459B82F2E1C1031B0A4000A06B /* CMFormat+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E1778823A85624E35F7C8590A09BE8 /* CMFormat+CoreDataClass.swift */; };
 		654D44FEB5745045CAF6DBE90018D182 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E69A8689D46B32E1BE4C0E6582A60380 /* Foundation.framework */; };
 		67213FB2604EF99D8E1E60584ADFA528 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59A2619849418DA3573E46351CF63F45 /* UIKit.framework */; };
 		67A10AAC1FDC761FD470FAF556F80D78 /* Networking-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 69703FBC822C499A121A28251A37B05E /* Networking-dummy.m */; };
@@ -63,14 +57,12 @@
 		8079325C2609BF6760C9AF8BEADADB64 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1321535D6D9291FA7126E05747D8F92A /* Result.swift */; };
 		83EE578A6ED3617790816F21341A17B0 /* DATAStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B9802B88AFD99AA8BD4DF69998E606 /* DATAStack.swift */; };
 		84DA315FD1D45AB56D650D42A5719CE8 /* CardMagus.swift in Sources */ = {isa = PBXBuildFile; fileRef = B922BF184A81FFA1BF36225343C000F6 /* CardMagus.swift */; };
-		84E912371F7A9E4823F9E4D6A8001DBC /* CMForeignName+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735668B62A4C02E2DE250C497EA52438 /* CMForeignName+CoreDataProperties.swift */; };
 		8D6C780670165806BA55169A14809AC1 /* Inflections.h in Headers */ = {isa = PBXBuildFile; fileRef = 4905AA77370325B1C177B0652CB04AFE /* Inflections.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8E7CAE35CC68CB3C9975297E7AB6C7FF /* Sync+NSManagedObjectContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89F5318F2CC485A67C785367CC473A4 /* Sync+NSManagedObjectContext.swift */; };
 		8FFFEE04CBEC9EF8E47680ECB6C2FB5B /* Pods-CardMagusKit_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CFFAEF27345A81432B55993A69098F03 /* Pods-CardMagusKit_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		94472D1400259ABB9594C7B7301BD418 /* NetworkActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1796850DB4A0FE7EC417C573961FF1FF /* NetworkActivityIndicator.swift */; };
 		9ABABF041A0161D2415C7EC48F896B5D /* Networking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4632B57A0724BF87D3C87C7192C3662 /* Networking.framework */; };
 		9B6ABE9F886B497A5858C7C0F7A0A189 /* Pods-CardMagusKit_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D7A0F4938D6D2A3D74324E8323D7A1ED /* Pods-CardMagusKit_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9DA52B0866D862E1348F3363ED96CBC5 /* CMLanguage+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49289EF73FA8CB0C09EE9DFEF71548F5 /* CMLanguage+CoreDataClass.swift */; };
 		9ECEC0A57507BB732D507D4F855DF30C /* FormDataPart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172153B972F0490AEA6BFAD0D27A5C25 /* FormDataPart.swift */; };
 		A1E1BE8A6358C53656E753021F70283E /* DATASource-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 562545B02F552B6DEF7CD37662ADEAAE /* DATASource-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A5BACE708014B767514782C434DADFF0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E69A8689D46B32E1BE4C0E6582A60380 /* Foundation.framework */; };
@@ -82,21 +74,15 @@
 		B312973679D1755771CDF8B8A54DB93B /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A05D7538889905851A9CC67ACDE8BBA /* Response.swift */; };
 		B3522ABA34A1BCF8175AB230EEB3BAC6 /* Sync+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0D5F01BAA0D05928E61D50E359A97D /* Sync+Helpers.swift */; };
 		BBDEA373E8A6342AA7805CF3017FC0EF /* NSDate+PropertyMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5AE8C86D269B411131CCE5E1B0EB98 /* NSDate+PropertyMapper.m */; };
-		BCE612DFE9E29A41EB4573BBC4ED5D4F /* CMLegality+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FEEFF03CB8715722AA60E235AB736D /* CMLegality+CoreDataProperties.swift */; };
 		BCF74B8C93B9643D5DC0B319E8A09FC0 /* Sync.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BF2350FBA735452B31142901E3D1366 /* Sync.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BFF06B81D59640DAE2BDAE26270A0297 /* Card Magus Model.xcdatamodeld in Resources */ = {isa = PBXBuildFile; fileRef = 41E596F2A716BCF0DB7D880E21FDF111 /* Card Magus Model.xcdatamodeld */; };
-		C26349CE0914ACD37F0749A498D17C7F /* CMLegality+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F3CAF5902882F2164B6F0B11119801 /* CMLegality+CoreDataClass.swift */; };
-		C4CDAA7C8CDE7EFA8A3005FC0CC8CF44 /* CMArtist+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEAA3B41901ECCD1F0018579811AB12 /* CMArtist+CoreDataProperties.swift */; };
 		C954A0298658191C508AC7C9E91850E7 /* DATAStack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B246EF63270E7CD111ED96A3BD115E41 /* DATAStack.framework */; };
 		CCE458C459D8B2A4AF3FD8A07F37019C /* PropertyMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CB91DC1F08E59EDD8512738E90F751 /* PropertyMapper.m */; };
 		CF5B4A0A9267E1E61D79AB017F45096B /* Sync.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C46270468ECDE96B081FC73976F6B5D3 /* Sync.framework */; };
 		D086B90C07399653B06E9597C4E0B56C /* DATASource+NSFetchedResultsControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0F738F794B2B2D83646BDA00E04C42 /* DATASource+NSFetchedResultsControllerDelegate.swift */; };
-		D181F0E8E5E6DC1A73B83799A1C4D423 /* CMCard+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488C7E0AECC9FE993691D258DC100757 /* CMCard+CoreDataClass.swift */; };
 		D2AEA2DA645F4888969792EBF50741B2 /* NSManagedObject+PropertyMapperHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = FB42C92DD4370D462403C2302F1A1BB5 /* NSManagedObject+PropertyMapperHelpers.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D52D07298B0B6A86B91A066CEB77A46E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E69A8689D46B32E1BE4C0E6582A60380 /* Foundation.framework */; };
-		DBF6522E7D5C46C06783B7561F981EFB /* CMCard+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F972F8E49AF2A88A55CB3E7CBE466039 /* CMCard+CoreDataProperties.swift */; };
 		DE83206BE6180D94BBFEAFBF42D2D54C /* TestCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBEEB0977484E644721558B9FD160970 /* TestCheck.swift */; };
-		DED7AA7B9455201F2FDEFBE848BFBDAC /* CMCardLegality+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4725D54A43500351C18662692CF888B7 /* CMCardLegality+CoreDataProperties.swift */; };
 		E05DD92893E589C5BEA7F5237B59B370 /* DATAStack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A36AD661921090479BDA095D026F0A29 /* DATAStack.framework */; };
 		E438B13B10EFC2A0C161D5A048DBA06E /* Networking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0378FC0732ACD8769413BDB85070856E /* Networking.framework */; };
 		E6E5709D6351EB288452CE7DD6D3D03B /* TestCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5063B3527F32C522A89CEFD39DF2D74E /* TestCheck.swift */; };
@@ -107,9 +93,7 @@
 		F0FD6F274349D43B7274A033BD654BB3 /* TestCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7DD74CDC64FB5F46D83A2482BCEB1D /* TestCheck.swift */; };
 		F3B1DF4BBBD7655A14BEE7E12C1AD329 /* DataFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A8C0DFA705293806A5BCC63F2E3CC2 /* DataFilter.swift */; };
 		F416A8552C78001F485BD719DA87ED6E /* NSDate+PropertyMapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 6EDF3A7F78B34B42D4C0D542DADD8C01 /* NSDate+PropertyMapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FA57E892BED5055EC724C20B7AC3FA95 /* CMForeignName+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4447248E733C89348EDDE2BB6B42DBF /* CMForeignName+CoreDataClass.swift */; };
 		FD95BE88369C0CACD70235A2F401163F /* Pods-CardMagusKit_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 14F75F334A09B4357A6487FA0D804274 /* Pods-CardMagusKit_Example-dummy.m */; };
-		FE1AA4741B47D53DE9AE49DE75836CC5 /* CMSet+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3974954C6AEA7AABC3223CBF0C9D026D /* CMSet+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -242,35 +226,25 @@
 		2CF6EDCCF5ACB80CC93FBC2786F548C0 /* Helpers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Helpers.swift; path = Sources/Helpers.swift; sourceTree = "<group>"; };
 		2E9733B1B3D02895C6177E1FF068FD9E /* NSPropertyDescription+Sync.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSPropertyDescription+Sync.h"; path = "Source/Sync/NSPropertyDescription+Sync.h"; sourceTree = "<group>"; };
 		3263B91D7FB72DE958041D5CE2047599 /* Card Magus Model.xcdatamodel */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.xcdatamodel; path = "Card Magus Model.xcdatamodel"; sourceTree = "<group>"; };
-		378A52D130B0070967F313990FE21104 /* CMSet+CoreDataClass.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "CMSet+CoreDataClass.swift"; sourceTree = "<group>"; };
 		37DC0529407FD8532C8EA7AC75672EE8 /* DATAStack-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DATAStack-umbrella.h"; sourceTree = "<group>"; };
-		3974954C6AEA7AABC3223CBF0C9D026D /* CMSet+CoreDataProperties.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "CMSet+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		3A3136DEFDB261817984A8991E8316BF /* CMArtist+CoreDataClass.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "CMArtist+CoreDataClass.swift"; sourceTree = "<group>"; };
 		3E27AB97DABE852EDA9D9F13DF2C99C6 /* NSManagedObjectContext+Sync.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSManagedObjectContext+Sync.swift"; path = "Source/Sync/NSManagedObjectContext+Sync.swift"; sourceTree = "<group>"; };
 		3EAD2C167D45AB588F771AF1A54AA3C2 /* Pods-CardMagusKit_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CardMagusKit_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		42FA074D8D47D46EFDD91B587A06F154 /* JSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSON.swift; path = Sources/JSON.swift; sourceTree = "<group>"; };
 		44CB91DC1F08E59EDD8512738E90F751 /* PropertyMapper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PropertyMapper.m; path = Source/PropertyMapper/PropertyMapper.m; sourceTree = "<group>"; };
-		4725D54A43500351C18662692CF888B7 /* CMCardLegality+CoreDataProperties.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "CMCardLegality+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		47CB32167005791BDAD1E22199EB97AE /* Pods-CardMagusKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CardMagusKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		47FEEFF03CB8715722AA60E235AB736D /* CMLegality+CoreDataProperties.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "CMLegality+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		488C7E0AECC9FE993691D258DC100757 /* CMCard+CoreDataClass.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "CMCard+CoreDataClass.swift"; sourceTree = "<group>"; };
 		4905AA77370325B1C177B0652CB04AFE /* Inflections.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Inflections.h; path = Source/Inflections/Inflections.h; sourceTree = "<group>"; };
-		49289EF73FA8CB0C09EE9DFEF71548F5 /* CMLanguage+CoreDataClass.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "CMLanguage+CoreDataClass.swift"; sourceTree = "<group>"; };
-		4D8E4BBACC06D62FF93134B2B52B5ECF /* CardMagusKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CardMagusKit.framework; path = CardMagusKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D8E4BBACC06D62FF93134B2B52B5ECF /* CardMagusKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CardMagusKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F7131792E83888E4CD7857E5A5A3E32 /* DATASource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DATASource.swift; path = Source/DATASource.swift; sourceTree = "<group>"; };
 		5063B3527F32C522A89CEFD39DF2D74E /* TestCheck.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TestCheck.swift; path = Source/TestCheck/TestCheck.swift; sourceTree = "<group>"; };
 		526CA8ACF8F456D940B6D509FA6F5472 /* NSManagedObject+Sync.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSManagedObject+Sync.swift"; path = "Source/Sync/NSManagedObject+Sync.swift"; sourceTree = "<group>"; };
 		52E9ADEC89AFF02F12C3BB6F61B543E1 /* DATASourceDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DATASourceDelegate.swift; path = Source/DATASourceDelegate.swift; sourceTree = "<group>"; };
-		5588952EA2C12B45F3A99BE348D39261 /* CardMagusKit.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = CardMagusKit.bundle; path = CardMagusKit.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		5588952EA2C12B45F3A99BE348D39261 /* CardMagusKit.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CardMagusKit.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		55BA9821206C1303EC9A3D99F0A3FD22 /* DATAStack-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DATAStack-dummy.m"; sourceTree = "<group>"; };
 		562545B02F552B6DEF7CD37662ADEAAE /* DATASource-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DATASource-umbrella.h"; sourceTree = "<group>"; };
 		585D533001F446EEE7FF41944E8FCC3F /* NSManagedObject+Export.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSManagedObject+Export.swift"; path = "Source/PropertyMapper/NSManagedObject+Export.swift"; sourceTree = "<group>"; };
-		58E1778823A85624E35F7C8590A09BE8 /* CMFormat+CoreDataClass.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "CMFormat+CoreDataClass.swift"; sourceTree = "<group>"; };
 		59A2619849418DA3573E46351CF63F45 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		5B3677A5A1361F0A8D49B43B87B7285B /* Pods-CardMagusKit_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CardMagusKit_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		5C2B0EA9FB423130F1DE3F32F01D7D19 /* CMFormat+CoreDataProperties.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "CMFormat+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		6393FEC3A6D0D3C77AF95C70307A5FBA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		63F3CAF5902882F2164B6F0B11119801 /* CMLegality+CoreDataClass.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "CMLegality+CoreDataClass.swift"; sourceTree = "<group>"; };
 		643F3813FF7A786204A18D7B66993813 /* Networking-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Networking-umbrella.h"; sourceTree = "<group>"; };
 		64976DD21AB17D56ABD7B4F5CEF43563 /* NSEntityDescription+PrimaryKey.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSEntityDescription+PrimaryKey.h"; path = "Source/PrimaryKey/NSEntityDescription+PrimaryKey.h"; sourceTree = "<group>"; };
 		69703FBC822C499A121A28251A37B05E /* Networking-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Networking-dummy.m"; sourceTree = "<group>"; };
@@ -278,9 +252,8 @@
 		6D66B93E3F331F218F07EEB79E8D3AEB /* DATAStack.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DATAStack.xcconfig; sourceTree = "<group>"; };
 		6D723D2F4F24D577B3248849E2962B1B /* PropertyMapper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PropertyMapper.h; path = Source/PropertyMapper/PropertyMapper.h; sourceTree = "<group>"; };
 		6E0F90CE0424C18283D91BADE679E96A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6E46F95EB49B9FDBD54B87AF8D8EDA3B /* Pods_CardMagusKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CardMagusKit_Example.framework; path = "Pods-CardMagusKit_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E46F95EB49B9FDBD54B87AF8D8EDA3B /* Pods_CardMagusKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CardMagusKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EDF3A7F78B34B42D4C0D542DADD8C01 /* NSDate+PropertyMapper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDate+PropertyMapper.h"; path = "Source/DateParser/NSDate+PropertyMapper.h"; sourceTree = "<group>"; };
-		735668B62A4C02E2DE250C497EA52438 /* CMForeignName+CoreDataProperties.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "CMForeignName+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		774AEC14AEE39C65FDC39BE35708ADCB /* Pods-CardMagusKit_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CardMagusKit_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		7770B52C1E3F7723B87746F8E28D2524 /* DATASourceCollectionHeaderView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DATASourceCollectionHeaderView.swift; path = Source/DATASourceCollectionHeaderView.swift; sourceTree = "<group>"; };
 		7985F6DD676F2C1335B3568C8A61825D /* ResourceBundle-CardMagusKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-CardMagusKit-Info.plist"; sourceTree = "<group>"; };
@@ -291,65 +264,60 @@
 		88F8DDFB6A6CA4BB4A143ECE98CB9E26 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8E7487C929FE05E0CA64AC15B1AA74E9 /* Pods-CardMagusKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CardMagusKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		9313AF58DF688C8A01E8A1C6B6C79B1B /* NSPropertyDescription+Sync.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSPropertyDescription+Sync.m"; path = "Source/Sync/NSPropertyDescription+Sync.m"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		94A8C0DFA705293806A5BCC63F2E3CC2 /* DataFilter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataFilter.swift; path = Source/DataFilter/DataFilter.swift; sourceTree = "<group>"; };
 		965DA00AE8BCD5DCE322D1884151FFE3 /* NSEntityDescription+Sync.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSEntityDescription+Sync.swift"; path = "Source/Sync/NSEntityDescription+Sync.swift"; sourceTree = "<group>"; };
-		99755CFEAB794142F6202A4BE48021C8 /* Sync.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Sync.modulemap; sourceTree = "<group>"; };
+		99755CFEAB794142F6202A4BE48021C8 /* Sync.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Sync.modulemap; sourceTree = "<group>"; };
 		9B297B3F27145F4C93CEFEC01C6071ED /* Pods-CardMagusKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CardMagusKit_Example.release.xcconfig"; sourceTree = "<group>"; };
 		9B7DD74CDC64FB5F46D83A2482BCEB1D /* TestCheck.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TestCheck.swift; path = Source/TestCheck.swift; sourceTree = "<group>"; };
-		9BC5BAE6F8A7790EF70F0CF98AA8AFAC /* CMCardLegality+CoreDataClass.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "CMCardLegality+CoreDataClass.swift"; sourceTree = "<group>"; };
 		9C0F738F794B2B2D83646BDA00E04C42 /* DATASource+NSFetchedResultsControllerDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DATASource+NSFetchedResultsControllerDelegate.swift"; path = "Source/DATASource+NSFetchedResultsControllerDelegate.swift"; sourceTree = "<group>"; };
 		9D1C410583EB0095431C09A25D54DF9F /* Sync-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Sync-umbrella.h"; sourceTree = "<group>"; };
 		A36AD661921090479BDA095D026F0A29 /* DATAStack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DATAStack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3863AA155DFFB90809C58E336E9573C /* DATASource.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DATASource.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/DATASource.framework; sourceTree = DEVELOPER_DIR; };
-		A4A3702962FABB017B12601CCDCEB205 /* Networking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Networking.framework; path = Networking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4A3702962FABB017B12601CCDCEB205 /* Networking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Networking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A633532DBC9396D94C7209475ABBF20F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A66C3FE616227D965BE7F36936308A4A /* Pods-CardMagusKit_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-CardMagusKit_Example.modulemap"; sourceTree = "<group>"; };
+		A66C3FE616227D965BE7F36936308A4A /* Pods-CardMagusKit_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-CardMagusKit_Example.modulemap"; sourceTree = "<group>"; };
 		AD239787783844F967053921052BE9E5 /* NSArray+Sync.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSArray+Sync.swift"; path = "Source/Sync/NSArray+Sync.swift"; sourceTree = "<group>"; };
 		B246EF63270E7CD111ED96A3BD115E41 /* DATAStack.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DATAStack.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/DATAStack.framework; sourceTree = DEVELOPER_DIR; };
-		B285B4E4CA71EE23CB133BE498058332 /* DATAStack.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = DATAStack.modulemap; sourceTree = "<group>"; };
-		B389E09F2D8F55CD329D094B40FC3B99 /* Pods_CardMagusKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CardMagusKit_Tests.framework; path = "Pods-CardMagusKit_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B285B4E4CA71EE23CB133BE498058332 /* DATAStack.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = DATAStack.modulemap; sourceTree = "<group>"; };
+		B389E09F2D8F55CD329D094B40FC3B99 /* Pods_CardMagusKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CardMagusKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B524E91896F11EAE8DC44512A48E45F2 /* Pods-CardMagusKit_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CardMagusKit_Example-frameworks.sh"; sourceTree = "<group>"; };
 		B5E51E3D5B43B523099DC3055AF0BDBB /* Pods-CardMagusKit_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CardMagusKit_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		B89F5318F2CC485A67C785367CC473A4 /* Sync+NSManagedObjectContext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Sync+NSManagedObjectContext.swift"; path = "Source/Sync/Sync+NSManagedObjectContext.swift"; sourceTree = "<group>"; };
 		B922BF184A81FFA1BF36225343C000F6 /* CardMagus.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CardMagus.swift; sourceTree = "<group>"; };
 		B9B7827CE631BBB15C12EF463C75AEC3 /* Networking+Private.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Networking+Private.swift"; path = "Sources/Networking+Private.swift"; sourceTree = "<group>"; };
-		B9E0507F07D24CEF40D575815AAE3FB7 /* Networking.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Networking.modulemap; sourceTree = "<group>"; };
+		B9E0507F07D24CEF40D575815AAE3FB7 /* Networking.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Networking.modulemap; sourceTree = "<group>"; };
 		BA83E0205EAA0474D797421BFD2A0F7E /* Pods-CardMagusKit_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CardMagusKit_Tests-resources.sh"; sourceTree = "<group>"; };
 		BAF2EFB35CFDCCF104C4E2A952B4A364 /* Pods-CardMagusKit_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CardMagusKit_Tests-dummy.m"; sourceTree = "<group>"; };
 		BD8323DA6FDA78BEFAAB8A7946735033 /* Image.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Image.swift; path = Sources/Image.swift; sourceTree = "<group>"; };
-		BDAD5F214A6A6AB6CE1999254B655C56 /* CMLanguage+CoreDataProperties.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "CMLanguage+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		BE0A56FC3C91CC987781A56757D70249 /* DATASource+UITableViewDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DATASource+UITableViewDataSource.swift"; path = "Source/DATASource+UITableViewDataSource.swift"; sourceTree = "<group>"; };
 		BF7DCB61C0E807A60B20C43FFD5906AC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF9C3866F94144F90CD679598E175EF5 /* Pods-CardMagusKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CardMagusKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		C2C383B72F7017D08A20C2A32E3161A3 /* Pods-CardMagusKit_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-CardMagusKit_Tests.modulemap"; sourceTree = "<group>"; };
+		C2C383B72F7017D08A20C2A32E3161A3 /* Pods-CardMagusKit_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-CardMagusKit_Tests.modulemap"; sourceTree = "<group>"; };
 		C46270468ECDE96B081FC73976F6B5D3 /* Sync.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sync.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Sync.framework; sourceTree = DEVELOPER_DIR; };
-		C6FBA1B76C3EFE75675FC2A01D7ECF63 /* DATASource.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = DATASource.modulemap; sourceTree = "<group>"; };
+		C6FBA1B76C3EFE75675FC2A01D7ECF63 /* DATASource.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = DATASource.modulemap; sourceTree = "<group>"; };
 		C704D8294E8EC0E796E0C500FC10B7FD /* DATAStack.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DATAStack.h; path = Source/DATAStack.h; sourceTree = "<group>"; };
-		CDEAA3B41901ECCD1F0018579811AB12 /* CMArtist+CoreDataProperties.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "CMArtist+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		CE5AE8C86D269B411131CCE5E1B0EB98 /* NSDate+PropertyMapper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDate+PropertyMapper.m"; path = "Source/DateParser/NSDate+PropertyMapper.m"; sourceTree = "<group>"; };
 		CEBB67748CB3FEEB413CDD4EC9805304 /* Sync.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Sync.xcconfig; sourceTree = "<group>"; };
 		CFFAEF27345A81432B55993A69098F03 /* Pods-CardMagusKit_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CardMagusKit_Example-umbrella.h"; sourceTree = "<group>"; };
 		D7A0F4938D6D2A3D74324E8323D7A1ED /* Pods-CardMagusKit_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CardMagusKit_Tests-umbrella.h"; sourceTree = "<group>"; };
-		D8B6D3B290629A49927E3579EA05B547 /* DATAStack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DATAStack.framework; path = DATAStack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8B6D3B290629A49927E3579EA05B547 /* DATAStack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DATAStack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBCD9475F501154094F1BFFA9D05F218 /* Pods-CardMagusKit_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CardMagusKit_Example-resources.sh"; sourceTree = "<group>"; };
 		E0CC40C01BF27F082FED925E1A79CD1F /* DATASource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DATASource.h; path = Source/DATASource.h; sourceTree = "<group>"; };
-		E2240B06D8B80BB275CEE47283A701C1 /* CardMagusKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = CardMagusKit.modulemap; sourceTree = "<group>"; };
+		E2240B06D8B80BB275CEE47283A701C1 /* CardMagusKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = CardMagusKit.modulemap; sourceTree = "<group>"; };
 		E3BA927E8C3217820AC85C0F48FB1B2E /* Inflections.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Inflections.m; path = Source/Inflections/Inflections.m; sourceTree = "<group>"; };
 		E4632B57A0724BF87D3C87C7192C3662 /* Networking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Networking.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Networking.framework; sourceTree = DEVELOPER_DIR; };
 		E69A8689D46B32E1BE4C0E6582A60380 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		E745161CA27D8100298C919743759BE5 /* DATASource.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DATASource.framework; path = DATASource.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E745161CA27D8100298C919743759BE5 /* DATASource.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DATASource.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9817D35B8038469B24F97FB5B0197C1 /* NSEntityDescription+PrimaryKey.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSEntityDescription+PrimaryKey.m"; path = "Source/PrimaryKey/NSEntityDescription+PrimaryKey.m"; sourceTree = "<group>"; };
-		EE05110B077773427148EEEDDFF84D3A /* Sync.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Sync.framework; path = Sync.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE05110B077773427148EEEDDFF84D3A /* Sync.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Sync.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE6D683A586027B3D5AAD982A084A77D /* Networking.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Networking.xcconfig; sourceTree = "<group>"; };
 		EF0D5F01BAA0D05928E61D50E359A97D /* Sync+Helpers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Sync+Helpers.swift"; path = "Source/Sync/Sync+Helpers.swift"; sourceTree = "<group>"; };
 		F163A1FCFCFC116EC355C6933A285815 /* Sync.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Sync.swift; path = Source/Sync/Sync.swift; sourceTree = "<group>"; };
 		F16A3ABCCE721945BCEF7A0D825AB337 /* CardMagusKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CardMagusKit-umbrella.h"; sourceTree = "<group>"; };
 		F3249134E54FBDEDBFAA2285B0AFB81B /* Networking+HTTPRequests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Networking+HTTPRequests.swift"; path = "Sources/Networking+HTTPRequests.swift"; sourceTree = "<group>"; };
-		F4447248E733C89348EDDE2BB6B42DBF /* CMForeignName+CoreDataClass.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "CMForeignName+CoreDataClass.swift"; sourceTree = "<group>"; };
 		F48625264DD70CF9434601463D9ABE49 /* Sync+DataStack.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Sync+DataStack.swift"; path = "Source/Sync/Sync+DataStack.swift"; sourceTree = "<group>"; };
 		F4D77828BE9626DFE467571F69781256 /* DATAStack-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DATAStack-prefix.pch"; sourceTree = "<group>"; };
-		F972F8E49AF2A88A55CB3E7CBE466039 /* CMCard+CoreDataProperties.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "CMCard+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		FB42C92DD4370D462403C2302F1A1BB5 /* NSManagedObject+PropertyMapperHelpers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSManagedObject+PropertyMapperHelpers.h"; path = "Source/PropertyMapper/NSManagedObject+PropertyMapperHelpers.h"; sourceTree = "<group>"; };
 		FBEEB0977484E644721558B9FD160970 /* TestCheck.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TestCheck.swift; path = Sources/TestCheck.swift; sourceTree = "<group>"; };
 		FEC9CADD2DEAD3BEF99B57222F1FCE07 /* DATASource.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DATASource.xcconfig; sourceTree = "<group>"; };
@@ -495,7 +463,6 @@
 				5063B3527F32C522A89CEFD39DF2D74E /* TestCheck.swift */,
 				B66F1623BBD39AC13CA23207394AFA23 /* Support Files */,
 			);
-			name = Sync;
 			path = Sync;
 			sourceTree = "<group>";
 		};
@@ -507,7 +474,6 @@
 				9B7DD74CDC64FB5F46D83A2482BCEB1D /* TestCheck.swift */,
 				98FD08E2D865D348D386DB2F3AA7E889 /* Support Files */,
 			);
-			name = DATAStack;
 			path = DATAStack;
 			sourceTree = "<group>";
 		};
@@ -570,7 +536,6 @@
 			children = (
 				6E88BD5F98C6A67B485941408A2B50A8 /* Classes */,
 			);
-			name = CardMagusKit;
 			path = CardMagusKit;
 			sourceTree = "<group>";
 		};
@@ -578,24 +543,7 @@
 			isa = PBXGroup;
 			children = (
 				B922BF184A81FFA1BF36225343C000F6 /* CardMagus.swift */,
-				3A3136DEFDB261817984A8991E8316BF /* CMArtist+CoreDataClass.swift */,
-				CDEAA3B41901ECCD1F0018579811AB12 /* CMArtist+CoreDataProperties.swift */,
-				488C7E0AECC9FE993691D258DC100757 /* CMCard+CoreDataClass.swift */,
-				F972F8E49AF2A88A55CB3E7CBE466039 /* CMCard+CoreDataProperties.swift */,
-				9BC5BAE6F8A7790EF70F0CF98AA8AFAC /* CMCardLegality+CoreDataClass.swift */,
-				4725D54A43500351C18662692CF888B7 /* CMCardLegality+CoreDataProperties.swift */,
-				F4447248E733C89348EDDE2BB6B42DBF /* CMForeignName+CoreDataClass.swift */,
-				735668B62A4C02E2DE250C497EA52438 /* CMForeignName+CoreDataProperties.swift */,
-				58E1778823A85624E35F7C8590A09BE8 /* CMFormat+CoreDataClass.swift */,
-				5C2B0EA9FB423130F1DE3F32F01D7D19 /* CMFormat+CoreDataProperties.swift */,
-				49289EF73FA8CB0C09EE9DFEF71548F5 /* CMLanguage+CoreDataClass.swift */,
-				BDAD5F214A6A6AB6CE1999254B655C56 /* CMLanguage+CoreDataProperties.swift */,
-				63F3CAF5902882F2164B6F0B11119801 /* CMLegality+CoreDataClass.swift */,
-				47FEEFF03CB8715722AA60E235AB736D /* CMLegality+CoreDataProperties.swift */,
-				378A52D130B0070967F313990FE21104 /* CMSet+CoreDataClass.swift */,
-				3974954C6AEA7AABC3223CBF0C9D026D /* CMSet+CoreDataProperties.swift */,
 			);
-			name = Classes;
 			path = Classes;
 			sourceTree = "<group>";
 		};
@@ -604,7 +552,6 @@
 			children = (
 				9E894B733975D34F591EC451EDFCAE9C /* Assets */,
 			);
-			name = CardMagusKit;
 			path = CardMagusKit;
 			sourceTree = "<group>";
 		};
@@ -643,7 +590,6 @@
 				52E9ADEC89AFF02F12C3BB6F61B543E1 /* DATASourceDelegate.swift */,
 				2A56564C2B0EC5C48F43E32797A03BA8 /* Support Files */,
 			);
-			name = DATASource;
 			path = DATASource;
 			sourceTree = "<group>";
 		};
@@ -666,7 +612,6 @@
 			children = (
 				41E596F2A716BCF0DB7D880E21FDF111 /* Card Magus Model.xcdatamodeld */,
 			);
-			name = Assets;
 			path = Assets;
 			sourceTree = "<group>";
 		};
@@ -687,7 +632,6 @@
 				FBEEB0977484E644721558B9FD160970 /* TestCheck.swift */,
 				1E5B0C2DF2A5D330A9572ADCD4C3AA74 /* Support Files */,
 			);
-			name = Networking;
 			path = Networking;
 			sourceTree = "<group>";
 		};
@@ -1099,22 +1043,6 @@
 			files = (
 				84DA315FD1D45AB56D650D42A5719CE8 /* CardMagus.swift in Sources */,
 				30EC3C3D147CB78837316DDF39E2F462 /* CardMagusKit-dummy.m in Sources */,
-				04E0C53EC96F69567058E4D577F48F1C /* CMArtist+CoreDataClass.swift in Sources */,
-				C4CDAA7C8CDE7EFA8A3005FC0CC8CF44 /* CMArtist+CoreDataProperties.swift in Sources */,
-				D181F0E8E5E6DC1A73B83799A1C4D423 /* CMCard+CoreDataClass.swift in Sources */,
-				DBF6522E7D5C46C06783B7561F981EFB /* CMCard+CoreDataProperties.swift in Sources */,
-				3FE41438F525C1A8494CA79218AC1655 /* CMCardLegality+CoreDataClass.swift in Sources */,
-				DED7AA7B9455201F2FDEFBE848BFBDAC /* CMCardLegality+CoreDataProperties.swift in Sources */,
-				FA57E892BED5055EC724C20B7AC3FA95 /* CMForeignName+CoreDataClass.swift in Sources */,
-				84E912371F7A9E4823F9E4D6A8001DBC /* CMForeignName+CoreDataProperties.swift in Sources */,
-				6223BD459B82F2E1C1031B0A4000A06B /* CMFormat+CoreDataClass.swift in Sources */,
-				50CC7738F0517717C55E7AA28B319B2C /* CMFormat+CoreDataProperties.swift in Sources */,
-				9DA52B0866D862E1348F3363ED96CBC5 /* CMLanguage+CoreDataClass.swift in Sources */,
-				23593C70E00C4687227B5E14A047D971 /* CMLanguage+CoreDataProperties.swift in Sources */,
-				C26349CE0914ACD37F0749A498D17C7F /* CMLegality+CoreDataClass.swift in Sources */,
-				BCE612DFE9E29A41EB4573BBC4ED5D4F /* CMLegality+CoreDataProperties.swift in Sources */,
-				44B88F35FB2E54F9D26C5DF8A7D0E86B /* CMSet+CoreDataClass.swift in Sources */,
-				FE1AA4741B47D53DE9AE49DE75836CC5 /* CMSet+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1983,6 +1911,7 @@
 			children = (
 				3263B91D7FB72DE958041D5CE2047599 /* Card Magus Model.xcdatamodel */,
 			);
+			currentVersion = 3263B91D7FB72DE958041D5CE2047599 /* Card Magus Model.xcdatamodel */;
 			path = "Card Magus Model.xcdatamodeld";
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

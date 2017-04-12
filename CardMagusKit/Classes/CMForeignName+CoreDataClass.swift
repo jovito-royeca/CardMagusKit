@@ -2,7 +2,7 @@
 //  CMForeignName+CoreDataClass.swift
 //  
 //
-//  Created by Jovito Royeca on 11/04/2017.
+//  Created by Jovito Royeca on 12/04/2017.
 //
 //
 

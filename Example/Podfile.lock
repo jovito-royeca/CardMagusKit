@@ -1,5 +1,5 @@
 PODS:
-  - CardMagusKit (0.7.6):
+  - CardMagusKit (0.7.7):
     - DATASource
     - DATAStack (~> 6)
     - Networking
@@ -21,7 +21,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  CardMagusKit: f3aa67f84976c5b650cb8cf350a395aba250b9c1
+  CardMagusKit: 8d304ff25cc05be440b626eb1b93c789011b298f
   DATASource: 52b86cfff6c7ac3db45192c01f7839c7473576c3
   DATAStack: 06d6a00f4fe84f11afdae2a6f47558f1087000e5
   Networking: e2c42013296d093e4249f8247acb08e36958a11a

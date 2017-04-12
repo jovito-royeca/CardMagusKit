@@ -2,7 +2,7 @@
 //  CMSet+CoreDataProperties.swift
 //  
 //
-//  Created by Jovito Royeca on 11/04/2017.
+//  Created by Jovito Royeca on 12/04/2017.
 //
 //
 
@@ -29,6 +29,10 @@ extension CMSet {
     @NSManaged public var type: String?
     @NSManaged public var cards: NSSet?
     @NSManaged public var printings_: CMCard?
+    @NSManaged public var type_: CMSetType?
+    @NSManaged public var block_: CMBlock?
+    @NSManaged public var border_: CMBorder?
+    @NSManaged public var booster_: CMBooster?
 
 }
 
