@@ -1,5 +1,5 @@
 //
-//  CMArtist+CoreDataProperties.swift
+//  CMWatermark+CoreDataProperties.swift
 //  Pods
 //
 //  Created by Jovito Royeca on 12/04/2017.
@@ -10,10 +10,10 @@ import Foundation
 import CoreData
 
 
-extension CMArtist {
+extension CMWatermark {
 
-    @nonobjc public class func fetchRequest() -> NSFetchRequest<CMArtist> {
-        return NSFetchRequest<CMArtist>(entityName: "CMArtist")
+    @nonobjc public class func fetchRequest() -> NSFetchRequest<CMWatermark> {
+        return NSFetchRequest<CMWatermark>(entityName: "CMWatermark")
     }
 
     @NSManaged public var name: String?
@@ -22,7 +22,7 @@ extension CMArtist {
 }
 
 // MARK: Generated accessors for cards
-extension CMArtist {
+extension CMWatermark {
 
     @objc(addCardsObject:)
     @NSManaged public func addToCards(_ value: CMCard)

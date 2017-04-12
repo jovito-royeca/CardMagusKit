@@ -11,9 +11,9 @@ import DATAStack
 import Sync
 
 @objc(CardMagus)
-public class CardMagus: NSObject {
+open class CardMagus: NSObject {
     // MARK: - Shared Instance
-    public static let sharedInstance = CardMagus()
+    open static let sharedInstance = CardMagus()
     
     // MARK: Variables
 //    guard let bundleURL = NSBundle(forClass: FrameworkClass.self).URLForResource("myFramework", withExtension: "bundle") else { throw Error }
@@ -22,12 +22,39 @@ public class CardMagus: NSObject {
 //    public let dataStack: DATAStack = DATAStack(modelName: "Card Magus Model", bundle: Bundle(for: CardMagus.self), storeType: .sqLite)
     
     fileprivate var _dataStack:DATAStack?
-    public var dataStack:DATAStack? {
+    open var dataStack:DATAStack? {
         get {
             return _dataStack
         }
         set (newValue) {
             _dataStack = newValue
         }
+    }
+    
+    open func findOrCreateObject(entityName: String, objectFinder: [String: AnyObject]) -> NSManagedObject? {
+        var object:NSManagedObject?
+        var predicate:NSPredicate?
+        
+        for (key,value) in objectFinder {
+            if predicate != nil {
+                predicate = NSCompoundPredicate(andPredicateWithSubpredicates: [predicate!, NSPredicate(format: "%K == %@", key, value as! NSObject)])
+            } else {
+                predicate = NSPredicate(format: "%K == %@", key, value as! NSObject)
+            }
+        }
+
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: entityName)
+        fetchRequest.predicate = predicate
+        
+        if let m = try! dataStack?.mainContext.fetch(fetchRequest).first as? NSManagedObject{
+            object = m
+        } else  {
+            if let desc = NSEntityDescription.entity(forEntityName: entityName, in: dataStack!.mainContext) {
+                object = NSManagedObject(entity: desc, insertInto: dataStack?.mainContext)
+                try! dataStack?.mainContext.save()
+            }
+        }
+        
+        return object
     }
 }

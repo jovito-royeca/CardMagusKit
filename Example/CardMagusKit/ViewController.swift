@@ -16,7 +16,6 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
         DatabaseMaintainer.sharedInstance.json2CoreData()
-        DatabaseMaintainer.sharedInstance.updateDatabase()
     }
 
     override func didReceiveMemoryWarning() {

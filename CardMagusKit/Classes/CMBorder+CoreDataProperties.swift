@@ -1,6 +1,6 @@
 //
 //  CMBorder+CoreDataProperties.swift
-//  
+//  Pods
 //
 //  Created by Jovito Royeca on 12/04/2017.
 //
@@ -17,25 +17,8 @@ extension CMBorder {
     }
 
     @NSManaged public var name: String?
-    @NSManaged public var sets: NSSet?
     @NSManaged public var cards: NSSet?
-
-}
-
-// MARK: Generated accessors for sets
-extension CMBorder {
-
-    @objc(addSetsObject:)
-    @NSManaged public func addToSets(_ value: CMSet)
-
-    @objc(removeSetsObject:)
-    @NSManaged public func removeFromSets(_ value: CMSet)
-
-    @objc(addSets:)
-    @NSManaged public func addToSets(_ values: NSSet)
-
-    @objc(removeSets:)
-    @NSManaged public func removeFromSets(_ values: NSSet)
+    @NSManaged public var sets: NSSet?
 
 }
 
@@ -53,5 +36,22 @@ extension CMBorder {
 
     @objc(removeCards:)
     @NSManaged public func removeFromCards(_ values: NSSet)
+
+}
+
+// MARK: Generated accessors for sets
+extension CMBorder {
+
+    @objc(addSetsObject:)
+    @NSManaged public func addToSets(_ value: CMSet)
+
+    @objc(removeSetsObject:)
+    @NSManaged public func removeFromSets(_ value: CMSet)
+
+    @objc(addSets:)
+    @NSManaged public func addToSets(_ values: NSSet)
+
+    @objc(removeSets:)
+    @NSManaged public func removeFromSets(_ values: NSSet)
 
 }

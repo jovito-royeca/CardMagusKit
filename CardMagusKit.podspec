@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CardMagusKit'
-  s.version          = '0.7.8'
+  s.version          = '0.8.0'
   s.summary          = 'Core Data and utilities for Card Magus.'
 
 # This description is used to generate tags and improve search results.

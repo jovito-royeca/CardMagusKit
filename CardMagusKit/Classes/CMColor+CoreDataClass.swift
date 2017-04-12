@@ -1,5 +1,5 @@
 //
-//  CMBlock+CoreDataClass.swift
+//  CMColor+CoreDataClass.swift
 //  Pods
 //
 //  Created by Jovito Royeca on 12/04/2017.
@@ -9,7 +9,7 @@
 import Foundation
 import CoreData
 
-@objc(CMBlock)
-public class CMBlock: NSManagedObject {
+@objc(CMColor)
+public class CMColor: NSManagedObject {
 
 }

@@ -7,193 +7,228 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		008B62FC547E16948E2023FE5553C46D /* NSPropertyDescription+Sync.m in Sources */ = {isa = PBXBuildFile; fileRef = 9313AF58DF688C8A01E8A1C6B6C79B1B /* NSPropertyDescription+Sync.m */; };
-		019FB49ACACB5A11F98570B0D8DAB92F /* PropertyMapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D723D2F4F24D577B3248849E2962B1B /* PropertyMapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0A42DC7C754FB31D39B28A6AF67865DE /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FA074D8D47D46EFDD91B587A06F154 /* JSON.swift */; };
+		082AB1AAA2FBB38D5E808C5E4DD9E890 /* NSManagedObjectContext+Sync.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E27AB97DABE852EDA9D9F13DF2C99C6 /* NSManagedObjectContext+Sync.swift */; };
 		0C12411427ED5C57409D4FDB2E490E89 /* Pods-CardMagusKit_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BAF2EFB35CFDCCF104C4E2A952B4A364 /* Pods-CardMagusKit_Tests-dummy.m */; };
-		11828D832F71989E8CE0B0A2C72A2E09 /* NSPropertyDescription+Sync.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E9733B1B3D02895C6177E1FF068FD9E /* NSPropertyDescription+Sync.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		148A1D5463F794DADE5A1A89649A03C9 /* Networking+HTTPRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3249134E54FBDEDBFAA2285B0AFB81B /* Networking+HTTPRequests.swift */; };
-		1C1DB3F605DE2431638050FC55F3B6CC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E69A8689D46B32E1BE4C0E6582A60380 /* Foundation.framework */; };
-		1D071C9BCC94C6E22C4900A7C8B5C388 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A4A0F3C4F82A2EF1D4E7332CDD64477 /* CoreData.framework */; };
-		1D7773528435467E2F23692D51CEE4D8 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 045EA09DAE130005FFF59F81CA5531F1 /* MapKit.framework */; };
-		1DBC43FBDCDA3F9A9D2DF8A5737C0F55 /* DATASourceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E9ADEC89AFF02F12C3BB6F61B543E1 /* DATASourceDelegate.swift */; };
-		230B057F4C4DF4A5ACE98B9C0008CF8D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E69A8689D46B32E1BE4C0E6582A60380 /* Foundation.framework */; };
-		290A31F0B064920C343325FA67D2ECA3 /* CardMagusKit.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5588952EA2C12B45F3A99BE348D39261 /* CardMagusKit.bundle */; };
-		2D51A6D3AF5E20BD0B24503C59473BF8 /* DATASource.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BD970011FF2137B1C7CB5DEFA791A6E /* DATASource.framework */; };
-		30EC3C3D147CB78837316DDF39E2F462 /* CardMagusKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 28A3FBB26B54D4C491DE922797B6CF33 /* CardMagusKit-dummy.m */; };
-		328DF6091968964D40C97FD1BD3E47B8 /* DataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E74293EBE466CEAB08FB773265D981 /* DataStack.swift */; };
-		33471B79A57CE0FF96BC0886B7ACC914 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF6EDCCF5ACB80CC93FBC2786F548C0 /* Helpers.swift */; };
-		34231BE76867C3B8966803CA0FCF6AB5 /* DATASource-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BBB19CED5D5DAB23364945AC96C2D6F /* DATASource-dummy.m */; };
-		35831EA506B93ADD15DCE8772CBC016A /* DATAStack-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 55BA9821206C1303EC9A3D99F0A3FD22 /* DATAStack-dummy.m */; };
-		361B08B80AF30DA16574DCEE30794938 /* DATAStack-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 37DC0529407FD8532C8EA7AC75672EE8 /* DATAStack-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		37C490A4312AE4BFFBD86BDE6D0306DA /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CDDFF1F60FF3A8E4A42E7F6C3205D93 /* Networking.swift */; };
-		3B61C0017F0E035DFA086B2A169A53D3 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A4A0F3C4F82A2EF1D4E7332CDD64477 /* CoreData.framework */; };
-		3FA04DC049919D3302277DBA004DB706 /* NSManagedObjectContext+Sync.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E27AB97DABE852EDA9D9F13DF2C99C6 /* NSManagedObjectContext+Sync.swift */; };
-		3FA12F5F5B2B71BA932F2C782E8615FB /* NSArray+Sync.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD239787783844F967053921052BE9E5 /* NSArray+Sync.swift */; };
-		439AF8950CAEDD238C2066CC9AB56823 /* Sync.swift in Sources */ = {isa = PBXBuildFile; fileRef = F163A1FCFCFC116EC355C6933A285815 /* Sync.swift */; };
-		491867B05E6260213237F36F3F69A56B /* Networking.h in Headers */ = {isa = PBXBuildFile; fileRef = 25C6ADA036DB0556A689755E6684F38F /* Networking.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4D1EBF314934896C3D2792F7D08D480C /* NSManagedObject+Sync.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526CA8ACF8F456D940B6D509FA6F5472 /* NSManagedObject+Sync.swift */; };
-		508D850A3C28347946073184548276CB /* Sync.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AD8FA3FFF3CC7C66A74A1708D8EAAE9 /* Sync.framework */; };
-		54234B9B14812CAB12BC8E5FB5BE42FE /* NSManagedObject+Export.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585D533001F446EEE7FF41944E8FCC3F /* NSManagedObject+Export.swift */; };
-		551AC8F167DD3CE26F749D6D14682391 /* DATASourceCollectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7770B52C1E3F7723B87746F8E28D2524 /* DATASourceCollectionHeaderView.swift */; };
-		55B90AD35D23111C5F255A4D898E9A2F /* CardMagusKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F16A3ABCCE721945BCEF7A0D825AB337 /* CardMagusKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		563D28E9C703785F45B5723C37EC934D /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A1487075A2C625494BC453F1743CD8 /* Result.swift */; };
-		5C120E3F1FF1558E93584AD9DED3F99C /* Inflections.m in Sources */ = {isa = PBXBuildFile; fileRef = E3BA927E8C3217820AC85C0F48FB1B2E /* Inflections.m */; };
-		5F8516F529E550AC0E5124A3AF16F207 /* Sync+DataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48625264DD70CF9434601463D9ABE49 /* Sync+DataStack.swift */; };
-		654D44FEB5745045CAF6DBE90018D182 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E69A8689D46B32E1BE4C0E6582A60380 /* Foundation.framework */; };
-		67213FB2604EF99D8E1E60584ADFA528 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59A2619849418DA3573E46351CF63F45 /* UIKit.framework */; };
-		67A10AAC1FDC761FD470FAF556F80D78 /* Networking-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 69703FBC822C499A121A28251A37B05E /* Networking-dummy.m */; };
-		6AA6017D1566A676F79132210A34F40A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59A2619849418DA3573E46351CF63F45 /* UIKit.framework */; };
-		6AAA409A67B6198F7194FF0B05A8E83F /* DATASource.h in Headers */ = {isa = PBXBuildFile; fileRef = E0CC40C01BF27F082FED925E1A79CD1F /* DATASource.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		73A40FE7D246C6C430C21FCFB1E56F2A /* DATASource.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3863AA155DFFB90809C58E336E9573C /* DATASource.framework */; };
-		7574A290D6A56A8660A886E022552B14 /* Networking+Private.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B7827CE631BBB15C12EF463C75AEC3 /* Networking+Private.swift */; };
-		78BAA700A1CF7684E596792028E4F7B3 /* Sync+NSPersistentContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC6E078E578BC691E1C9E2AF937DC8A /* Sync+NSPersistentContainer.swift */; };
-		78F97AD9A181E65ABC2F2F3B8C115F85 /* NSEntityDescription+PrimaryKey.m in Sources */ = {isa = PBXBuildFile; fileRef = E9817D35B8038469B24F97FB5B0197C1 /* NSEntityDescription+PrimaryKey.m */; };
-		7945CDCF68D3C9655FFD7BC331369441 /* DATASource+UITableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0A56FC3C91CC987781A56757D70249 /* DATASource+UITableViewDataSource.swift */; };
-		7AAC6D2B635B1F1AFBC94638C712E3EA /* Networking-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 643F3813FF7A786204A18D7B66993813 /* Networking-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7ED7C23B7A6ED1C388FDE7E2C01A3693 /* DATASource+UICollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0522733BB6133B783F3D0F556CD1ECE0 /* DATASource+UICollectionViewDataSource.swift */; };
-		7EDF950BEC9DCE291B0E433B1F720C98 /* NSEntityDescription+Sync.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965DA00AE8BCD5DCE322D1884151FFE3 /* NSEntityDescription+Sync.swift */; };
-		8042C8F3AD6B4AD34C4C3231F0D37B64 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E69A8689D46B32E1BE4C0E6582A60380 /* Foundation.framework */; };
-		8079325C2609BF6760C9AF8BEADADB64 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1321535D6D9291FA7126E05747D8F92A /* Result.swift */; };
-		83EE578A6ED3617790816F21341A17B0 /* DATAStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B9802B88AFD99AA8BD4DF69998E606 /* DATAStack.swift */; };
-		84DA315FD1D45AB56D650D42A5719CE8 /* CardMagus.swift in Sources */ = {isa = PBXBuildFile; fileRef = B922BF184A81FFA1BF36225343C000F6 /* CardMagus.swift */; };
-		8D6C780670165806BA55169A14809AC1 /* Inflections.h in Headers */ = {isa = PBXBuildFile; fileRef = 4905AA77370325B1C177B0652CB04AFE /* Inflections.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8E7CAE35CC68CB3C9975297E7AB6C7FF /* Sync+NSManagedObjectContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89F5318F2CC485A67C785367CC473A4 /* Sync+NSManagedObjectContext.swift */; };
+		10B499D977E3730EE19E86A2F2B83CA8 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A4A0F3C4F82A2EF1D4E7332CDD64477 /* CoreData.framework */; };
+		10FF90D30A4EF2A8D904A1990DA4211B /* DataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E74293EBE466CEAB08FB773265D981 /* DataStack.swift */; };
+		111BB51A1E9E53D400076A47 /* CMCardType+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111BB4F81E9E53D400076A47 /* CMCardType+CoreDataClass.swift */; };
+		111BB51B1E9E53D400076A47 /* CMCardType+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111BB4F91E9E53D400076A47 /* CMCardType+CoreDataProperties.swift */; };
+		111BB51C1E9E53D400076A47 /* CMLanguage+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111BB4FA1E9E53D400076A47 /* CMLanguage+CoreDataClass.swift */; };
+		111BB51D1E9E53D400076A47 /* CMLanguage+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111BB4FB1E9E53D400076A47 /* CMLanguage+CoreDataProperties.swift */; };
+		111BB51E1E9E53D400076A47 /* CMBorder+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111BB4FC1E9E53D400076A47 /* CMBorder+CoreDataClass.swift */; };
+		111BB51F1E9E53D400076A47 /* CMBorder+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111BB4FD1E9E53D400076A47 /* CMBorder+CoreDataProperties.swift */; };
+		111BB5201E9E53D400076A47 /* CMLayout+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111BB4FE1E9E53D400076A47 /* CMLayout+CoreDataClass.swift */; };
+		111BB5211E9E53D400076A47 /* CMLayout+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111BB4FF1E9E53D400076A47 /* CMLayout+CoreDataProperties.swift */; };
+		111BB5221E9E53D400076A47 /* CMSet+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111BB5001E9E53D400076A47 /* CMSet+CoreDataClass.swift */; };
+		111BB5231E9E53D400076A47 /* CMSet+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111BB5011E9E53D400076A47 /* CMSet+CoreDataProperties.swift */; };
+		111BB5241E9E53D400076A47 /* CMColor+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111BB5021E9E53D400076A47 /* CMColor+CoreDataClass.swift */; };
+		111BB5251E9E53D400076A47 /* CMColor+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111BB5031E9E53D400076A47 /* CMColor+CoreDataProperties.swift */; };
+		111BB5261E9E53D400076A47 /* CMLegality+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111BB5041E9E53D400076A47 /* CMLegality+CoreDataClass.swift */; };
+		111BB5271E9E53D400076A47 /* CMLegality+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111BB5051E9E53D400076A47 /* CMLegality+CoreDataProperties.swift */; };
+		111BB5281E9E53D400076A47 /* CMSetType+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111BB5061E9E53D400076A47 /* CMSetType+CoreDataClass.swift */; };
+		111BB5291E9E53D400076A47 /* CMSetType+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111BB5071E9E53D400076A47 /* CMSetType+CoreDataProperties.swift */; };
+		111BB52A1E9E53D400076A47 /* CMWatermark+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111BB5081E9E53D400076A47 /* CMWatermark+CoreDataClass.swift */; };
+		111BB52B1E9E53D400076A47 /* CMWatermark+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111BB5091E9E53D400076A47 /* CMWatermark+CoreDataProperties.swift */; };
+		111BB52C1E9E53D400076A47 /* CMForeignName+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111BB50A1E9E53D400076A47 /* CMForeignName+CoreDataClass.swift */; };
+		111BB52D1E9E53D400076A47 /* CMForeignName+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111BB50B1E9E53D400076A47 /* CMForeignName+CoreDataProperties.swift */; };
+		111BB52E1E9E53D400076A47 /* CMBooster+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111BB50C1E9E53D400076A47 /* CMBooster+CoreDataClass.swift */; };
+		111BB52F1E9E53D400076A47 /* CMBooster+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111BB50D1E9E53D400076A47 /* CMBooster+CoreDataProperties.swift */; };
+		111BB5301E9E53D400076A47 /* CMCardLegality+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111BB50E1E9E53D400076A47 /* CMCardLegality+CoreDataClass.swift */; };
+		111BB5311E9E53D400076A47 /* CMCardLegality+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111BB50F1E9E53D400076A47 /* CMCardLegality+CoreDataProperties.swift */; };
+		111BB5321E9E53D400076A47 /* CMRarity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111BB5101E9E53D400076A47 /* CMRarity+CoreDataClass.swift */; };
+		111BB5331E9E53D400076A47 /* CMRarity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111BB5111E9E53D400076A47 /* CMRarity+CoreDataProperties.swift */; };
+		111BB5341E9E53D400076A47 /* CMArtist+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111BB5121E9E53D400076A47 /* CMArtist+CoreDataClass.swift */; };
+		111BB5351E9E53D400076A47 /* CMArtist+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111BB5131E9E53D400076A47 /* CMArtist+CoreDataProperties.swift */; };
+		111BB5361E9E53D400076A47 /* CMBlock+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111BB5141E9E53D400076A47 /* CMBlock+CoreDataClass.swift */; };
+		111BB5371E9E53D400076A47 /* CMBlock+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111BB5151E9E53D400076A47 /* CMBlock+CoreDataProperties.swift */; };
+		111BB5381E9E53D400076A47 /* CMFormat+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111BB5161E9E53D400076A47 /* CMFormat+CoreDataClass.swift */; };
+		111BB5391E9E53D400076A47 /* CMFormat+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111BB5171E9E53D400076A47 /* CMFormat+CoreDataProperties.swift */; };
+		111BB53A1E9E53D400076A47 /* CMCard+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111BB5181E9E53D400076A47 /* CMCard+CoreDataClass.swift */; };
+		111BB53B1E9E53D400076A47 /* CMCard+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111BB5191E9E53D400076A47 /* CMCard+CoreDataProperties.swift */; };
+		151FB66CEDFC1F1144D789778938CB01 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E69A8689D46B32E1BE4C0E6582A60380 /* Foundation.framework */; };
+		191A03D3AEA9BC396EB6CA3ED90F103B /* PropertyMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CB91DC1F08E59EDD8512738E90F751 /* PropertyMapper.m */; };
+		1CDB54C08B216C959B13C35F0F339B0C /* Networking+HTTPRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3249134E54FBDEDBFAA2285B0AFB81B /* Networking+HTTPRequests.swift */; };
+		1E1B37C8534AE7AB5AD49FBBCAC27D93 /* Sync.swift in Sources */ = {isa = PBXBuildFile; fileRef = F163A1FCFCFC116EC355C6933A285815 /* Sync.swift */; };
+		1ECD48DCEA36D58D867A985543A2226A /* Networking+Private.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B7827CE631BBB15C12EF463C75AEC3 /* Networking+Private.swift */; };
+		21352196679A2A7EE3094A2F4201BA76 /* Networking.h in Headers */ = {isa = PBXBuildFile; fileRef = 25C6ADA036DB0556A689755E6684F38F /* Networking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		255614B237E5904C801529475B812086 /* DATAStack-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 37DC0529407FD8532C8EA7AC75672EE8 /* DATAStack-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		269DD786E7C536F64BD91B45E445483F /* CardMagusKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F16A3ABCCE721945BCEF7A0D825AB337 /* CardMagusKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2A3F67BD50FA98B1458D86F8359E38EE /* DATAStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B9802B88AFD99AA8BD4DF69998E606 /* DATAStack.swift */; };
+		31BB3B55E7A7687AAB7BEBD3875E432E /* CardMagusKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 28A3FBB26B54D4C491DE922797B6CF33 /* CardMagusKit-dummy.m */; };
+		3265C672F613B70CC97D7B7D9D05C10A /* PropertyMapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D723D2F4F24D577B3248849E2962B1B /* PropertyMapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		339C7A78E814435A59664B7001D9DC57 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A05D7538889905851A9CC67ACDE8BBA /* Response.swift */; };
+		3501A3A3F5DDE86D9F1F05C0B3747D39 /* NSEntityDescription+PrimaryKey.m in Sources */ = {isa = PBXBuildFile; fileRef = E9817D35B8038469B24F97FB5B0197C1 /* NSEntityDescription+PrimaryKey.m */; };
+		36BC3807E8320BDD1A1F1898C9BE315F /* TestCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBEEB0977484E644721558B9FD160970 /* TestCheck.swift */; };
+		374F3FF04F59072B3792DC40872EB2B0 /* Sync+NSManagedObjectContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89F5318F2CC485A67C785367CC473A4 /* Sync+NSManagedObjectContext.swift */; };
+		386A9BAC6F865F437C5A7504ED05EEE9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59A2619849418DA3573E46351CF63F45 /* UIKit.framework */; };
+		3A375695EB534AAD7165BE9DCA4BD019 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF6EDCCF5ACB80CC93FBC2786F548C0 /* Helpers.swift */; };
+		3AB0953A5408141A8A7D5A2C1AEF9E4D /* NetworkActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1796850DB4A0FE7EC417C573961FF1FF /* NetworkActivityIndicator.swift */; };
+		3D155DF16B5F19D7487B42168916B9F9 /* DATAStack-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 55BA9821206C1303EC9A3D99F0A3FD22 /* DATAStack-dummy.m */; };
+		44CE2C7B4CF2A6B69AD8496ECD0B4A7E /* Sync.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BF2350FBA735452B31142901E3D1366 /* Sync.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		46D190D54F69DEB847F5CCF7F66445D1 /* NSManagedObject+PropertyMapperHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = FB42C92DD4370D462403C2302F1A1BB5 /* NSManagedObject+PropertyMapperHelpers.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		47E5C071470C2BB68F91E17FB466514B /* NSEntityDescription+Sync.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965DA00AE8BCD5DCE322D1884151FFE3 /* NSEntityDescription+Sync.swift */; };
+		48CB16F81365E4B9FD748E0FA97F0258 /* DATAStack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B246EF63270E7CD111ED96A3BD115E41 /* DATAStack.framework */; };
+		4CA7779DB67EC907482DEFEB9FAC6202 /* NSDate+PropertyMapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 6EDF3A7F78B34B42D4C0D542DADD8C01 /* NSDate+PropertyMapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4D9F3F31595C2D50B6C5E832AFF61014 /* Sync.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AD8FA3FFF3CC7C66A74A1708D8EAAE9 /* Sync.framework */; };
+		577AAB7862A254F379014911D9EC00B6 /* FormDataPart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172153B972F0490AEA6BFAD0D27A5C25 /* FormDataPart.swift */; };
+		5A404893E5B8FD97F8807AFF2171CE35 /* Sync-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF2815889455393F66C9FD2E1D34F79 /* Sync-dummy.m */; };
+		645FA645954DAAF3A987790A1A94F267 /* NSArray+Sync.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD239787783844F967053921052BE9E5 /* NSArray+Sync.swift */; };
+		6B661B1A0B83998C21030DD5BD1F8E29 /* Sync.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C46270468ECDE96B081FC73976F6B5D3 /* Sync.framework */; };
+		6E252BD76CD2584343C124A23307B745 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FA074D8D47D46EFDD91B587A06F154 /* JSON.swift */; };
+		7BABCB3B8ED59F7E22AEB16E5EC137AD /* TestCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5063B3527F32C522A89CEFD39DF2D74E /* TestCheck.swift */; };
+		803D73D4530124E31FF533B5E99CF169 /* Sync+NSPersistentContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC6E078E578BC691E1C9E2AF937DC8A /* Sync+NSPersistentContainer.swift */; };
+		84F7273B5726FFA577A09549C7BA8D49 /* Networking-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 643F3813FF7A786204A18D7B66993813 /* Networking-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8541A375469A5F08935C0C6019693016 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59A2619849418DA3573E46351CF63F45 /* UIKit.framework */; };
+		889DE01E68C708D12C072C88CFBCEE96 /* DATASource.h in Headers */ = {isa = PBXBuildFile; fileRef = E0CC40C01BF27F082FED925E1A79CD1F /* DATASource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		88B4CCF49D9E89AEC684F3EDC96DFA7F /* Inflections.m in Sources */ = {isa = PBXBuildFile; fileRef = E3BA927E8C3217820AC85C0F48FB1B2E /* Inflections.m */; };
+		8971358A794BD896E013752FB7852E6E /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CDDFF1F60FF3A8E4A42E7F6C3205D93 /* Networking.swift */; };
+		899DC24887655BDDD2418A01644AD0E7 /* Inflections.h in Headers */ = {isa = PBXBuildFile; fileRef = 4905AA77370325B1C177B0652CB04AFE /* Inflections.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8FFFEE04CBEC9EF8E47680ECB6C2FB5B /* Pods-CardMagusKit_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CFFAEF27345A81432B55993A69098F03 /* Pods-CardMagusKit_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		94472D1400259ABB9594C7B7301BD418 /* NetworkActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1796850DB4A0FE7EC417C573961FF1FF /* NetworkActivityIndicator.swift */; };
-		9ABABF041A0161D2415C7EC48F896B5D /* Networking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4632B57A0724BF87D3C87C7192C3662 /* Networking.framework */; };
+		96817D6C52C0DBB02BAB1CF4EA6FC76F /* NSManagedObject+Export.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585D533001F446EEE7FF41944E8FCC3F /* NSManagedObject+Export.swift */; };
+		9999FF83F4D86568A9C3566F7C38DDDD /* DATASource-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BBB19CED5D5DAB23364945AC96C2D6F /* DATASource-dummy.m */; };
+		9A69D880CA6D3EBEA8643CA857778DC7 /* Networking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4632B57A0724BF87D3C87C7192C3662 /* Networking.framework */; };
 		9B6ABE9F886B497A5858C7C0F7A0A189 /* Pods-CardMagusKit_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D7A0F4938D6D2A3D74324E8323D7A1ED /* Pods-CardMagusKit_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9ECEC0A57507BB732D507D4F855DF30C /* FormDataPart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172153B972F0490AEA6BFAD0D27A5C25 /* FormDataPart.swift */; };
-		A1E1BE8A6358C53656E753021F70283E /* DATASource-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 562545B02F552B6DEF7CD37662ADEAAE /* DATASource-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9CCB50ED995CD04342A11CBF2EE519C5 /* NSPropertyDescription+Sync.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E9733B1B3D02895C6177E1FF068FD9E /* NSPropertyDescription+Sync.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1BDED935762ED8BA550D6E8CFA2AD67 /* TestCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7DD74CDC64FB5F46D83A2482BCEB1D /* TestCheck.swift */; };
+		A2BB04EB8258C90DDA180B078BCC3877 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A1487075A2C625494BC453F1743CD8 /* Result.swift */; };
+		A32A3A7AFA25B7FDC9FC57985E17BBFB /* CardMagusKit.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5588952EA2C12B45F3A99BE348D39261 /* CardMagusKit.bundle */; };
 		A5BACE708014B767514782C434DADFF0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E69A8689D46B32E1BE4C0E6582A60380 /* Foundation.framework */; };
-		A71065F70C34102D3959259822027D94 /* DATAStack.h in Headers */ = {isa = PBXBuildFile; fileRef = C704D8294E8EC0E796E0C500FC10B7FD /* DATAStack.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A857642C5F25239E51A37F09234D4FEE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E69A8689D46B32E1BE4C0E6582A60380 /* Foundation.framework */; };
-		AE527EBCE066C6A7D9F696FD8C4FACB4 /* NSManagedObject+PropertyMapperHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DE888F87B4ADD536F77E18511A926BC /* NSManagedObject+PropertyMapperHelpers.m */; };
-		AF60B962BE187D476C9CD6C5AFF5CA53 /* Sync-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF2815889455393F66C9FD2E1D34F79 /* Sync-dummy.m */; };
-		B0093F8C8CCF7F3CB92B6255D38581A1 /* NSEntityDescription+PrimaryKey.h in Headers */ = {isa = PBXBuildFile; fileRef = 64976DD21AB17D56ABD7B4F5CEF43563 /* NSEntityDescription+PrimaryKey.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B312973679D1755771CDF8B8A54DB93B /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A05D7538889905851A9CC67ACDE8BBA /* Response.swift */; };
-		B3522ABA34A1BCF8175AB230EEB3BAC6 /* Sync+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0D5F01BAA0D05928E61D50E359A97D /* Sync+Helpers.swift */; };
-		BBDEA373E8A6342AA7805CF3017FC0EF /* NSDate+PropertyMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5AE8C86D269B411131CCE5E1B0EB98 /* NSDate+PropertyMapper.m */; };
-		BCF74B8C93B9643D5DC0B319E8A09FC0 /* Sync.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BF2350FBA735452B31142901E3D1366 /* Sync.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BFF06B81D59640DAE2BDAE26270A0297 /* Card Magus Model.xcdatamodeld in Resources */ = {isa = PBXBuildFile; fileRef = 41E596F2A716BCF0DB7D880E21FDF111 /* Card Magus Model.xcdatamodeld */; };
-		C954A0298658191C508AC7C9E91850E7 /* DATAStack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B246EF63270E7CD111ED96A3BD115E41 /* DATAStack.framework */; };
-		CCE458C459D8B2A4AF3FD8A07F37019C /* PropertyMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CB91DC1F08E59EDD8512738E90F751 /* PropertyMapper.m */; };
-		CF5B4A0A9267E1E61D79AB017F45096B /* Sync.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C46270468ECDE96B081FC73976F6B5D3 /* Sync.framework */; };
-		D086B90C07399653B06E9597C4E0B56C /* DATASource+NSFetchedResultsControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0F738F794B2B2D83646BDA00E04C42 /* DATASource+NSFetchedResultsControllerDelegate.swift */; };
-		D2AEA2DA645F4888969792EBF50741B2 /* NSManagedObject+PropertyMapperHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = FB42C92DD4370D462403C2302F1A1BB5 /* NSManagedObject+PropertyMapperHelpers.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D52D07298B0B6A86B91A066CEB77A46E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E69A8689D46B32E1BE4C0E6582A60380 /* Foundation.framework */; };
-		DE83206BE6180D94BBFEAFBF42D2D54C /* TestCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBEEB0977484E644721558B9FD160970 /* TestCheck.swift */; };
-		E05DD92893E589C5BEA7F5237B59B370 /* DATAStack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A36AD661921090479BDA095D026F0A29 /* DATAStack.framework */; };
-		E438B13B10EFC2A0C161D5A048DBA06E /* Networking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0378FC0732ACD8769413BDB85070856E /* Networking.framework */; };
-		E6E5709D6351EB288452CE7DD6D3D03B /* TestCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5063B3527F32C522A89CEFD39DF2D74E /* TestCheck.swift */; };
-		E8793C7C8CF4EC3206BE3A9104FF7EF4 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A4A0F3C4F82A2EF1D4E7332CDD64477 /* CoreData.framework */; };
-		EA5B48977E233C545B09826CE62BAC63 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8323DA6FDA78BEFAAB8A7946735033 /* Image.swift */; };
-		EB308CB07EA461A3B4B24FA804684092 /* DATASource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7131792E83888E4CD7857E5A5A3E32 /* DATASource.swift */; };
-		F0A939990F70205883E7A0FA948403F8 /* Sync-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D1C410583EB0095431C09A25D54DF9F /* Sync-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F0FD6F274349D43B7274A033BD654BB3 /* TestCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7DD74CDC64FB5F46D83A2482BCEB1D /* TestCheck.swift */; };
-		F3B1DF4BBBD7655A14BEE7E12C1AD329 /* DataFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A8C0DFA705293806A5BCC63F2E3CC2 /* DataFilter.swift */; };
-		F416A8552C78001F485BD719DA87ED6E /* NSDate+PropertyMapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 6EDF3A7F78B34B42D4C0D542DADD8C01 /* NSDate+PropertyMapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A9BB54B4EAC9858B7503C7F3D0725327 /* Sync+DataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48625264DD70CF9434601463D9ABE49 /* Sync+DataStack.swift */; };
+		ABBB71113DDC84F0A680F7403B3951AA /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1321535D6D9291FA7126E05747D8F92A /* Result.swift */; };
+		ADEB2B4C717E8F89B73BCDC69F0DCCEB /* DataFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A8C0DFA705293806A5BCC63F2E3CC2 /* DataFilter.swift */; };
+		AF06FD888D370AFB4B2B47DAFD9B0DD7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E69A8689D46B32E1BE4C0E6582A60380 /* Foundation.framework */; };
+		AFAAC27DF8981E6D7263C05D54D567A7 /* DATASource+NSFetchedResultsControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0F738F794B2B2D83646BDA00E04C42 /* DATASource+NSFetchedResultsControllerDelegate.swift */; };
+		B131E126388F099845B4DB0A0AAADAF9 /* DATASource.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BD970011FF2137B1C7CB5DEFA791A6E /* DATASource.framework */; };
+		B334F648AEB720AC99AFDBCD25EE0D1A /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A4A0F3C4F82A2EF1D4E7332CDD64477 /* CoreData.framework */; };
+		B3D6EC354FB2ECDEBE5B2954FEC4CD9E /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8323DA6FDA78BEFAAB8A7946735033 /* Image.swift */; };
+		B7AA65BCBECF738D1685E13DBE2164A8 /* DATASourceCollectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7770B52C1E3F7723B87746F8E28D2524 /* DATASourceCollectionHeaderView.swift */; };
+		BF89F6F36DB5AEEDC04885B20297484D /* DATASource-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 562545B02F552B6DEF7CD37662ADEAAE /* DATASource-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BF9AEAD973B0AC9F1CB52C80941EBE0D /* Card Magus Model.xcdatamodeld in Resources */ = {isa = PBXBuildFile; fileRef = 9CDDCADA5315E9798A0566C11C72473A /* Card Magus Model.xcdatamodeld */; };
+		C276363432C3DFC90322A7EFE3D056F4 /* NSManagedObject+Sync.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526CA8ACF8F456D940B6D509FA6F5472 /* NSManagedObject+Sync.swift */; };
+		C7DDCF046F48D39D70B6088505BB0C2C /* CardMagus.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB20EBD67054F6252DF18E1FE4D8F99F /* CardMagus.swift */; };
+		C83B01E315401784492B058CDC8831AE /* DATAStack.h in Headers */ = {isa = PBXBuildFile; fileRef = C704D8294E8EC0E796E0C500FC10B7FD /* DATAStack.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C883453B3A2EF9ADD3813E997C44CB5E /* DATAStack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A36AD661921090479BDA095D026F0A29 /* DATAStack.framework */; };
+		CFEDA01A9E8809EEF173C7BF145772B6 /* Networking-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 69703FBC822C499A121A28251A37B05E /* Networking-dummy.m */; };
+		D1F0DD4F7234D73EEFABC36EB7753978 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A4A0F3C4F82A2EF1D4E7332CDD64477 /* CoreData.framework */; };
+		D31427D1E4341C7F9D131EEDBF28BFFF /* NSDate+PropertyMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5AE8C86D269B411131CCE5E1B0EB98 /* NSDate+PropertyMapper.m */; };
+		DC26DFE1ECC37DDBB1E7696789F13D96 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E69A8689D46B32E1BE4C0E6582A60380 /* Foundation.framework */; };
+		DD2096CD863FA8A604CB0800686A6C09 /* CardMagus.swift in Resources */ = {isa = PBXBuildFile; fileRef = CB20EBD67054F6252DF18E1FE4D8F99F /* CardMagus.swift */; };
+		DEB8A719E60BACDEB777B5F063CBD1F2 /* DATASource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7131792E83888E4CD7857E5A5A3E32 /* DATASource.swift */; };
+		DEE0AF1A9FF8EB79C7D747AB6A7CAA88 /* NSPropertyDescription+Sync.m in Sources */ = {isa = PBXBuildFile; fileRef = 9313AF58DF688C8A01E8A1C6B6C79B1B /* NSPropertyDescription+Sync.m */; };
+		E12FC7FEFDCB6B8D39127F1480EC2781 /* DATASource+UICollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0522733BB6133B783F3D0F556CD1ECE0 /* DATASource+UICollectionViewDataSource.swift */; };
+		E25578BD2C6250D6861BA91DBD3ADE5C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E69A8689D46B32E1BE4C0E6582A60380 /* Foundation.framework */; };
+		E4AC6322DF93F4929BFFCF5FE54E5AD3 /* DATASourceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E9ADEC89AFF02F12C3BB6F61B543E1 /* DATASourceDelegate.swift */; };
+		E875996F6942F15AAB60D184AA4C3A32 /* Networking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0378FC0732ACD8769413BDB85070856E /* Networking.framework */; };
+		E8E89EA200A46101845FF4F9AA6D3C6A /* NSManagedObject+PropertyMapperHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DE888F87B4ADD536F77E18511A926BC /* NSManagedObject+PropertyMapperHelpers.m */; };
+		EEA68A51722318B05DB2F8D69208D798 /* Sync-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D1C410583EB0095431C09A25D54DF9F /* Sync-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EF7F6E9B1B65577C3EB73C8D462D6951 /* DATASource.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3863AA155DFFB90809C58E336E9573C /* DATASource.framework */; };
+		F58CB64C4FE632E2B18AD9B60D667378 /* DATASource+UITableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0A56FC3C91CC987781A56757D70249 /* DATASource+UITableViewDataSource.swift */; };
+		F74244C4BAC0989FBA8788D052A48B18 /* Sync+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0D5F01BAA0D05928E61D50E359A97D /* Sync+Helpers.swift */; };
+		FA046AAFF3A74EDB2146B3EA388B5834 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E69A8689D46B32E1BE4C0E6582A60380 /* Foundation.framework */; };
+		FCF065A026B246D383FDF7FAA55BA0E2 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 045EA09DAE130005FFF59F81CA5531F1 /* MapKit.framework */; };
 		FD95BE88369C0CACD70235A2F401163F /* Pods-CardMagusKit_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 14F75F334A09B4357A6487FA0D804274 /* Pods-CardMagusKit_Example-dummy.m */; };
+		FEB46CE157863C9B7A7CDE82AF48A85D /* NSEntityDescription+PrimaryKey.h in Headers */ = {isa = PBXBuildFile; fileRef = 64976DD21AB17D56ABD7B4F5CEF43563 /* NSEntityDescription+PrimaryKey.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		0DB1581E2F918CF9E9FDC050A3210448 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 94F9E27F967CC2E5EF94881BF39421E1;
-			remoteInfo = DATAStack;
-		};
-		206C2030A19C48EC11DF81545E000312 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 23803C59F4AA5E97221280A4D5AFF648;
-			remoteInfo = "CardMagusKit-CardMagusKit";
-		};
 		2408C7A0F9AF8FAF33EAA567E564E375 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 94F9E27F967CC2E5EF94881BF39421E1;
+			remoteGlobalIDString = 7678D29A65492E2297313F1825E0E93A;
 			remoteInfo = DATAStack;
 		};
-		273F4F43AC79BDC66E18D4CB1795CC26 /* PBXContainerItemProxy */ = {
+		30F472DC898C1097BC4DA56B2186E017 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 80482CC6A87D40C1B49C1CBADAC7F661;
-			remoteInfo = Networking;
+			remoteGlobalIDString = 62B022431ADC138BD2F4700E017010BD;
+			remoteInfo = DATASource;
 		};
 		3F56499DC900C3312BF008FEECA2F992 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 94F9E27F967CC2E5EF94881BF39421E1;
+			remoteGlobalIDString = 7678D29A65492E2297313F1825E0E93A;
 			remoteInfo = DATAStack;
 		};
 		567242F749C3DE77784F24C88878BBB3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 0FE013E601C41DE1101CF3B698C72910;
+			remoteGlobalIDString = 267E631AD2835807EA2954AE67E92AE2;
 			remoteInfo = CardMagusKit;
+		};
+		63D3CCC51D8C73FC8171C5863D13097A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7981760F112F121A0AB2C3609A102EC3;
+			remoteInfo = Sync;
 		};
 		6901BEFE367F9B7DF104D243C93B0E96 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 874502669EF285933B29A7422DF427DF;
+			remoteGlobalIDString = 7981760F112F121A0AB2C3609A102EC3;
 			remoteInfo = Sync;
 		};
 		776CDDD2957567DF24B68CDC23AD668D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 80482CC6A87D40C1B49C1CBADAC7F661;
+			remoteGlobalIDString = A991B7D728B9D67338E1A8C9D4412D2C;
 			remoteInfo = Networking;
 		};
-		9ED88224958A1CE450CA2A9C806E666C /* PBXContainerItemProxy */ = {
+		7A6ECD1E4613799312D352A784BE152E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 874502669EF285933B29A7422DF427DF;
-			remoteInfo = Sync;
+			remoteGlobalIDString = 7678D29A65492E2297313F1825E0E93A;
+			remoteInfo = DATAStack;
 		};
 		A3ACBB4EDD6794688F1A54F9EED1865A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 26DCF2F988D413FC6F7926977943A108;
+			remoteGlobalIDString = 62B022431ADC138BD2F4700E017010BD;
 			remoteInfo = DATASource;
 		};
 		AAF8DC6AE7E1F2A308187B761BBA4818 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 26DCF2F988D413FC6F7926977943A108;
+			remoteGlobalIDString = 62B022431ADC138BD2F4700E017010BD;
 			remoteInfo = DATASource;
 		};
 		D40CBB684931CA7E597B7F7F0548CEF4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 80482CC6A87D40C1B49C1CBADAC7F661;
+			remoteGlobalIDString = A991B7D728B9D67338E1A8C9D4412D2C;
 			remoteInfo = Networking;
 		};
-		DF07494D035CA6B66C62B79963C0E850 /* PBXContainerItemProxy */ = {
+		E990E910F8EB1C6E887AF05D0A07185C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 26DCF2F988D413FC6F7926977943A108;
-			remoteInfo = DATASource;
+			remoteGlobalIDString = 653CBEB97E392E9E6540CF6D9C6CD0EB;
+			remoteInfo = "CardMagusKit-CardMagusKit";
 		};
 		F3F4D4C35229FCF8825D86904AF94FD9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 874502669EF285933B29A7422DF427DF;
+			remoteGlobalIDString = 7981760F112F121A0AB2C3609A102EC3;
 			remoteInfo = Sync;
+		};
+		FC65CF6D2EC0CAB3D0083AD51B2B255E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A991B7D728B9D67338E1A8C9D4412D2C;
+			remoteInfo = Networking;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -207,6 +242,40 @@
 		097E85F32358C41F9C2876C62B6C9CD1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A05D7538889905851A9CC67ACDE8BBA /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Sources/Response.swift; sourceTree = "<group>"; };
 		0DE888F87B4ADD536F77E18511A926BC /* NSManagedObject+PropertyMapperHelpers.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSManagedObject+PropertyMapperHelpers.m"; path = "Source/PropertyMapper/NSManagedObject+PropertyMapperHelpers.m"; sourceTree = "<group>"; };
+		111BB4F81E9E53D400076A47 /* CMCardType+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CMCardType+CoreDataClass.swift"; sourceTree = "<group>"; };
+		111BB4F91E9E53D400076A47 /* CMCardType+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CMCardType+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		111BB4FA1E9E53D400076A47 /* CMLanguage+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CMLanguage+CoreDataClass.swift"; sourceTree = "<group>"; };
+		111BB4FB1E9E53D400076A47 /* CMLanguage+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CMLanguage+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		111BB4FC1E9E53D400076A47 /* CMBorder+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CMBorder+CoreDataClass.swift"; sourceTree = "<group>"; };
+		111BB4FD1E9E53D400076A47 /* CMBorder+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CMBorder+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		111BB4FE1E9E53D400076A47 /* CMLayout+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CMLayout+CoreDataClass.swift"; sourceTree = "<group>"; };
+		111BB4FF1E9E53D400076A47 /* CMLayout+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CMLayout+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		111BB5001E9E53D400076A47 /* CMSet+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CMSet+CoreDataClass.swift"; sourceTree = "<group>"; };
+		111BB5011E9E53D400076A47 /* CMSet+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CMSet+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		111BB5021E9E53D400076A47 /* CMColor+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CMColor+CoreDataClass.swift"; sourceTree = "<group>"; };
+		111BB5031E9E53D400076A47 /* CMColor+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CMColor+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		111BB5041E9E53D400076A47 /* CMLegality+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CMLegality+CoreDataClass.swift"; sourceTree = "<group>"; };
+		111BB5051E9E53D400076A47 /* CMLegality+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CMLegality+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		111BB5061E9E53D400076A47 /* CMSetType+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CMSetType+CoreDataClass.swift"; sourceTree = "<group>"; };
+		111BB5071E9E53D400076A47 /* CMSetType+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CMSetType+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		111BB5081E9E53D400076A47 /* CMWatermark+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CMWatermark+CoreDataClass.swift"; sourceTree = "<group>"; };
+		111BB5091E9E53D400076A47 /* CMWatermark+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CMWatermark+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		111BB50A1E9E53D400076A47 /* CMForeignName+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CMForeignName+CoreDataClass.swift"; sourceTree = "<group>"; };
+		111BB50B1E9E53D400076A47 /* CMForeignName+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CMForeignName+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		111BB50C1E9E53D400076A47 /* CMBooster+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CMBooster+CoreDataClass.swift"; sourceTree = "<group>"; };
+		111BB50D1E9E53D400076A47 /* CMBooster+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CMBooster+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		111BB50E1E9E53D400076A47 /* CMCardLegality+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CMCardLegality+CoreDataClass.swift"; sourceTree = "<group>"; };
+		111BB50F1E9E53D400076A47 /* CMCardLegality+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CMCardLegality+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		111BB5101E9E53D400076A47 /* CMRarity+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CMRarity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		111BB5111E9E53D400076A47 /* CMRarity+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CMRarity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		111BB5121E9E53D400076A47 /* CMArtist+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CMArtist+CoreDataClass.swift"; sourceTree = "<group>"; };
+		111BB5131E9E53D400076A47 /* CMArtist+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CMArtist+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		111BB5141E9E53D400076A47 /* CMBlock+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CMBlock+CoreDataClass.swift"; sourceTree = "<group>"; };
+		111BB5151E9E53D400076A47 /* CMBlock+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CMBlock+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		111BB5161E9E53D400076A47 /* CMFormat+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CMFormat+CoreDataClass.swift"; sourceTree = "<group>"; };
+		111BB5171E9E53D400076A47 /* CMFormat+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CMFormat+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		111BB5181E9E53D400076A47 /* CMCard+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CMCard+CoreDataClass.swift"; sourceTree = "<group>"; };
+		111BB5191E9E53D400076A47 /* CMCard+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CMCard+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		1321535D6D9291FA7126E05747D8F92A /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Sync/Result.swift; sourceTree = "<group>"; };
 		14C1FCDE91631CE03B5454DC5A320B5D /* Networking-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Networking-prefix.pch"; sourceTree = "<group>"; };
 		14F75F334A09B4357A6487FA0D804274 /* Pods-CardMagusKit_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CardMagusKit_Example-dummy.m"; sourceTree = "<group>"; };
@@ -225,7 +294,6 @@
 		2BBB19CED5D5DAB23364945AC96C2D6F /* DATASource-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DATASource-dummy.m"; sourceTree = "<group>"; };
 		2CF6EDCCF5ACB80CC93FBC2786F548C0 /* Helpers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Helpers.swift; path = Sources/Helpers.swift; sourceTree = "<group>"; };
 		2E9733B1B3D02895C6177E1FF068FD9E /* NSPropertyDescription+Sync.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSPropertyDescription+Sync.h"; path = "Source/Sync/NSPropertyDescription+Sync.h"; sourceTree = "<group>"; };
-		3263B91D7FB72DE958041D5CE2047599 /* Card Magus Model.xcdatamodel */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.xcdatamodel; path = "Card Magus Model.xcdatamodel"; sourceTree = "<group>"; };
 		37DC0529407FD8532C8EA7AC75672EE8 /* DATAStack-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DATAStack-umbrella.h"; sourceTree = "<group>"; };
 		3E27AB97DABE852EDA9D9F13DF2C99C6 /* NSManagedObjectContext+Sync.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSManagedObjectContext+Sync.swift"; path = "Source/Sync/NSManagedObjectContext+Sync.swift"; sourceTree = "<group>"; };
 		3EAD2C167D45AB588F771AF1A54AA3C2 /* Pods-CardMagusKit_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CardMagusKit_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -268,6 +336,7 @@
 		94A8C0DFA705293806A5BCC63F2E3CC2 /* DataFilter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataFilter.swift; path = Source/DataFilter/DataFilter.swift; sourceTree = "<group>"; };
 		965DA00AE8BCD5DCE322D1884151FFE3 /* NSEntityDescription+Sync.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSEntityDescription+Sync.swift"; path = "Source/Sync/NSEntityDescription+Sync.swift"; sourceTree = "<group>"; };
 		99755CFEAB794142F6202A4BE48021C8 /* Sync.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Sync.modulemap; sourceTree = "<group>"; };
+		99E7BD1EAAE5060BB368CA3B69EF09C3 /* Card Magus Model.xcdatamodel */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.xcdatamodel; path = "Card Magus Model.xcdatamodel"; sourceTree = "<group>"; };
 		9B297B3F27145F4C93CEFEC01C6071ED /* Pods-CardMagusKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CardMagusKit_Example.release.xcconfig"; sourceTree = "<group>"; };
 		9B7DD74CDC64FB5F46D83A2482BCEB1D /* TestCheck.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TestCheck.swift; path = Source/TestCheck.swift; sourceTree = "<group>"; };
 		9C0F738F794B2B2D83646BDA00E04C42 /* DATASource+NSFetchedResultsControllerDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DATASource+NSFetchedResultsControllerDelegate.swift"; path = "Source/DATASource+NSFetchedResultsControllerDelegate.swift"; sourceTree = "<group>"; };
@@ -284,7 +353,6 @@
 		B524E91896F11EAE8DC44512A48E45F2 /* Pods-CardMagusKit_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CardMagusKit_Example-frameworks.sh"; sourceTree = "<group>"; };
 		B5E51E3D5B43B523099DC3055AF0BDBB /* Pods-CardMagusKit_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CardMagusKit_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		B89F5318F2CC485A67C785367CC473A4 /* Sync+NSManagedObjectContext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Sync+NSManagedObjectContext.swift"; path = "Source/Sync/Sync+NSManagedObjectContext.swift"; sourceTree = "<group>"; };
-		B922BF184A81FFA1BF36225343C000F6 /* CardMagus.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CardMagus.swift; sourceTree = "<group>"; };
 		B9B7827CE631BBB15C12EF463C75AEC3 /* Networking+Private.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Networking+Private.swift"; path = "Sources/Networking+Private.swift"; sourceTree = "<group>"; };
 		B9E0507F07D24CEF40D575815AAE3FB7 /* Networking.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Networking.modulemap; sourceTree = "<group>"; };
 		BA83E0205EAA0474D797421BFD2A0F7E /* Pods-CardMagusKit_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CardMagusKit_Tests-resources.sh"; sourceTree = "<group>"; };
@@ -297,6 +365,7 @@
 		C46270468ECDE96B081FC73976F6B5D3 /* Sync.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sync.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Sync.framework; sourceTree = DEVELOPER_DIR; };
 		C6FBA1B76C3EFE75675FC2A01D7ECF63 /* DATASource.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = DATASource.modulemap; sourceTree = "<group>"; };
 		C704D8294E8EC0E796E0C500FC10B7FD /* DATAStack.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DATAStack.h; path = Source/DATAStack.h; sourceTree = "<group>"; };
+		CB20EBD67054F6252DF18E1FE4D8F99F /* CardMagus.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CardMagus.swift; sourceTree = "<group>"; };
 		CE5AE8C86D269B411131CCE5E1B0EB98 /* NSDate+PropertyMapper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDate+PropertyMapper.m"; path = "Source/DateParser/NSDate+PropertyMapper.m"; sourceTree = "<group>"; };
 		CEBB67748CB3FEEB413CDD4EC9805304 /* Sync.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Sync.xcconfig; sourceTree = "<group>"; };
 		CFFAEF27345A81432B55993A69098F03 /* Pods-CardMagusKit_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CardMagusKit_Example-umbrella.h"; sourceTree = "<group>"; };
@@ -324,47 +393,45 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		3DB06D2239D1340771D88BFDBA891AFD /* Frameworks */ = {
+		2AF5D6DFA3B51F21DCED15BC7F44B883 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B61C0017F0E035DFA086B2A169A53D3 /* CoreData.framework in Frameworks */,
-				1C1DB3F605DE2431638050FC55F3B6CC /* Foundation.framework in Frameworks */,
+				EF7F6E9B1B65577C3EB73C8D462D6951 /* DATASource.framework in Frameworks */,
+				B131E126388F099845B4DB0A0AAADAF9 /* DATASource.framework in Frameworks */,
+				C883453B3A2EF9ADD3813E997C44CB5E /* DATAStack.framework in Frameworks */,
+				48CB16F81365E4B9FD748E0FA97F0258 /* DATAStack.framework in Frameworks */,
+				DC26DFE1ECC37DDBB1E7696789F13D96 /* Foundation.framework in Frameworks */,
+				FCF065A026B246D383FDF7FAA55BA0E2 /* MapKit.framework in Frameworks */,
+				9A69D880CA6D3EBEA8643CA857778DC7 /* Networking.framework in Frameworks */,
+				E875996F6942F15AAB60D184AA4C3A32 /* Networking.framework in Frameworks */,
+				6B661B1A0B83998C21030DD5BD1F8E29 /* Sync.framework in Frameworks */,
+				4D9F3F31595C2D50B6C5E832AFF61014 /* Sync.framework in Frameworks */,
+				8541A375469A5F08935C0C6019693016 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		441471F07A5703698C0B820428AAAAA9 /* Frameworks */ = {
+		4070A6D96F9CA0253382280018DA7814 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D52D07298B0B6A86B91A066CEB77A46E /* Foundation.framework in Frameworks */,
+				AF06FD888D370AFB4B2B47DAFD9B0DD7 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5F85D5DCA5263008AABF648259B8C071 /* Frameworks */ = {
+		560A242E07DF23185C7876A20BCA3D32 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				73A40FE7D246C6C430C21FCFB1E56F2A /* DATASource.framework in Frameworks */,
-				2D51A6D3AF5E20BD0B24503C59473BF8 /* DATASource.framework in Frameworks */,
-				E05DD92893E589C5BEA7F5237B59B370 /* DATAStack.framework in Frameworks */,
-				C954A0298658191C508AC7C9E91850E7 /* DATAStack.framework in Frameworks */,
-				8042C8F3AD6B4AD34C4C3231F0D37B64 /* Foundation.framework in Frameworks */,
-				1D7773528435467E2F23692D51CEE4D8 /* MapKit.framework in Frameworks */,
-				9ABABF041A0161D2415C7EC48F896B5D /* Networking.framework in Frameworks */,
-				E438B13B10EFC2A0C161D5A048DBA06E /* Networking.framework in Frameworks */,
-				CF5B4A0A9267E1E61D79AB017F45096B /* Sync.framework in Frameworks */,
-				508D850A3C28347946073184548276CB /* Sync.framework in Frameworks */,
-				6AA6017D1566A676F79132210A34F40A /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		69764926C1941EEE7293A8711E54FA02 /* Frameworks */ = {
+		5B611EC4C73AD41A84E609404F1FBF44 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D071C9BCC94C6E22C4900A7C8B5C388 /* CoreData.framework in Frameworks */,
-				230B057F4C4DF4A5ACE98B9C0008CF8D /* Foundation.framework in Frameworks */,
+				D1F0DD4F7234D73EEFABC36EB7753978 /* CoreData.framework in Frameworks */,
+				FA046AAFF3A74EDB2146B3EA388B5834 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,20 +443,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		ADB4636EAAB1637A0C4E8E437EAA7A29 /* Frameworks */ = {
+		735CD329F30D7196C53AE1502D702B63 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E8793C7C8CF4EC3206BE3A9104FF7EF4 /* CoreData.framework in Frameworks */,
-				654D44FEB5745045CAF6DBE90018D182 /* Foundation.framework in Frameworks */,
-				67213FB2604EF99D8E1E60584ADFA528 /* UIKit.framework in Frameworks */,
+				10B499D977E3730EE19E86A2F2B83CA8 /* CoreData.framework in Frameworks */,
+				151FB66CEDFC1F1144D789778938CB01 /* Foundation.framework in Frameworks */,
+				386A9BAC6F865F437C5A7504ED05EEE9 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C8D50F0A3673E6161DBC39503EB1290F /* Frameworks */ = {
+		99E0BF5F58FE3909AB18A6BC0374EF0B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B334F648AEB720AC99AFDBCD25EE0D1A /* CoreData.framework in Frameworks */,
+				E25578BD2C6250D6861BA91DBD3ADE5C /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -509,14 +578,6 @@
 			path = "../Target Support Files/Networking";
 			sourceTree = "<group>";
 		};
-		2312D2F5D5E33EAE6B6B794631948377 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				6F1A12169AC18A5C6102C4E2A9AAAF2C /* CardMagusKit */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
 		2A56564C2B0EC5C48F43E32797A03BA8 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -531,26 +592,35 @@
 			path = "../Target Support Files/DATASource";
 			sourceTree = "<group>";
 		};
-		3E2EBC16E7EDC2927D1FEF5D3C199ABD /* CardMagusKit */ = {
+		569D7D78E0CF11E7D672341DEF64E7F1 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				6E88BD5F98C6A67B485941408A2B50A8 /* Classes */,
+				9CDDCADA5315E9798A0566C11C72473A /* Card Magus Model.xcdatamodeld */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		593E68F55B368136E5DAC6764A3AC74B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7A369E01AAFF453979D613973F7C1B8D /* CardMagusKit */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		64E43E92EE81534761CBDC2FCCE940A2 /* CardMagusKit */ = {
+			isa = PBXGroup;
+			children = (
+				F636E55CF9B564AB7E745585B27F5C51 /* Classes */,
 			);
 			path = CardMagusKit;
 			sourceTree = "<group>";
 		};
-		6E88BD5F98C6A67B485941408A2B50A8 /* Classes */ = {
+		7A369E01AAFF453979D613973F7C1B8D /* CardMagusKit */ = {
 			isa = PBXGroup;
 			children = (
-				B922BF184A81FFA1BF36225343C000F6 /* CardMagus.swift */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		6F1A12169AC18A5C6102C4E2A9AAAF2C /* CardMagusKit */ = {
-			isa = PBXGroup;
-			children = (
-				9E894B733975D34F591EC451EDFCAE9C /* Assets */,
+				569D7D78E0CF11E7D672341DEF64E7F1 /* Assets */,
+				BB28282C2C21FFD1F0D287707AB29B62 /* Classes */,
 			);
 			path = CardMagusKit;
 			sourceTree = "<group>";
@@ -570,8 +640,8 @@
 		892D407E4D57F12F23E8E4B34785EEEF /* CardMagusKit */ = {
 			isa = PBXGroup;
 			children = (
-				3E2EBC16E7EDC2927D1FEF5D3C199ABD /* CardMagusKit */,
-				2312D2F5D5E33EAE6B6B794631948377 /* Resources */,
+				64E43E92EE81534761CBDC2FCCE940A2 /* CardMagusKit */,
+				593E68F55B368136E5DAC6764A3AC74B /* Resources */,
 				F167E1CB329B2B3D470DD4F661C3A2F5 /* Support Files */,
 			);
 			name = CardMagusKit;
@@ -607,14 +677,6 @@
 			path = "../Target Support Files/DATAStack";
 			sourceTree = "<group>";
 		};
-		9E894B733975D34F591EC451EDFCAE9C /* Assets */ = {
-			isa = PBXGroup;
-			children = (
-				41E596F2A716BCF0DB7D880E21FDF111 /* Card Magus Model.xcdatamodeld */,
-			);
-			path = Assets;
-			sourceTree = "<group>";
-		};
 		B12F13ABF43FECA2B4089F8F5FAFDC97 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
@@ -647,6 +709,13 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/Sync";
+			sourceTree = "<group>";
+		};
+		BB28282C2C21FFD1F0D287707AB29B62 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 		C8779F7D82DB8D2170F175DB0B9FF7F9 /* Products */ = {
@@ -714,6 +783,48 @@
 			path = "Example/Pods/Target Support Files/CardMagusKit";
 			sourceTree = "<group>";
 		};
+		F636E55CF9B564AB7E745585B27F5C51 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				CB20EBD67054F6252DF18E1FE4D8F99F /* CardMagus.swift */,
+				111BB5121E9E53D400076A47 /* CMArtist+CoreDataClass.swift */,
+				111BB5131E9E53D400076A47 /* CMArtist+CoreDataProperties.swift */,
+				111BB5141E9E53D400076A47 /* CMBlock+CoreDataClass.swift */,
+				111BB5151E9E53D400076A47 /* CMBlock+CoreDataProperties.swift */,
+				111BB50C1E9E53D400076A47 /* CMBooster+CoreDataClass.swift */,
+				111BB50D1E9E53D400076A47 /* CMBooster+CoreDataProperties.swift */,
+				111BB4FC1E9E53D400076A47 /* CMBorder+CoreDataClass.swift */,
+				111BB4FD1E9E53D400076A47 /* CMBorder+CoreDataProperties.swift */,
+				111BB5181E9E53D400076A47 /* CMCard+CoreDataClass.swift */,
+				111BB5191E9E53D400076A47 /* CMCard+CoreDataProperties.swift */,
+				111BB50E1E9E53D400076A47 /* CMCardLegality+CoreDataClass.swift */,
+				111BB50F1E9E53D400076A47 /* CMCardLegality+CoreDataProperties.swift */,
+				111BB4F81E9E53D400076A47 /* CMCardType+CoreDataClass.swift */,
+				111BB4F91E9E53D400076A47 /* CMCardType+CoreDataProperties.swift */,
+				111BB5021E9E53D400076A47 /* CMColor+CoreDataClass.swift */,
+				111BB5031E9E53D400076A47 /* CMColor+CoreDataProperties.swift */,
+				111BB50A1E9E53D400076A47 /* CMForeignName+CoreDataClass.swift */,
+				111BB50B1E9E53D400076A47 /* CMForeignName+CoreDataProperties.swift */,
+				111BB5161E9E53D400076A47 /* CMFormat+CoreDataClass.swift */,
+				111BB5171E9E53D400076A47 /* CMFormat+CoreDataProperties.swift */,
+				111BB4FA1E9E53D400076A47 /* CMLanguage+CoreDataClass.swift */,
+				111BB4FB1E9E53D400076A47 /* CMLanguage+CoreDataProperties.swift */,
+				111BB4FE1E9E53D400076A47 /* CMLayout+CoreDataClass.swift */,
+				111BB4FF1E9E53D400076A47 /* CMLayout+CoreDataProperties.swift */,
+				111BB5041E9E53D400076A47 /* CMLegality+CoreDataClass.swift */,
+				111BB5051E9E53D400076A47 /* CMLegality+CoreDataProperties.swift */,
+				111BB5101E9E53D400076A47 /* CMRarity+CoreDataClass.swift */,
+				111BB5111E9E53D400076A47 /* CMRarity+CoreDataProperties.swift */,
+				111BB5001E9E53D400076A47 /* CMSet+CoreDataClass.swift */,
+				111BB5011E9E53D400076A47 /* CMSet+CoreDataProperties.swift */,
+				111BB5061E9E53D400076A47 /* CMSetType+CoreDataClass.swift */,
+				111BB5071E9E53D400076A47 /* CMSetType+CoreDataProperties.swift */,
+				111BB5081E9E53D400076A47 /* CMWatermark+CoreDataClass.swift */,
+				111BB5091E9E53D400076A47 /* CMWatermark+CoreDataProperties.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		F91B6235E8254D47D4D221DA26D9C9DC /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -736,20 +847,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		167DF9B6B7F9759E0F285FE25B682C46 /* Headers */ = {
+		0177EE19461C39FBE3E08482CB1E31E1 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				55B90AD35D23111C5F255A4D898E9A2F /* CardMagusKit-umbrella.h in Headers */,
+				269DD786E7C536F64BD91B45E445483F /* CardMagusKit-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3D01A92A553BDE87B7F3F109EA7FDB50 /* Headers */ = {
+		2A1516C6BB7D069C030A49F24180F5B6 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1E1BE8A6358C53656E753021F70283E /* DATASource-umbrella.h in Headers */,
-				6AAA409A67B6198F7194FF0B05A8E83F /* DATASource.h in Headers */,
+				255614B237E5904C801529475B812086 /* DATAStack-umbrella.h in Headers */,
+				C83B01E315401784492B058CDC8831AE /* DATAStack.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -761,97 +872,63 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BA3AC216196B604F892DEBE9C5B9B072 /* Headers */ = {
+		5AAB6CB06493C484E706132FF34E4F03 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7AAC6D2B635B1F1AFBC94638C712E3EA /* Networking-umbrella.h in Headers */,
-				491867B05E6260213237F36F3F69A56B /* Networking.h in Headers */,
+				899DC24887655BDDD2418A01644AD0E7 /* Inflections.h in Headers */,
+				4CA7779DB67EC907482DEFEB9FAC6202 /* NSDate+PropertyMapper.h in Headers */,
+				FEB46CE157863C9B7A7CDE82AF48A85D /* NSEntityDescription+PrimaryKey.h in Headers */,
+				46D190D54F69DEB847F5CCF7F66445D1 /* NSManagedObject+PropertyMapperHelpers.h in Headers */,
+				9CCB50ED995CD04342A11CBF2EE519C5 /* NSPropertyDescription+Sync.h in Headers */,
+				3265C672F613B70CC97D7B7D9D05C10A /* PropertyMapper.h in Headers */,
+				EEA68A51722318B05DB2F8D69208D798 /* Sync-umbrella.h in Headers */,
+				44CE2C7B4CF2A6B69AD8496ECD0B4A7E /* Sync.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EB36E42A4BB306F9D574140E7F915CFB /* Headers */ = {
+		7893CB0526FE86C5DDC3E1C049F31718 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				361B08B80AF30DA16574DCEE30794938 /* DATAStack-umbrella.h in Headers */,
-				A71065F70C34102D3959259822027D94 /* DATAStack.h in Headers */,
+				84F7273B5726FFA577A09549C7BA8D49 /* Networking-umbrella.h in Headers */,
+				21352196679A2A7EE3094A2F4201BA76 /* Networking.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F8CB67FB7AD33DA4F9716ED0A815E33B /* Headers */ = {
+		A1B6BCA459219D843EF04C9F5DFD0D1B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D6C780670165806BA55169A14809AC1 /* Inflections.h in Headers */,
-				F416A8552C78001F485BD719DA87ED6E /* NSDate+PropertyMapper.h in Headers */,
-				B0093F8C8CCF7F3CB92B6255D38581A1 /* NSEntityDescription+PrimaryKey.h in Headers */,
-				D2AEA2DA645F4888969792EBF50741B2 /* NSManagedObject+PropertyMapperHelpers.h in Headers */,
-				11828D832F71989E8CE0B0A2C72A2E09 /* NSPropertyDescription+Sync.h in Headers */,
-				019FB49ACACB5A11F98570B0D8DAB92F /* PropertyMapper.h in Headers */,
-				F0A939990F70205883E7A0FA948403F8 /* Sync-umbrella.h in Headers */,
-				BCF74B8C93B9643D5DC0B319E8A09FC0 /* Sync.h in Headers */,
+				BF89F6F36DB5AEEDC04885B20297484D /* DATASource-umbrella.h in Headers */,
+				889DE01E68C708D12C072C88CFBCEE96 /* DATASource.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		0FE013E601C41DE1101CF3B698C72910 /* CardMagusKit */ = {
+		267E631AD2835807EA2954AE67E92AE2 /* CardMagusKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 81F7CB2D349DA22285508EA6248E3608 /* Build configuration list for PBXNativeTarget "CardMagusKit" */;
+			buildConfigurationList = 819F845A8926AE83194D8B29F7C91DE2 /* Build configuration list for PBXNativeTarget "CardMagusKit" */;
 			buildPhases = (
-				8CF510DAB9F29FBBAB53A29005FFDF7F /* Sources */,
-				5F85D5DCA5263008AABF648259B8C071 /* Frameworks */,
-				68AF331138F8A02080A615AA17024065 /* Resources */,
-				167DF9B6B7F9759E0F285FE25B682C46 /* Headers */,
+				86A28F6A924264CEB885D89F771E25A4 /* Sources */,
+				2AF5D6DFA3B51F21DCED15BC7F44B883 /* Frameworks */,
+				B083A0C2D897AF78388E9A93D946573F /* Resources */,
+				0177EE19461C39FBE3E08482CB1E31E1 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				6CA49DD9B33E909C2689508AA29122B4 /* PBXTargetDependency */,
-				31F300DA54A35A8F15F053152BAE9B9C /* PBXTargetDependency */,
-				DF3AB79264DA08BBD98D38FFC5B39651 /* PBXTargetDependency */,
-				7906745CC8AD0B9CCBC8203A5E9BD009 /* PBXTargetDependency */,
-				9B19B83B117B3662F9A0977124186876 /* PBXTargetDependency */,
+				C9CD2D00A028E61CC89D73E21FF57462 /* PBXTargetDependency */,
+				059FFCDFA6F37535749294A2B15BBFFC /* PBXTargetDependency */,
+				A75B6EFE425EE16C8DC1DD84CFB9C0AF /* PBXTargetDependency */,
+				7CC8841D1E0A9BCAD99294286F1DFBCE /* PBXTargetDependency */,
+				EEF96F5B6695285FEC6A6BBA3B9AB733 /* PBXTargetDependency */,
 			);
 			name = CardMagusKit;
 			productName = CardMagusKit;
 			productReference = 4D8E4BBACC06D62FF93134B2B52B5ECF /* CardMagusKit.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		23803C59F4AA5E97221280A4D5AFF648 /* CardMagusKit-CardMagusKit */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = AE3B5AFEA9E50DCBD65E3453C50C953C /* Build configuration list for PBXNativeTarget "CardMagusKit-CardMagusKit" */;
-			buildPhases = (
-				8DB2911FE26D1E847DAC3926636F3CC8 /* Sources */,
-				C8D50F0A3673E6161DBC39503EB1290F /* Frameworks */,
-				166047A55E8ED16F7C27C2AB6D9A79AA /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "CardMagusKit-CardMagusKit";
-			productName = "CardMagusKit-CardMagusKit";
-			productReference = 5588952EA2C12B45F3A99BE348D39261 /* CardMagusKit.bundle */;
-			productType = "com.apple.product-type.bundle";
-		};
-		26DCF2F988D413FC6F7926977943A108 /* DATASource */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5AE2C196A2F9B43D378256166EDAAE0A /* Build configuration list for PBXNativeTarget "DATASource" */;
-			buildPhases = (
-				AB067AC93F1B526EB5CB5BED819475A3 /* Sources */,
-				ADB4636EAAB1637A0C4E8E437EAA7A29 /* Frameworks */,
-				3D01A92A553BDE87B7F3F109EA7FDB50 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = DATASource;
-			productName = DATASource;
-			productReference = E745161CA27D8100298C919743759BE5 /* DATASource.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		31C3F5DE8CC51EAE7347BA390CD8C16A /* Pods-CardMagusKit_Example */ = {
@@ -876,30 +953,64 @@
 			productReference = 6E46F95EB49B9FDBD54B87AF8D8EDA3B /* Pods_CardMagusKit_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		80482CC6A87D40C1B49C1CBADAC7F661 /* Networking */ = {
+		62B022431ADC138BD2F4700E017010BD /* DATASource */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C3C6AFFB1944786532E8934CB958F796 /* Build configuration list for PBXNativeTarget "Networking" */;
+			buildConfigurationList = 07E21B8658652AAEC63BC338C6A2AEE3 /* Build configuration list for PBXNativeTarget "DATASource" */;
 			buildPhases = (
-				C6A613D59DE14759AAAF4E6FBBB830DE /* Sources */,
-				441471F07A5703698C0B820428AAAAA9 /* Frameworks */,
-				BA3AC216196B604F892DEBE9C5B9B072 /* Headers */,
+				6B1C4E8B39E96F83D46D5B8DE74E5B71 /* Sources */,
+				735CD329F30D7196C53AE1502D702B63 /* Frameworks */,
+				A1B6BCA459219D843EF04C9F5DFD0D1B /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Networking;
-			productName = Networking;
-			productReference = A4A3702962FABB017B12601CCDCEB205 /* Networking.framework */;
+			name = DATASource;
+			productName = DATASource;
+			productReference = E745161CA27D8100298C919743759BE5 /* DATASource.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		874502669EF285933B29A7422DF427DF /* Sync */ = {
+		653CBEB97E392E9E6540CF6D9C6CD0EB /* CardMagusKit-CardMagusKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C9F51C6A0872016E5566FC5BCD985829 /* Build configuration list for PBXNativeTarget "Sync" */;
+			buildConfigurationList = 1D09292BA7E6B0F2E3EFD8843E6AF449 /* Build configuration list for PBXNativeTarget "CardMagusKit-CardMagusKit" */;
 			buildPhases = (
-				422EEFD9DECA5C118666729BAAC0A293 /* Sources */,
-				3DB06D2239D1340771D88BFDBA891AFD /* Frameworks */,
-				F8CB67FB7AD33DA4F9716ED0A815E33B /* Headers */,
+				50DE603761131B6A9E06E30C6B827CD8 /* Sources */,
+				560A242E07DF23185C7876A20BCA3D32 /* Frameworks */,
+				2E3E6A0AE458F2A6C7B1CDE481F0E4F1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CardMagusKit-CardMagusKit";
+			productName = "CardMagusKit-CardMagusKit";
+			productReference = 5588952EA2C12B45F3A99BE348D39261 /* CardMagusKit.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		7678D29A65492E2297313F1825E0E93A /* DATAStack */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 94D98A8B001A78834D4E038616B26F2E /* Build configuration list for PBXNativeTarget "DATAStack" */;
+			buildPhases = (
+				A9252CAF1C56B71B5BC5355535EC3720 /* Sources */,
+				99E0BF5F58FE3909AB18A6BC0374EF0B /* Frameworks */,
+				2A1516C6BB7D069C030A49F24180F5B6 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DATAStack;
+			productName = DATAStack;
+			productReference = D8B6D3B290629A49927E3579EA05B547 /* DATAStack.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7981760F112F121A0AB2C3609A102EC3 /* Sync */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B43385E9D48138D92D4E4A5AC550C0AF /* Build configuration list for PBXNativeTarget "Sync" */;
+			buildPhases = (
+				E7929628DDC272DD58F586B1F5538F51 /* Sources */,
+				5B611EC4C73AD41A84E609404F1FBF44 /* Frameworks */,
+				5AAB6CB06493C484E706132FF34E4F03 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -910,21 +1021,21 @@
 			productReference = EE05110B077773427148EEEDDFF84D3A /* Sync.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		94F9E27F967CC2E5EF94881BF39421E1 /* DATAStack */ = {
+		A991B7D728B9D67338E1A8C9D4412D2C /* Networking */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7A2DD5D7544E38EF3CBAF3075B108191 /* Build configuration list for PBXNativeTarget "DATAStack" */;
+			buildConfigurationList = 3205F3A805C914D682C180611668A235 /* Build configuration list for PBXNativeTarget "Networking" */;
 			buildPhases = (
-				910134D1C69FDDA106ED196DA65C29E7 /* Sources */,
-				69764926C1941EEE7293A8711E54FA02 /* Frameworks */,
-				EB36E42A4BB306F9D574140E7F915CFB /* Headers */,
+				DBB771861841DEE474DB6731BFD40439 /* Sources */,
+				4070A6D96F9CA0253382280018DA7814 /* Frameworks */,
+				7893CB0526FE86C5DDC3E1C049F31718 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = DATAStack;
-			productName = DATAStack;
-			productReference = D8B6D3B290629A49927E3579EA05B547 /* DATAStack.framework */;
+			name = Networking;
+			productName = Networking;
+			productReference = A4A3702962FABB017B12601CCDCEB205 /* Networking.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		C0D66094FF346E3BBF3925C16062312B /* Pods-CardMagusKit_Tests */ = {
@@ -956,6 +1067,17 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0700;
+				TargetAttributes = {
+					267E631AD2835807EA2954AE67E92AE2 = {
+						LastSwiftMigration = 0830;
+					};
+					653CBEB97E392E9E6540CF6D9C6CD0EB = {
+						LastSwiftMigration = 0830;
+					};
+					C0D66094FF346E3BBF3925C16062312B = {
+						LastSwiftMigration = 0830;
+					};
+				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -969,32 +1091,33 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0FE013E601C41DE1101CF3B698C72910 /* CardMagusKit */,
-				23803C59F4AA5E97221280A4D5AFF648 /* CardMagusKit-CardMagusKit */,
-				26DCF2F988D413FC6F7926977943A108 /* DATASource */,
-				94F9E27F967CC2E5EF94881BF39421E1 /* DATAStack */,
-				80482CC6A87D40C1B49C1CBADAC7F661 /* Networking */,
+				267E631AD2835807EA2954AE67E92AE2 /* CardMagusKit */,
+				653CBEB97E392E9E6540CF6D9C6CD0EB /* CardMagusKit-CardMagusKit */,
+				62B022431ADC138BD2F4700E017010BD /* DATASource */,
+				7678D29A65492E2297313F1825E0E93A /* DATAStack */,
+				A991B7D728B9D67338E1A8C9D4412D2C /* Networking */,
 				31C3F5DE8CC51EAE7347BA390CD8C16A /* Pods-CardMagusKit_Example */,
 				C0D66094FF346E3BBF3925C16062312B /* Pods-CardMagusKit_Tests */,
-				874502669EF285933B29A7422DF427DF /* Sync */,
+				7981760F112F121A0AB2C3609A102EC3 /* Sync */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		166047A55E8ED16F7C27C2AB6D9A79AA /* Resources */ = {
+		2E3E6A0AE458F2A6C7B1CDE481F0E4F1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BFF06B81D59640DAE2BDAE26270A0297 /* Card Magus Model.xcdatamodeld in Resources */,
+				BF9AEAD973B0AC9F1CB52C80941EBE0D /* Card Magus Model.xcdatamodeld in Resources */,
+				DD2096CD863FA8A604CB0800686A6C09 /* CardMagus.swift in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		68AF331138F8A02080A615AA17024065 /* Resources */ = {
+		B083A0C2D897AF78388E9A93D946573F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				290A31F0B064920C343325FA67D2ECA3 /* CardMagusKit.bundle in Resources */,
+				A32A3A7AFA25B7FDC9FC57985E17BBFB /* CardMagusKit.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1009,57 +1132,67 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		422EEFD9DECA5C118666729BAAC0A293 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F3B1DF4BBBD7655A14BEE7E12C1AD329 /* DataFilter.swift in Sources */,
-				328DF6091968964D40C97FD1BD3E47B8 /* DataStack.swift in Sources */,
-				5C120E3F1FF1558E93584AD9DED3F99C /* Inflections.m in Sources */,
-				3FA12F5F5B2B71BA932F2C782E8615FB /* NSArray+Sync.swift in Sources */,
-				BBDEA373E8A6342AA7805CF3017FC0EF /* NSDate+PropertyMapper.m in Sources */,
-				78F97AD9A181E65ABC2F2F3B8C115F85 /* NSEntityDescription+PrimaryKey.m in Sources */,
-				7EDF950BEC9DCE291B0E433B1F720C98 /* NSEntityDescription+Sync.swift in Sources */,
-				54234B9B14812CAB12BC8E5FB5BE42FE /* NSManagedObject+Export.swift in Sources */,
-				AE527EBCE066C6A7D9F696FD8C4FACB4 /* NSManagedObject+PropertyMapperHelpers.m in Sources */,
-				4D1EBF314934896C3D2792F7D08D480C /* NSManagedObject+Sync.swift in Sources */,
-				3FA04DC049919D3302277DBA004DB706 /* NSManagedObjectContext+Sync.swift in Sources */,
-				008B62FC547E16948E2023FE5553C46D /* NSPropertyDescription+Sync.m in Sources */,
-				CCE458C459D8B2A4AF3FD8A07F37019C /* PropertyMapper.m in Sources */,
-				8079325C2609BF6760C9AF8BEADADB64 /* Result.swift in Sources */,
-				5F8516F529E550AC0E5124A3AF16F207 /* Sync+DataStack.swift in Sources */,
-				B3522ABA34A1BCF8175AB230EEB3BAC6 /* Sync+Helpers.swift in Sources */,
-				8E7CAE35CC68CB3C9975297E7AB6C7FF /* Sync+NSManagedObjectContext.swift in Sources */,
-				78BAA700A1CF7684E596792028E4F7B3 /* Sync+NSPersistentContainer.swift in Sources */,
-				AF60B962BE187D476C9CD6C5AFF5CA53 /* Sync-dummy.m in Sources */,
-				439AF8950CAEDD238C2066CC9AB56823 /* Sync.swift in Sources */,
-				E6E5709D6351EB288452CE7DD6D3D03B /* TestCheck.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8CF510DAB9F29FBBAB53A29005FFDF7F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				84DA315FD1D45AB56D650D42A5719CE8 /* CardMagus.swift in Sources */,
-				30EC3C3D147CB78837316DDF39E2F462 /* CardMagusKit-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8DB2911FE26D1E847DAC3926636F3CC8 /* Sources */ = {
+		50DE603761131B6A9E06E30C6B827CD8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		910134D1C69FDDA106ED196DA65C29E7 /* Sources */ = {
+		6B1C4E8B39E96F83D46D5B8DE74E5B71 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				35831EA506B93ADD15DCE8772CBC016A /* DATAStack-dummy.m in Sources */,
-				83EE578A6ED3617790816F21341A17B0 /* DATAStack.swift in Sources */,
-				F0FD6F274349D43B7274A033BD654BB3 /* TestCheck.swift in Sources */,
+				AFAAC27DF8981E6D7263C05D54D567A7 /* DATASource+NSFetchedResultsControllerDelegate.swift in Sources */,
+				E12FC7FEFDCB6B8D39127F1480EC2781 /* DATASource+UICollectionViewDataSource.swift in Sources */,
+				F58CB64C4FE632E2B18AD9B60D667378 /* DATASource+UITableViewDataSource.swift in Sources */,
+				9999FF83F4D86568A9C3566F7C38DDDD /* DATASource-dummy.m in Sources */,
+				DEB8A719E60BACDEB777B5F063CBD1F2 /* DATASource.swift in Sources */,
+				B7AA65BCBECF738D1685E13DBE2164A8 /* DATASourceCollectionHeaderView.swift in Sources */,
+				E4AC6322DF93F4929BFFCF5FE54E5AD3 /* DATASourceDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86A28F6A924264CEB885D89F771E25A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				111BB5361E9E53D400076A47 /* CMBlock+CoreDataClass.swift in Sources */,
+				111BB5231E9E53D400076A47 /* CMSet+CoreDataProperties.swift in Sources */,
+				111BB5371E9E53D400076A47 /* CMBlock+CoreDataProperties.swift in Sources */,
+				111BB5341E9E53D400076A47 /* CMArtist+CoreDataClass.swift in Sources */,
+				111BB53A1E9E53D400076A47 /* CMCard+CoreDataClass.swift in Sources */,
+				111BB52A1E9E53D400076A47 /* CMWatermark+CoreDataClass.swift in Sources */,
+				111BB5241E9E53D400076A47 /* CMColor+CoreDataClass.swift in Sources */,
+				111BB51E1E9E53D400076A47 /* CMBorder+CoreDataClass.swift in Sources */,
+				111BB5211E9E53D400076A47 /* CMLayout+CoreDataProperties.swift in Sources */,
+				111BB5301E9E53D400076A47 /* CMCardLegality+CoreDataClass.swift in Sources */,
+				111BB52C1E9E53D400076A47 /* CMForeignName+CoreDataClass.swift in Sources */,
+				111BB5281E9E53D400076A47 /* CMSetType+CoreDataClass.swift in Sources */,
+				111BB5271E9E53D400076A47 /* CMLegality+CoreDataProperties.swift in Sources */,
+				111BB5201E9E53D400076A47 /* CMLayout+CoreDataClass.swift in Sources */,
+				111BB5331E9E53D400076A47 /* CMRarity+CoreDataProperties.swift in Sources */,
+				C7DDCF046F48D39D70B6088505BB0C2C /* CardMagus.swift in Sources */,
+				111BB5381E9E53D400076A47 /* CMFormat+CoreDataClass.swift in Sources */,
+				111BB5291E9E53D400076A47 /* CMSetType+CoreDataProperties.swift in Sources */,
+				111BB51B1E9E53D400076A47 /* CMCardType+CoreDataProperties.swift in Sources */,
+				111BB5391E9E53D400076A47 /* CMFormat+CoreDataProperties.swift in Sources */,
+				111BB52E1E9E53D400076A47 /* CMBooster+CoreDataClass.swift in Sources */,
+				111BB5221E9E53D400076A47 /* CMSet+CoreDataClass.swift in Sources */,
+				111BB5321E9E53D400076A47 /* CMRarity+CoreDataClass.swift in Sources */,
+				111BB52F1E9E53D400076A47 /* CMBooster+CoreDataProperties.swift in Sources */,
+				111BB5251E9E53D400076A47 /* CMColor+CoreDataProperties.swift in Sources */,
+				31BB3B55E7A7687AAB7BEBD3875E432E /* CardMagusKit-dummy.m in Sources */,
+				111BB5311E9E53D400076A47 /* CMCardLegality+CoreDataProperties.swift in Sources */,
+				111BB52D1E9E53D400076A47 /* CMForeignName+CoreDataProperties.swift in Sources */,
+				111BB51A1E9E53D400076A47 /* CMCardType+CoreDataClass.swift in Sources */,
+				111BB5351E9E53D400076A47 /* CMArtist+CoreDataProperties.swift in Sources */,
+				111BB51C1E9E53D400076A47 /* CMLanguage+CoreDataClass.swift in Sources */,
+				111BB53B1E9E53D400076A47 /* CMCard+CoreDataProperties.swift in Sources */,
+				111BB52B1E9E53D400076A47 /* CMWatermark+CoreDataProperties.swift in Sources */,
+				111BB51D1E9E53D400076A47 /* CMLanguage+CoreDataProperties.swift in Sources */,
+				111BB51F1E9E53D400076A47 /* CMBorder+CoreDataProperties.swift in Sources */,
+				111BB5261E9E53D400076A47 /* CMLegality+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1071,130 +1204,154 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AB067AC93F1B526EB5CB5BED819475A3 /* Sources */ = {
+		A9252CAF1C56B71B5BC5355535EC3720 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D086B90C07399653B06E9597C4E0B56C /* DATASource+NSFetchedResultsControllerDelegate.swift in Sources */,
-				7ED7C23B7A6ED1C388FDE7E2C01A3693 /* DATASource+UICollectionViewDataSource.swift in Sources */,
-				7945CDCF68D3C9655FFD7BC331369441 /* DATASource+UITableViewDataSource.swift in Sources */,
-				34231BE76867C3B8966803CA0FCF6AB5 /* DATASource-dummy.m in Sources */,
-				EB308CB07EA461A3B4B24FA804684092 /* DATASource.swift in Sources */,
-				551AC8F167DD3CE26F749D6D14682391 /* DATASourceCollectionHeaderView.swift in Sources */,
-				1DBC43FBDCDA3F9A9D2DF8A5737C0F55 /* DATASourceDelegate.swift in Sources */,
+				3D155DF16B5F19D7487B42168916B9F9 /* DATAStack-dummy.m in Sources */,
+				2A3F67BD50FA98B1458D86F8359E38EE /* DATAStack.swift in Sources */,
+				A1BDED935762ED8BA550D6E8CFA2AD67 /* TestCheck.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C6A613D59DE14759AAAF4E6FBBB830DE /* Sources */ = {
+		DBB771861841DEE474DB6731BFD40439 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9ECEC0A57507BB732D507D4F855DF30C /* FormDataPart.swift in Sources */,
-				33471B79A57CE0FF96BC0886B7ACC914 /* Helpers.swift in Sources */,
-				EA5B48977E233C545B09826CE62BAC63 /* Image.swift in Sources */,
-				0A42DC7C754FB31D39B28A6AF67865DE /* JSON.swift in Sources */,
-				94472D1400259ABB9594C7B7301BD418 /* NetworkActivityIndicator.swift in Sources */,
-				148A1D5463F794DADE5A1A89649A03C9 /* Networking+HTTPRequests.swift in Sources */,
-				7574A290D6A56A8660A886E022552B14 /* Networking+Private.swift in Sources */,
-				67A10AAC1FDC761FD470FAF556F80D78 /* Networking-dummy.m in Sources */,
-				37C490A4312AE4BFFBD86BDE6D0306DA /* Networking.swift in Sources */,
-				B312973679D1755771CDF8B8A54DB93B /* Response.swift in Sources */,
-				563D28E9C703785F45B5723C37EC934D /* Result.swift in Sources */,
-				DE83206BE6180D94BBFEAFBF42D2D54C /* TestCheck.swift in Sources */,
+				577AAB7862A254F379014911D9EC00B6 /* FormDataPart.swift in Sources */,
+				3A375695EB534AAD7165BE9DCA4BD019 /* Helpers.swift in Sources */,
+				B3D6EC354FB2ECDEBE5B2954FEC4CD9E /* Image.swift in Sources */,
+				6E252BD76CD2584343C124A23307B745 /* JSON.swift in Sources */,
+				3AB0953A5408141A8A7D5A2C1AEF9E4D /* NetworkActivityIndicator.swift in Sources */,
+				1CDB54C08B216C959B13C35F0F339B0C /* Networking+HTTPRequests.swift in Sources */,
+				1ECD48DCEA36D58D867A985543A2226A /* Networking+Private.swift in Sources */,
+				CFEDA01A9E8809EEF173C7BF145772B6 /* Networking-dummy.m in Sources */,
+				8971358A794BD896E013752FB7852E6E /* Networking.swift in Sources */,
+				339C7A78E814435A59664B7001D9DC57 /* Response.swift in Sources */,
+				A2BB04EB8258C90DDA180B078BCC3877 /* Result.swift in Sources */,
+				36BC3807E8320BDD1A1F1898C9BE315F /* TestCheck.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7929628DDC272DD58F586B1F5538F51 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADEB2B4C717E8F89B73BCDC69F0DCCEB /* DataFilter.swift in Sources */,
+				10FF90D30A4EF2A8D904A1990DA4211B /* DataStack.swift in Sources */,
+				88B4CCF49D9E89AEC684F3EDC96DFA7F /* Inflections.m in Sources */,
+				645FA645954DAAF3A987790A1A94F267 /* NSArray+Sync.swift in Sources */,
+				D31427D1E4341C7F9D131EEDBF28BFFF /* NSDate+PropertyMapper.m in Sources */,
+				3501A3A3F5DDE86D9F1F05C0B3747D39 /* NSEntityDescription+PrimaryKey.m in Sources */,
+				47E5C071470C2BB68F91E17FB466514B /* NSEntityDescription+Sync.swift in Sources */,
+				96817D6C52C0DBB02BAB1CF4EA6FC76F /* NSManagedObject+Export.swift in Sources */,
+				E8E89EA200A46101845FF4F9AA6D3C6A /* NSManagedObject+PropertyMapperHelpers.m in Sources */,
+				C276363432C3DFC90322A7EFE3D056F4 /* NSManagedObject+Sync.swift in Sources */,
+				082AB1AAA2FBB38D5E808C5E4DD9E890 /* NSManagedObjectContext+Sync.swift in Sources */,
+				DEE0AF1A9FF8EB79C7D747AB6A7CAA88 /* NSPropertyDescription+Sync.m in Sources */,
+				191A03D3AEA9BC396EB6CA3ED90F103B /* PropertyMapper.m in Sources */,
+				ABBB71113DDC84F0A680F7403B3951AA /* Result.swift in Sources */,
+				A9BB54B4EAC9858B7503C7F3D0725327 /* Sync+DataStack.swift in Sources */,
+				F74244C4BAC0989FBA8788D052A48B18 /* Sync+Helpers.swift in Sources */,
+				374F3FF04F59072B3792DC40872EB2B0 /* Sync+NSManagedObjectContext.swift in Sources */,
+				803D73D4530124E31FF533B5E99CF169 /* Sync+NSPersistentContainer.swift in Sources */,
+				5A404893E5B8FD97F8807AFF2171CE35 /* Sync-dummy.m in Sources */,
+				1E1B37C8534AE7AB5AD49FBBCAC27D93 /* Sync.swift in Sources */,
+				7BABCB3B8ED59F7E22AEB16E5EC137AD /* TestCheck.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		059FFCDFA6F37535749294A2B15BBFFC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DATASource;
+			target = 62B022431ADC138BD2F4700E017010BD /* DATASource */;
+			targetProxy = 30F472DC898C1097BC4DA56B2186E017 /* PBXContainerItemProxy */;
+		};
 		0688EC0DC0D2162861BB39EFAFC0CD77 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Networking;
-			target = 80482CC6A87D40C1B49C1CBADAC7F661 /* Networking */;
+			target = A991B7D728B9D67338E1A8C9D4412D2C /* Networking */;
 			targetProxy = 776CDDD2957567DF24B68CDC23AD668D /* PBXContainerItemProxy */;
 		};
 		1F23DFB7A82000B162901D72F97ED9B7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = DATAStack;
-			target = 94F9E27F967CC2E5EF94881BF39421E1 /* DATAStack */;
+			target = 7678D29A65492E2297313F1825E0E93A /* DATAStack */;
 			targetProxy = 3F56499DC900C3312BF008FEECA2F992 /* PBXContainerItemProxy */;
 		};
 		20679389D9CD698EA8B284551FA67484 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = DATASource;
-			target = 26DCF2F988D413FC6F7926977943A108 /* DATASource */;
+			target = 62B022431ADC138BD2F4700E017010BD /* DATASource */;
 			targetProxy = AAF8DC6AE7E1F2A308187B761BBA4818 /* PBXContainerItemProxy */;
 		};
 		25A16D8B93C046EB94E0FA155156DD23 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Networking;
-			target = 80482CC6A87D40C1B49C1CBADAC7F661 /* Networking */;
+			target = A991B7D728B9D67338E1A8C9D4412D2C /* Networking */;
 			targetProxy = D40CBB684931CA7E597B7F7F0548CEF4 /* PBXContainerItemProxy */;
 		};
 		30C04AC088F4FE797D1FFAAC7D3C22BE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = DATAStack;
-			target = 94F9E27F967CC2E5EF94881BF39421E1 /* DATAStack */;
+			target = 7678D29A65492E2297313F1825E0E93A /* DATAStack */;
 			targetProxy = 2408C7A0F9AF8FAF33EAA567E564E375 /* PBXContainerItemProxy */;
-		};
-		31F300DA54A35A8F15F053152BAE9B9C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = DATASource;
-			target = 26DCF2F988D413FC6F7926977943A108 /* DATASource */;
-			targetProxy = DF07494D035CA6B66C62B79963C0E850 /* PBXContainerItemProxy */;
 		};
 		57963059700C1F8D4A0D9A4D7E6052DD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = CardMagusKit;
-			target = 0FE013E601C41DE1101CF3B698C72910 /* CardMagusKit */;
+			target = 267E631AD2835807EA2954AE67E92AE2 /* CardMagusKit */;
 			targetProxy = 567242F749C3DE77784F24C88878BBB3 /* PBXContainerItemProxy */;
 		};
 		65841435F65BAE632C7C571AC1440C3E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Sync;
-			target = 874502669EF285933B29A7422DF427DF /* Sync */;
+			target = 7981760F112F121A0AB2C3609A102EC3 /* Sync */;
 			targetProxy = F3F4D4C35229FCF8825D86904AF94FD9 /* PBXContainerItemProxy */;
 		};
-		6CA49DD9B33E909C2689508AA29122B4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "CardMagusKit-CardMagusKit";
-			target = 23803C59F4AA5E97221280A4D5AFF648 /* CardMagusKit-CardMagusKit */;
-			targetProxy = 206C2030A19C48EC11DF81545E000312 /* PBXContainerItemProxy */;
-		};
-		7906745CC8AD0B9CCBC8203A5E9BD009 /* PBXTargetDependency */ = {
+		7CC8841D1E0A9BCAD99294286F1DFBCE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Networking;
-			target = 80482CC6A87D40C1B49C1CBADAC7F661 /* Networking */;
-			targetProxy = 273F4F43AC79BDC66E18D4CB1795CC26 /* PBXContainerItemProxy */;
-		};
-		9B19B83B117B3662F9A0977124186876 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Sync;
-			target = 874502669EF285933B29A7422DF427DF /* Sync */;
-			targetProxy = 9ED88224958A1CE450CA2A9C806E666C /* PBXContainerItemProxy */;
+			target = A991B7D728B9D67338E1A8C9D4412D2C /* Networking */;
+			targetProxy = FC65CF6D2EC0CAB3D0083AD51B2B255E /* PBXContainerItemProxy */;
 		};
 		9CF66698458DEC254B764C25670FAB09 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = DATASource;
-			target = 26DCF2F988D413FC6F7926977943A108 /* DATASource */;
+			target = 62B022431ADC138BD2F4700E017010BD /* DATASource */;
 			targetProxy = A3ACBB4EDD6794688F1A54F9EED1865A /* PBXContainerItemProxy */;
+		};
+		A75B6EFE425EE16C8DC1DD84CFB9C0AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DATAStack;
+			target = 7678D29A65492E2297313F1825E0E93A /* DATAStack */;
+			targetProxy = 7A6ECD1E4613799312D352A784BE152E /* PBXContainerItemProxy */;
 		};
 		C86A8505178BC914E8BA6375B0DA95E1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Sync;
-			target = 874502669EF285933B29A7422DF427DF /* Sync */;
+			target = 7981760F112F121A0AB2C3609A102EC3 /* Sync */;
 			targetProxy = 6901BEFE367F9B7DF104D243C93B0E96 /* PBXContainerItemProxy */;
 		};
-		DF3AB79264DA08BBD98D38FFC5B39651 /* PBXTargetDependency */ = {
+		C9CD2D00A028E61CC89D73E21FF57462 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = DATAStack;
-			target = 94F9E27F967CC2E5EF94881BF39421E1 /* DATAStack */;
-			targetProxy = 0DB1581E2F918CF9E9FDC050A3210448 /* PBXContainerItemProxy */;
+			name = "CardMagusKit-CardMagusKit";
+			target = 653CBEB97E392E9E6540CF6D9C6CD0EB /* CardMagusKit-CardMagusKit */;
+			targetProxy = E990E910F8EB1C6E887AF05D0A07185C /* PBXContainerItemProxy */;
+		};
+		EEF96F5B6695285FEC6A6BBA3B9AB733 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Sync;
+			target = 7981760F112F121A0AB2C3609A102EC3 /* Sync */;
+			targetProxy = 63D3CCC51D8C73FC8171C5863D13097A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		04122B2EABED831398554ACDDDB355FA /* Debug */ = {
+		07E673A07AF11224F8AB6053BFC4E864 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FEC9CADD2DEAD3BEF99B57222F1FCE07 /* DATASource.xcconfig */;
 			buildSettings = {
@@ -1229,7 +1386,25 @@
 			};
 			name = Debug;
 		};
-		19C11A1EACA63CE0D23964C0B75A7F54 /* Release */ = {
+		0F812C8C41B15772CF9BA83FDAA1F8ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 252519AF994942135B5A4A1655D021F1 /* CardMagusKit.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/CardMagusKit";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/CardMagusKit/ResourceBundle-CardMagusKit-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_NAME = CardMagusKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		10B178D7850F6FE8F9B616ED35F61CEA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 252519AF994942135B5A4A1655D021F1 /* CardMagusKit.xcconfig */;
 			buildSettings = {
@@ -1238,7 +1413,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -1251,70 +1426,20 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/CardMagusKit/CardMagusKit.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = CardMagusKit;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
-		23194D709AA4E64BBDAFE2813F0F1E15 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 252519AF994942135B5A4A1655D021F1 /* CardMagusKit.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/CardMagusKit";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/CardMagusKit/ResourceBundle-CardMagusKit-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				PRODUCT_NAME = CardMagusKit;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
-		2E11106813345416356706A776C4B39C /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = EE6D683A586027B3D5AAD982A084A77D /* Networking.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Networking/Networking-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Networking/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Networking/Networking.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = Networking;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		4481BC48CDB632AD1A281108A1122272 /* Debug */ = {
+		1C5C55ED390AC5396758748CF78826A5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CEBB67748CB3FEEB413CDD4EC9805304 /* Sync.xcconfig */;
 			buildSettings = {
@@ -1349,22 +1474,39 @@
 			};
 			name = Debug;
 		};
-		490B18856FBC23CC34FF466A6E7972A5 /* Debug */ = {
+		1EB38E95C474D2B51DB63D97F4B6D037 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 252519AF994942135B5A4A1655D021F1 /* CardMagusKit.xcconfig */;
 			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/CardMagusKit";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/CardMagusKit/ResourceBundle-CardMagusKit-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/CardMagusKit/CardMagusKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CardMagusKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CardMagusKit/CardMagusKit.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = CardMagusKit;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		4E487F173E6C9664F4E9E26B9635D23C /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -1414,6 +1556,92 @@
 			};
 			name = Debug;
 		};
+		54AE32FB3F65D5362A639707CED6198C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CEBB67748CB3FEEB413CDD4EC9805304 /* Sync.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Sync/Sync-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Sync/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Sync/Sync.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Sync;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		591B0F9624ACF1FF3622824DC47335B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D66B93E3F331F218F07EEB79E8D3AEB /* DATAStack.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/DATAStack/DATAStack-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DATAStack/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/DATAStack/DATAStack.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = DATAStack;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5EEE72D9728046AB3CE8592F5CDD25F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 252519AF994942135B5A4A1655D021F1 /* CardMagusKit.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/CardMagusKit";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/CardMagusKit/ResourceBundle-CardMagusKit-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_NAME = CardMagusKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
 		6AD5F09371D88D3D94E3E25368B573A5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9B297B3F27145F4C93CEFEC01C6071ED /* Pods-CardMagusKit_Example.release.xcconfig */;
@@ -1452,7 +1680,76 @@
 			};
 			name = Release;
 		};
-		77623930A224D50065571DCD53E78A6E /* Release */ = {
+		70C0061407F5FF1312F0214323FBCB34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE6D683A586027B3D5AAD982A084A77D /* Networking.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Networking/Networking-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Networking/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Networking/Networking.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Networking;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		80BFE1D9F2B193EA00E087F3EB5FAE70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE6D683A586027B3D5AAD982A084A77D /* Networking.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Networking/Networking-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Networking/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Networking/Networking.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Networking;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		959357311B2771B8435D72D6F832437C /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FEC9CADD2DEAD3BEF99B57222F1FCE07 /* DATASource.xcconfig */;
 			buildSettings = {
@@ -1486,9 +1783,9 @@
 			};
 			name = Release;
 		};
-		885ACB2B73FB2773E5124B5693015B18 /* Debug */ = {
+		AFC41CE9CC4BAA8C60D504978DCD0270 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 252519AF994942135B5A4A1655D021F1 /* CardMagusKit.xcconfig */;
+			baseConfigurationReference = 6D66B93E3F331F218F07EEB79E8D3AEB /* DATAStack.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1502,14 +1799,14 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/CardMagusKit/CardMagusKit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/CardMagusKit/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/DATAStack/DATAStack-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DATAStack/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/CardMagusKit/CardMagusKit.modulemap";
+				MODULEMAP_FILE = "Target Support Files/DATAStack/DATAStack.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = CardMagusKit;
+				PRODUCT_NAME = DATAStack;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -1520,40 +1817,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
-		};
-		951E6EB93811702BA4CB5BA81FB2B1D2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = CEBB67748CB3FEEB413CDD4EC9805304 /* Sync.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Sync/Sync-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Sync/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Sync/Sync.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = Sync;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
 		};
 		B59CBF5F6F443AD5D9BA8852822E6018 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -1638,110 +1901,6 @@
 			};
 			name = Release;
 		};
-		BDFE94022D808838FDA2B15A5D25AF9A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6D66B93E3F331F218F07EEB79E8D3AEB /* DATAStack.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/DATAStack/DATAStack-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/DATAStack/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/DATAStack/DATAStack.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = DATAStack;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		DA285A07686B89DB314868715FC08B36 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6D66B93E3F331F218F07EEB79E8D3AEB /* DATAStack.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/DATAStack/DATAStack-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/DATAStack/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/DATAStack/DATAStack.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = DATAStack;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		DB9685F804B55C110DC305035C9EA2EC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = EE6D683A586027B3D5AAD982A084A77D /* Networking.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Networking/Networking-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Networking/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Networking/Networking.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = Networking;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		F41A1027BD10C5F3C9ACCE658B027EE4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 47CB32167005791BDAD1E22199EB97AE /* Pods-CardMagusKit_Example.debug.xcconfig */;
@@ -1822,11 +1981,38 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		07E21B8658652AAEC63BC338C6A2AEE3 /* Build configuration list for PBXNativeTarget "DATASource" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07E673A07AF11224F8AB6053BFC4E864 /* Debug */,
+				959357311B2771B8435D72D6F832437C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1D09292BA7E6B0F2E3EFD8843E6AF449 /* Build configuration list for PBXNativeTarget "CardMagusKit-CardMagusKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5EEE72D9728046AB3CE8592F5CDD25F8 /* Debug */,
+				0F812C8C41B15772CF9BA83FDAA1F8ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4E487F173E6C9664F4E9E26B9635D23C /* Debug */,
 				BDD0139D6EB93FA375F887ABD62DAB2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3205F3A805C914D682C180611668A235 /* Build configuration list for PBXNativeTarget "Networking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80BFE1D9F2B193EA00E087F3EB5FAE70 /* Debug */,
+				70C0061407F5FF1312F0214323FBCB34 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1840,29 +2026,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5AE2C196A2F9B43D378256166EDAAE0A /* Build configuration list for PBXNativeTarget "DATASource" */ = {
+		819F845A8926AE83194D8B29F7C91DE2 /* Build configuration list for PBXNativeTarget "CardMagusKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				04122B2EABED831398554ACDDDB355FA /* Debug */,
-				77623930A224D50065571DCD53E78A6E /* Release */,
+				10B178D7850F6FE8F9B616ED35F61CEA /* Debug */,
+				1EB38E95C474D2B51DB63D97F4B6D037 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7A2DD5D7544E38EF3CBAF3075B108191 /* Build configuration list for PBXNativeTarget "DATAStack" */ = {
+		94D98A8B001A78834D4E038616B26F2E /* Build configuration list for PBXNativeTarget "DATAStack" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BDFE94022D808838FDA2B15A5D25AF9A /* Debug */,
-				DA285A07686B89DB314868715FC08B36 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		81F7CB2D349DA22285508EA6248E3608 /* Build configuration list for PBXNativeTarget "CardMagusKit" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				885ACB2B73FB2773E5124B5693015B18 /* Debug */,
-				19C11A1EACA63CE0D23964C0B75A7F54 /* Release */,
+				AFC41CE9CC4BAA8C60D504978DCD0270 /* Debug */,
+				591B0F9624ACF1FF3622824DC47335B6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1876,29 +2053,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AE3B5AFEA9E50DCBD65E3453C50C953C /* Build configuration list for PBXNativeTarget "CardMagusKit-CardMagusKit" */ = {
+		B43385E9D48138D92D4E4A5AC550C0AF /* Build configuration list for PBXNativeTarget "Sync" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				490B18856FBC23CC34FF466A6E7972A5 /* Debug */,
-				23194D709AA4E64BBDAFE2813F0F1E15 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C3C6AFFB1944786532E8934CB958F796 /* Build configuration list for PBXNativeTarget "Networking" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DB9685F804B55C110DC305035C9EA2EC /* Debug */,
-				2E11106813345416356706A776C4B39C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C9F51C6A0872016E5566FC5BCD985829 /* Build configuration list for PBXNativeTarget "Sync" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4481BC48CDB632AD1A281108A1122272 /* Debug */,
-				951E6EB93811702BA4CB5BA81FB2B1D2 /* Release */,
+				1C5C55ED390AC5396758748CF78826A5 /* Debug */,
+				54AE32FB3F65D5362A639707CED6198C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1906,12 +2065,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		41E596F2A716BCF0DB7D880E21FDF111 /* Card Magus Model.xcdatamodeld */ = {
+		9CDDCADA5315E9798A0566C11C72473A /* Card Magus Model.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				3263B91D7FB72DE958041D5CE2047599 /* Card Magus Model.xcdatamodel */,
+				99E7BD1EAAE5060BB368CA3B69EF09C3 /* Card Magus Model.xcdatamodel */,
 			);
-			currentVersion = 3263B91D7FB72DE958041D5CE2047599 /* Card Magus Model.xcdatamodel */;
+			currentVersion = 99E7BD1EAAE5060BB368CA3B69EF09C3 /* Card Magus Model.xcdatamodel */;
 			path = "Card Magus Model.xcdatamodeld";
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

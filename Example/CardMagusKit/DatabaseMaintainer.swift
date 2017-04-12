@@ -36,6 +36,8 @@ class DatabaseMaintainer: NSObject {
                                      completion:  { error in
                                         NotificationCenter.default.removeObserver(self, name:notifName, object: nil)
                                         
+                                        self.updateSets()
+                                        self.updateCards()
                         })
                     }
                 }
@@ -43,15 +45,101 @@ class DatabaseMaintainer: NSObject {
         }
     }
     
-    public func updateDatabase() {
-        let request:NSFetchRequest<NSFetchRequestResult> = NSFetchRequest(entityName: "CMSet")
-        var sets:[CMSet]?
-        sets = try! CardMagus.sharedInstance.dataStack?.mainContext.fetch(request) as? [CMSet]
+    public func updateSets() {
+        let request = CMSet.fetchRequest()
         
-//        if let
-        
+        if let sets = try! CardMagus.sharedInstance.dataStack?.mainContext.fetch(request) as? [CMSet] {
+            for set in sets {
+                print("\(set.code!) - \(set.name!)")
+                // border
+                if let border = set.border {
+                    let objectFInder = ["name": border] as [String: AnyObject]
+                    if let object = CardMagus.sharedInstance.findOrCreateObject(entityName: "CMBorder", objectFinder: objectFInder) as? CMBorder {
+                        object.name = border
+                        set.border = nil
+                        set.border_ = object
+                    }
+                }
+                
+                // type
+                if let type = set.type {
+                    let objectFInder = ["name": type] as [String: AnyObject]
+                    if let object = CardMagus.sharedInstance.findOrCreateObject(entityName: "CMSetType", objectFinder: objectFInder) as? CMSetType {
+                        object.name = type
+                        set.type = nil
+                        set.type_ = object
+                    }
+                }
+                
+                // block
+                if let block = set.block {
+                    let objectFInder = ["name": block] as [String: AnyObject]
+                    if let object = CardMagus.sharedInstance.findOrCreateObject(entityName: "CMBlock", objectFinder: objectFInder) as? CMBlock {
+                        object.name = block
+                        set.block = nil
+                        set.block_ = object
+                    }
+                }
+                
+                // booster
+                // TODO...
+                
+                
+                try! CardMagus.sharedInstance.dataStack?.mainContext.save()
+            }
+        }
     }
     
+    public func updateCards() {
+        let request = CMCard.fetchRequest()
+        
+        if let cards = try! CardMagus.sharedInstance.dataStack?.mainContext.fetch(request) as? [CMCard] {
+            for card in cards {
+                print("\(card.name!) - (\(card.set!.code!))")
+            
+                // layout
+                // TODO...
+                
+                // names
+                // TODO...
+                
+                // colors
+                // TODO...
+                
+                // colorIdentity
+                // TODO...
+                
+                // type
+                // TODO...
+                
+                // supertypes
+                // TODO...
+                
+                // types
+                // TODO...
+                
+                // rarity
+                // TODO...
+                
+                // artist
+                // TODO...
+                
+                // variations
+                // TODO...
+                
+                // watermark
+                // TODO...
+                
+                // border
+                // TODO...
+                
+                
+            }
+        }
+        
+        
+    }
+
     // MARK: private methods
     func changeNotification(_ notification: Notification) {
         if let updatedObjects = notification.userInfo?[NSUpdatedObjectsKey] {

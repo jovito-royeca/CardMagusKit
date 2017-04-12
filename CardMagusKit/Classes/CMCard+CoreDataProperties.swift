@@ -1,6 +1,6 @@
 //
 //  CMCard+CoreDataProperties.swift
-//  
+//  Pods
 //
 //  Created by Jovito Royeca on 12/04/2017.
 //
@@ -54,12 +54,23 @@ extension CMCard {
     @NSManaged public var types: NSData?
     @NSManaged public var variations: NSData?
     @NSManaged public var watermark: String?
-    @NSManaged public var artist: CMArtist?
+    @NSManaged public var artist: String?
+    @NSManaged public var artist_: CMArtist?
+    @NSManaged public var border_: CMBorder?
     @NSManaged public var cardLegalities_: NSSet?
     @NSManaged public var foreignNames_: NSSet?
-    @NSManaged public var printings_: NSSet?
     @NSManaged public var set: CMSet?
-    @NSManaged public var border_: CMBorder?
+    @NSManaged public var layout_: CMLayout?
+    @NSManaged public var variations_: NSSet?
+    @NSManaged public var names_: NSSet?
+    @NSManaged public var colors_: NSSet?
+    @NSManaged public var colorIdentities_: NSSet?
+    @NSManaged public var type_: CMCardType?
+    @NSManaged public var subtypes_: NSSet?
+    @NSManaged public var supertypes_: NSSet?
+    @NSManaged public var types_: NSSet?
+    @NSManaged public var rarity_: CMRarity?
+    @NSManaged public var watermark_: CMWatermark?
 
 }
 
@@ -97,19 +108,121 @@ extension CMCard {
 
 }
 
-// MARK: Generated accessors for printings_
+// MARK: Generated accessors for variations_
 extension CMCard {
 
-    @objc(addPrintings_Object:)
-    @NSManaged public func addToPrintings_(_ value: CMSet)
+    @objc(addVariations_Object:)
+    @NSManaged public func addToVariations_(_ value: CMCard)
 
-    @objc(removePrintings_Object:)
-    @NSManaged public func removeFromPrintings_(_ value: CMSet)
+    @objc(removeVariations_Object:)
+    @NSManaged public func removeFromVariations_(_ value: CMCard)
 
-    @objc(addPrintings_:)
-    @NSManaged public func addToPrintings_(_ values: NSSet)
+    @objc(addVariations_:)
+    @NSManaged public func addToVariations_(_ values: NSSet)
 
-    @objc(removePrintings_:)
-    @NSManaged public func removeFromPrintings_(_ values: NSSet)
+    @objc(removeVariations_:)
+    @NSManaged public func removeFromVariations_(_ values: NSSet)
+
+}
+
+// MARK: Generated accessors for names_
+extension CMCard {
+
+    @objc(addNames_Object:)
+    @NSManaged public func addToNames_(_ value: CMCard)
+
+    @objc(removeNames_Object:)
+    @NSManaged public func removeFromNames_(_ value: CMCard)
+
+    @objc(addNames_:)
+    @NSManaged public func addToNames_(_ values: NSSet)
+
+    @objc(removeNames_:)
+    @NSManaged public func removeFromNames_(_ values: NSSet)
+
+}
+
+// MARK: Generated accessors for colors_
+extension CMCard {
+
+    @objc(addColors_Object:)
+    @NSManaged public func addToColors_(_ value: CMCard)
+
+    @objc(removeColors_Object:)
+    @NSManaged public func removeFromColors_(_ value: CMCard)
+
+    @objc(addColors_:)
+    @NSManaged public func addToColors_(_ values: NSSet)
+
+    @objc(removeColors_:)
+    @NSManaged public func removeFromColors_(_ values: NSSet)
+
+}
+
+// MARK: Generated accessors for colorIdentities_
+extension CMCard {
+
+    @objc(addColorIdentities_Object:)
+    @NSManaged public func addToColorIdentities_(_ value: CMColor)
+
+    @objc(removeColorIdentities_Object:)
+    @NSManaged public func removeFromColorIdentities_(_ value: CMColor)
+
+    @objc(addColorIdentities_:)
+    @NSManaged public func addToColorIdentities_(_ values: NSSet)
+
+    @objc(removeColorIdentities_:)
+    @NSManaged public func removeFromColorIdentities_(_ values: NSSet)
+
+}
+
+// MARK: Generated accessors for subtypes_
+extension CMCard {
+
+    @objc(addSubtypes_Object:)
+    @NSManaged public func addToSubtypes_(_ value: CMCardType)
+
+    @objc(removeSubtypes_Object:)
+    @NSManaged public func removeFromSubtypes_(_ value: CMCardType)
+
+    @objc(addSubtypes_:)
+    @NSManaged public func addToSubtypes_(_ values: NSSet)
+
+    @objc(removeSubtypes_:)
+    @NSManaged public func removeFromSubtypes_(_ values: NSSet)
+
+}
+
+// MARK: Generated accessors for supertypes_
+extension CMCard {
+
+    @objc(addSupertypes_Object:)
+    @NSManaged public func addToSupertypes_(_ value: CMCardType)
+
+    @objc(removeSupertypes_Object:)
+    @NSManaged public func removeFromSupertypes_(_ value: CMCardType)
+
+    @objc(addSupertypes_:)
+    @NSManaged public func addToSupertypes_(_ values: NSSet)
+
+    @objc(removeSupertypes_:)
+    @NSManaged public func removeFromSupertypes_(_ values: NSSet)
+
+}
+
+// MARK: Generated accessors for types_
+extension CMCard {
+
+    @objc(addTypes_Object:)
+    @NSManaged public func addToTypes_(_ value: CMCardType)
+
+    @objc(removeTypes_Object:)
+    @NSManaged public func removeFromTypes_(_ value: CMCardType)
+
+    @objc(addTypes_:)
+    @NSManaged public func addToTypes_(_ values: NSSet)
+
+    @objc(removeTypes_:)
+    @NSManaged public func removeFromTypes_(_ values: NSSet)
 
 }
