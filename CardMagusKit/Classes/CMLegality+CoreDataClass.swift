@@ -10,6 +10,6 @@ import Foundation
 import CoreData
 
 @objc(CMLegality)
-public class CMLegality: NSManagedObject {
+open class CMLegality: NSManagedObject {
 
 }

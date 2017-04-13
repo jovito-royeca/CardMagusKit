@@ -12,8 +12,8 @@ import CoreData
 
 extension CMLegality {
 
-    @nonobjc public class func fetchRequest() -> NSFetchRequest<CMLegality> {
-        return NSFetchRequest<CMLegality>(entityName: "CMLegality")
+    @nonobjc open override class func fetchRequest() -> NSFetchRequest<NSFetchRequestResult> {
+        return NSFetchRequest<CMLegality>(entityName: "CMLegality") as! NSFetchRequest<NSFetchRequestResult>
     }
 
     @NSManaged public var name: String?

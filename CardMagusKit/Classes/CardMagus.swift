@@ -15,12 +15,6 @@ open class CardMagus: NSObject {
     // MARK: - Shared Instance
     open static let sharedInstance = CardMagus()
     
-    // MARK: Variables
-//    guard let bundleURL = NSBundle(forClass: FrameworkClass.self).URLForResource("myFramework", withExtension: "bundle") else { throw Error }
-//    guard let frameworkBundle = NSBundle(URL: bundleURL) else { throw Error }
-//    guard let momURL = frameworkBundle.URLForResource("Database", withExtension: "momd") else { throw Error }
-//    public let dataStack: DATAStack = DATAStack(modelName: "Card Magus Model", bundle: Bundle(for: CardMagus.self), storeType: .sqLite)
-    
     fileprivate var _dataStack:DATAStack?
     open var dataStack:DATAStack? {
         get {
@@ -31,7 +25,7 @@ open class CardMagus: NSObject {
         }
     }
     
-    open func findOrCreateObject(entityName: String, objectFinder: [String: AnyObject]) -> NSManagedObject? {
+    open func findOrCreateObject(_ entityName: String, objectFinder: [String: AnyObject]) -> NSManagedObject? {
         var object:NSManagedObject?
         var predicate:NSPredicate?
         

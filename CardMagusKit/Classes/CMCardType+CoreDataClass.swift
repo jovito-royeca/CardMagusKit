@@ -10,6 +10,6 @@ import Foundation
 import CoreData
 
 @objc(CMCardType)
-public class CMCardType: NSManagedObject {
+open class CMCardType: NSManagedObject {
 
 }

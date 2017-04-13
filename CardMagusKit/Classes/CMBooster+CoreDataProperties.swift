@@ -12,8 +12,8 @@ import CoreData
 
 extension CMBooster {
 
-    @nonobjc public class func fetchRequest() -> NSFetchRequest<CMBooster> {
-        return NSFetchRequest<CMBooster>(entityName: "CMBooster")
+    @nonobjc open override class func fetchRequest() -> NSFetchRequest<NSFetchRequestResult> {
+        return NSFetchRequest<CMBooster>(entityName: "CMBooster") as! NSFetchRequest<NSFetchRequestResult>
     }
 
     @NSManaged public var name: String?

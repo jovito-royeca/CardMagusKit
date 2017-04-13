@@ -10,6 +10,6 @@ import Foundation
 import CoreData
 
 @objc(CMRarity)
-public class CMRarity: NSManagedObject {
+open class CMRarity: NSManagedObject {
 
 }

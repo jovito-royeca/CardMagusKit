@@ -10,6 +10,6 @@ import Foundation
 import CoreData
 
 @objc(CMColor)
-public class CMColor: NSManagedObject {
+open class CMColor: NSManagedObject {
 
 }

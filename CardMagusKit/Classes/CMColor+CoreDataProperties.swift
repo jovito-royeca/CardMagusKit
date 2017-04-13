@@ -12,14 +12,14 @@ import CoreData
 
 extension CMColor {
 
-    @nonobjc public class func fetchRequest() -> NSFetchRequest<CMColor> {
-        return NSFetchRequest<CMColor>(entityName: "CMColor")
+    @nonobjc open override class func fetchRequest() -> NSFetchRequest<NSFetchRequestResult> {
+        return NSFetchRequest<CMColor>(entityName: "CMColor") as! NSFetchRequest<NSFetchRequestResult>
     }
 
     @NSManaged public var name: String?
     @NSManaged public var symbol: String?
     @NSManaged public var cardColors: NSSet?
-    @NSManaged public var cardIdentities: CMCard?
+    @NSManaged public var cardIdentities: NSSet?
 
 }
 
@@ -38,4 +38,21 @@ extension CMColor {
     @objc(removeCardColors:)
     @NSManaged public func removeFromCardColors(_ values: NSSet)
 
+}
+
+// MARK: Generated accessors for cardColors
+extension CMColor {
+    
+    @objc(addCardIdentitiesObject:)
+    @NSManaged public func addToCardIdentities(_ value: CMCard)
+    
+    @objc(removeCardIdentitiesObject:)
+    @NSManaged public func removeFromCardIdentities(_ value: CMCard)
+    
+    @objc(addCardIdentities:)
+    @NSManaged public func addToCardIdentities(_ values: NSSet)
+    
+    @objc(removeCardIdentities:)
+    @NSManaged public func removeFromCardIdentities(_ values: NSSet)
+    
 }

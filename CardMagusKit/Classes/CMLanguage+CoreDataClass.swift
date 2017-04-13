@@ -10,6 +10,6 @@ import Foundation
 import CoreData
 
 @objc(CMLanguage)
-public class CMLanguage: NSManagedObject {
+open class CMLanguage: NSManagedObject {
 
 }

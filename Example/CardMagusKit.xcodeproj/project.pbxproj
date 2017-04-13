@@ -107,14 +107,14 @@
 		607FACD21AFB9204008FA782 /* Example for CardMagusKit */ = {
 			isa = PBXGroup;
 			children = (
-				11EC4BC61E9DF64300500E2B /* Utilities */,
-				11EC4BC31E9DF0EC00500E2B /* data */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
-				607FACD71AFB9204008FA782 /* ViewController.swift */,
-				607FACD91AFB9204008FA782 /* Main.storyboard */,
+				11EC4BC31E9DF0EC00500E2B /* data */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
+				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
+				11EC4BC61E9DF64300500E2B /* Utilities */,
+				607FACD71AFB9204008FA782 /* ViewController.swift */,
 			);
 			name = "Example for CardMagusKit";
 			path = CardMagusKit;
@@ -231,11 +231,11 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						LastSwiftMigration = 0820;
+						LastSwiftMigration = 0830;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						LastSwiftMigration = 0820;
+						LastSwiftMigration = 0830;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
 				};

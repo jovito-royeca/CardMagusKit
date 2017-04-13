@@ -10,6 +10,6 @@ import Foundation
 import CoreData
 
 @objc(CMFormat)
-public class CMFormat: NSManagedObject {
+open class CMFormat: NSManagedObject {
 
 }

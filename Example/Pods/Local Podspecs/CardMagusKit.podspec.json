@@ -1,6 +1,6 @@
 {
   "name": "CardMagusKit",
-  "version": "0.7.8",
+  "version": "0.8.0",
   "summary": "Core Data and utilities for Card Magus.",
   "description": "Core Data classes, database, and utilities for Card Magus.",
   "homepage": "https://github.com/jovito-royeca/CardMagusKit",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/jovito-royeca/CardMagusKit.git",
-    "tag": "0.7.8"
+    "tag": "0.8.0"
   },
   "social_media_url": "https://twitter.com/JovitoRoyeca",
   "platforms": {

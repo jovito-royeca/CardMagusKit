@@ -12,8 +12,8 @@ import CoreData
 
 extension CMBorder {
 
-    @nonobjc public class func fetchRequest() -> NSFetchRequest<CMBorder> {
-        return NSFetchRequest<CMBorder>(entityName: "CMBorder")
+    @nonobjc open override class func fetchRequest() -> NSFetchRequest<NSFetchRequestResult> {
+        return NSFetchRequest<CMBorder>(entityName: "CMBorder") as! NSFetchRequest<NSFetchRequestResult>
     }
 
     @NSManaged public var name: String?

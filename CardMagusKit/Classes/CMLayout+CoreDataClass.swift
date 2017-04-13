@@ -10,6 +10,6 @@ import Foundation
 import CoreData
 
 @objc(CMLayout)
-public class CMLayout: NSManagedObject {
+open class CMLayout: NSManagedObject {
 
 }

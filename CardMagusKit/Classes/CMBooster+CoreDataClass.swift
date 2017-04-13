@@ -10,6 +10,6 @@ import Foundation
 import CoreData
 
 @objc(CMBooster)
-public class CMBooster: NSManagedObject {
+open class CMBooster: NSManagedObject {
 
 }

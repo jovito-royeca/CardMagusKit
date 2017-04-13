@@ -12,8 +12,8 @@ import CoreData
 
 extension CMSetType {
 
-    @nonobjc public class func fetchRequest() -> NSFetchRequest<CMSetType> {
-        return NSFetchRequest<CMSetType>(entityName: "CMSetType")
+    @nonobjc open override class func fetchRequest() -> NSFetchRequest<NSFetchRequestResult> {
+        return NSFetchRequest<CMSetType>(entityName: "CMSetType") as! NSFetchRequest<NSFetchRequestResult>
     }
 
     @NSManaged public var name: String?

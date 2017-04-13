@@ -12,47 +12,47 @@ import CoreData
 
 extension CMCard {
 
-    @nonobjc public class func fetchRequest() -> NSFetchRequest<CMCard> {
-        return NSFetchRequest<CMCard>(entityName: "CMCard")
+    @nonobjc open override class func fetchRequest() -> NSFetchRequest<NSFetchRequestResult> {
+        return NSFetchRequest<CMCard>(entityName: "CMCard") as! NSFetchRequest<NSFetchRequestResult>
     }
 
     @NSManaged public var border: String?
     @NSManaged public var cmc: Double
-    @NSManaged public var coloridentity: NSData?
-    @NSManaged public var colors: NSData?
+    @NSManaged public var colorIdentity: Data?
+    @NSManaged public var colors: Data?
     @NSManaged public var flavor: String?
-    @NSManaged public var foreignNames: NSData?
+    @NSManaged public var foreignNames: Data?
     @NSManaged public var hand: Int32
     @NSManaged public var id: String?
     @NSManaged public var imageName: String?
     @NSManaged public var layout: String?
-    @NSManaged public var legalities: NSData?
+    @NSManaged public var legalities: Data?
     @NSManaged public var life: Int32
     @NSManaged public var loyalty: Int32
     @NSManaged public var manaCost: String?
     @NSManaged public var mciNumber: Int32
     @NSManaged public var multiverseid: Int64
     @NSManaged public var name: String?
-    @NSManaged public var names: NSData?
+    @NSManaged public var names: Data?
     @NSManaged public var number: String?
     @NSManaged public var originalText: String?
     @NSManaged public var originalType: String?
     @NSManaged public var power: String?
-    @NSManaged public var printings: NSData?
+    @NSManaged public var printings: Data?
     @NSManaged public var rarity: String?
     @NSManaged public var releaseDate: String?
     @NSManaged public var reserved: Bool
-    @NSManaged public var rulings: NSData?
+    @NSManaged public var rulings: Data?
     @NSManaged public var source: String?
     @NSManaged public var starter: Bool
-    @NSManaged public var subtypes: NSData?
-    @NSManaged public var supertypes: NSData?
+    @NSManaged public var subtypes: Data?
+    @NSManaged public var supertypes: Data?
     @NSManaged public var text: String?
     @NSManaged public var timeshifted: Bool
     @NSManaged public var toughness: String?
     @NSManaged public var type: String?
-    @NSManaged public var types: NSData?
-    @NSManaged public var variations: NSData?
+    @NSManaged public var types: Data?
+    @NSManaged public var variations: Data?
     @NSManaged public var watermark: String?
     @NSManaged public var artist: String?
     @NSManaged public var artist_: CMArtist?
@@ -62,13 +62,14 @@ extension CMCard {
     @NSManaged public var set: CMSet?
     @NSManaged public var layout_: CMLayout?
     @NSManaged public var variations_: NSSet?
-    @NSManaged public var names_: NSSet?
     @NSManaged public var colors_: NSSet?
     @NSManaged public var colorIdentities_: NSSet?
     @NSManaged public var type_: CMCardType?
     @NSManaged public var subtypes_: NSSet?
     @NSManaged public var supertypes_: NSSet?
     @NSManaged public var types_: NSSet?
+    @NSManaged public var printings_: NSSet?
+    @NSManaged public var rulings_: NSSet?
     @NSManaged public var rarity_: CMRarity?
     @NSManaged public var watermark_: CMWatermark?
 
@@ -125,31 +126,14 @@ extension CMCard {
 
 }
 
-// MARK: Generated accessors for names_
-extension CMCard {
-
-    @objc(addNames_Object:)
-    @NSManaged public func addToNames_(_ value: CMCard)
-
-    @objc(removeNames_Object:)
-    @NSManaged public func removeFromNames_(_ value: CMCard)
-
-    @objc(addNames_:)
-    @NSManaged public func addToNames_(_ values: NSSet)
-
-    @objc(removeNames_:)
-    @NSManaged public func removeFromNames_(_ values: NSSet)
-
-}
-
 // MARK: Generated accessors for colors_
 extension CMCard {
 
     @objc(addColors_Object:)
-    @NSManaged public func addToColors_(_ value: CMCard)
+    @NSManaged public func addToColors_(_ value: CMColor)
 
     @objc(removeColors_Object:)
-    @NSManaged public func removeFromColors_(_ value: CMCard)
+    @NSManaged public func removeFromColors_(_ value: CMColor)
 
     @objc(addColors_:)
     @NSManaged public func addToColors_(_ values: NSSet)
@@ -225,4 +209,38 @@ extension CMCard {
     @objc(removeTypes_:)
     @NSManaged public func removeFromTypes_(_ values: NSSet)
 
+}
+
+// MARK: Generated accessors for printings_
+extension CMCard {
+    
+    @objc(addPrintings_Object:)
+    @NSManaged public func addToPrintings_(_ value: CMSet)
+    
+    @objc(removePrintings_Object:)
+    @NSManaged public func removeFromPrintings_(_ value: CMSet)
+    
+    @objc(addPrintings_:)
+    @NSManaged public func addToPrintings_(_ values: NSSet)
+    
+    @objc(removePrintings_:)
+    @NSManaged public func removeFromPrintings_(_ values: NSSet)
+    
+}
+
+// MARK: Generated accessors for rulings_
+extension CMCard {
+    
+    @objc(addRulings_Object:)
+    @NSManaged public func addToRulings_(_ value: CMRuling)
+    
+    @objc(removeRulings_Object:)
+    @NSManaged public func removeFromRulings_(_ value: CMRuling)
+    
+    @objc(addRulings_:)
+    @NSManaged public func addToRulings_(_ values: NSSet)
+    
+    @objc(removeRulings_:)
+    @NSManaged public func removeFromRulings_(_ values: NSSet)
+    
 }

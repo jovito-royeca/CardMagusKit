@@ -10,6 +10,6 @@ import Foundation
 import CoreData
 
 @objc(CMBlock)
-public class CMBlock: NSManagedObject {
+open class CMBlock: NSManagedObject {
 
 }

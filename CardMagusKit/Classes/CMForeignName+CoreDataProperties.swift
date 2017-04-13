@@ -12,10 +12,11 @@ import CoreData
 
 extension CMForeignName {
 
-    @nonobjc public class func fetchRequest() -> NSFetchRequest<CMForeignName> {
-        return NSFetchRequest<CMForeignName>(entityName: "CMForeignName")
+    @nonobjc open override class func fetchRequest() -> NSFetchRequest<NSFetchRequestResult> {
+        return NSFetchRequest<CMForeignName>(entityName: "CMForeignName") as! NSFetchRequest<NSFetchRequestResult>
     }
 
+    @NSManaged public var id: Int64
     @NSManaged public var multiverseid: Int64
     @NSManaged public var name: String?
     @NSManaged public var card: CMCard?

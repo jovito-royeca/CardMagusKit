@@ -12,8 +12,8 @@ import CoreData
 
 extension CMLayout {
 
-    @nonobjc public class func fetchRequest() -> NSFetchRequest<CMLayout> {
-        return NSFetchRequest<CMLayout>(entityName: "CMLayout")
+    @nonobjc open override class func fetchRequest() -> NSFetchRequest<NSFetchRequestResult> {
+        return NSFetchRequest<CMLayout>(entityName: "CMLayout") as! NSFetchRequest<NSFetchRequestResult>
     }
 
     @NSManaged public var name: String?
