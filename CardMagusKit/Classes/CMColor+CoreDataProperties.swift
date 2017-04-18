@@ -2,7 +2,7 @@
 //  CMColor+CoreDataProperties.swift
 //  Pods
 //
-//  Created by Jovito Royeca on 12/04/2017.
+//  Created by Jovito Royeca on 15/04/2017.
 //
 //
 
@@ -40,19 +40,19 @@ extension CMColor {
 
 }
 
-// MARK: Generated accessors for cardColors
+// MARK: Generated accessors for cardIdentities
 extension CMColor {
-    
+
     @objc(addCardIdentitiesObject:)
     @NSManaged public func addToCardIdentities(_ value: CMCard)
-    
+
     @objc(removeCardIdentitiesObject:)
     @NSManaged public func removeFromCardIdentities(_ value: CMCard)
-    
+
     @objc(addCardIdentities:)
     @NSManaged public func addToCardIdentities(_ values: NSSet)
-    
+
     @objc(removeCardIdentities:)
     @NSManaged public func removeFromCardIdentities(_ values: NSSet)
-    
+
 }

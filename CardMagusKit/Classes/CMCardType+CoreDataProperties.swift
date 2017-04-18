@@ -2,7 +2,7 @@
 //  CMCardType+CoreDataProperties.swift
 //  Pods
 //
-//  Created by Jovito Royeca on 12/04/2017.
+//  Created by Jovito Royeca on 15/04/2017.
 //
 //
 
@@ -18,9 +18,9 @@ extension CMCardType {
 
     @NSManaged public var name: String?
     @NSManaged public var cards: NSSet?
-    @NSManaged public var cardTypes: NSSet?
-    @NSManaged public var cardSupertypes: NSSet?
     @NSManaged public var cardSubtypes: NSSet?
+    @NSManaged public var cardSupertypes: NSSet?
+    @NSManaged public var cardTypes: NSSet?
 
 }
 
@@ -41,20 +41,20 @@ extension CMCardType {
 
 }
 
-// MARK: Generated accessors for cardTypes
+// MARK: Generated accessors for cardSubtypes
 extension CMCardType {
 
-    @objc(addCardTypesObject:)
-    @NSManaged public func addToCardTypes(_ value: CMCard)
+    @objc(addCardSubtypesObject:)
+    @NSManaged public func addToCardSubtypes(_ value: CMCard)
 
-    @objc(removeCardTypesObject:)
-    @NSManaged public func removeFromCardTypes(_ value: CMCard)
+    @objc(removeCardSubtypesObject:)
+    @NSManaged public func removeFromCardSubtypes(_ value: CMCard)
 
-    @objc(addCardTypes:)
-    @NSManaged public func addToCardTypes(_ values: NSSet)
+    @objc(addCardSubtypes:)
+    @NSManaged public func addToCardSubtypes(_ values: NSSet)
 
-    @objc(removeCardTypes:)
-    @NSManaged public func removeFromCardTypes(_ values: NSSet)
+    @objc(removeCardSubtypes:)
+    @NSManaged public func removeFromCardSubtypes(_ values: NSSet)
 
 }
 
@@ -75,19 +75,19 @@ extension CMCardType {
 
 }
 
-// MARK: Generated accessors for cardSubtypes
+// MARK: Generated accessors for cardTypes
 extension CMCardType {
 
-    @objc(addCardSubtypesObject:)
-    @NSManaged public func addToCardSubtypes(_ value: CMCard)
+    @objc(addCardTypesObject:)
+    @NSManaged public func addToCardTypes(_ value: CMCard)
 
-    @objc(removeCardSubtypesObject:)
-    @NSManaged public func removeFromCardSubtypes(_ value: CMCard)
+    @objc(removeCardTypesObject:)
+    @NSManaged public func removeFromCardTypes(_ value: CMCard)
 
-    @objc(addCardSubtypes:)
-    @NSManaged public func addToCardSubtypes(_ values: NSSet)
+    @objc(addCardTypes:)
+    @NSManaged public func addToCardTypes(_ values: NSSet)
 
-    @objc(removeCardSubtypes:)
-    @NSManaged public func removeFromCardSubtypes(_ values: NSSet)
+    @objc(removeCardTypes:)
+    @NSManaged public func removeFromCardTypes(_ values: NSSet)
 
 }

@@ -2,7 +2,7 @@
 //  CMCard+CoreDataProperties.swift
 //  Pods
 //
-//  Created by Jovito Royeca on 12/04/2017.
+//  Created by Jovito Royeca on 15/04/2017.
 //
 //
 
@@ -16,6 +16,7 @@ extension CMCard {
         return NSFetchRequest<CMCard>(entityName: "CMCard") as! NSFetchRequest<NSFetchRequestResult>
     }
 
+    @NSManaged public var artist: String?
     @NSManaged public var border: String?
     @NSManaged public var cmc: Double
     @NSManaged public var colorIdentity: Data?
@@ -30,7 +31,7 @@ extension CMCard {
     @NSManaged public var life: Int32
     @NSManaged public var loyalty: Int32
     @NSManaged public var manaCost: String?
-    @NSManaged public var mciNumber: Int32
+    @NSManaged public var mciNumber: String?
     @NSManaged public var multiverseid: Int64
     @NSManaged public var name: String?
     @NSManaged public var names: Data?
@@ -54,23 +55,22 @@ extension CMCard {
     @NSManaged public var types: Data?
     @NSManaged public var variations: Data?
     @NSManaged public var watermark: String?
-    @NSManaged public var artist: String?
     @NSManaged public var artist_: CMArtist?
     @NSManaged public var border_: CMBorder?
     @NSManaged public var cardLegalities_: NSSet?
-    @NSManaged public var foreignNames_: NSSet?
-    @NSManaged public var set: CMSet?
-    @NSManaged public var layout_: CMLayout?
-    @NSManaged public var variations_: NSSet?
-    @NSManaged public var colors_: NSSet?
     @NSManaged public var colorIdentities_: NSSet?
-    @NSManaged public var type_: CMCardType?
+    @NSManaged public var colors_: NSSet?
+    @NSManaged public var foreignNames_: NSSet?
+    @NSManaged public var layout_: CMLayout?
+    @NSManaged public var printings_: NSSet?
+    @NSManaged public var rarity_: CMRarity?
+    @NSManaged public var rulings_: NSSet?
+    @NSManaged public var set: CMSet?
     @NSManaged public var subtypes_: NSSet?
     @NSManaged public var supertypes_: NSSet?
+    @NSManaged public var type_: CMCardType?
     @NSManaged public var types_: NSSet?
-    @NSManaged public var printings_: NSSet?
-    @NSManaged public var rulings_: NSSet?
-    @NSManaged public var rarity_: CMRarity?
+    @NSManaged public var variations_: NSSet?
     @NSManaged public var watermark_: CMWatermark?
 
 }
@@ -92,37 +92,20 @@ extension CMCard {
 
 }
 
-// MARK: Generated accessors for foreignNames_
+// MARK: Generated accessors for colorIdentities_
 extension CMCard {
 
-    @objc(addForeignNames_Object:)
-    @NSManaged public func addToForeignNames_(_ value: CMForeignName)
+    @objc(addColorIdentities_Object:)
+    @NSManaged public func addToColorIdentities_(_ value: CMColor)
 
-    @objc(removeForeignNames_Object:)
-    @NSManaged public func removeFromForeignNames_(_ value: CMForeignName)
+    @objc(removeColorIdentities_Object:)
+    @NSManaged public func removeFromColorIdentities_(_ value: CMColor)
 
-    @objc(addForeignNames_:)
-    @NSManaged public func addToForeignNames_(_ values: NSSet)
+    @objc(addColorIdentities_:)
+    @NSManaged public func addToColorIdentities_(_ values: NSSet)
 
-    @objc(removeForeignNames_:)
-    @NSManaged public func removeFromForeignNames_(_ values: NSSet)
-
-}
-
-// MARK: Generated accessors for variations_
-extension CMCard {
-
-    @objc(addVariations_Object:)
-    @NSManaged public func addToVariations_(_ value: CMCard)
-
-    @objc(removeVariations_Object:)
-    @NSManaged public func removeFromVariations_(_ value: CMCard)
-
-    @objc(addVariations_:)
-    @NSManaged public func addToVariations_(_ values: NSSet)
-
-    @objc(removeVariations_:)
-    @NSManaged public func removeFromVariations_(_ values: NSSet)
+    @objc(removeColorIdentities_:)
+    @NSManaged public func removeFromColorIdentities_(_ values: NSSet)
 
 }
 
@@ -143,20 +126,54 @@ extension CMCard {
 
 }
 
-// MARK: Generated accessors for colorIdentities_
+// MARK: Generated accessors for foreignNames_
 extension CMCard {
 
-    @objc(addColorIdentities_Object:)
-    @NSManaged public func addToColorIdentities_(_ value: CMColor)
+    @objc(addForeignNames_Object:)
+    @NSManaged public func addToForeignNames_(_ value: CMForeignName)
 
-    @objc(removeColorIdentities_Object:)
-    @NSManaged public func removeFromColorIdentities_(_ value: CMColor)
+    @objc(removeForeignNames_Object:)
+    @NSManaged public func removeFromForeignNames_(_ value: CMForeignName)
 
-    @objc(addColorIdentities_:)
-    @NSManaged public func addToColorIdentities_(_ values: NSSet)
+    @objc(addForeignNames_:)
+    @NSManaged public func addToForeignNames_(_ values: NSSet)
 
-    @objc(removeColorIdentities_:)
-    @NSManaged public func removeFromColorIdentities_(_ values: NSSet)
+    @objc(removeForeignNames_:)
+    @NSManaged public func removeFromForeignNames_(_ values: NSSet)
+
+}
+
+// MARK: Generated accessors for printings_
+extension CMCard {
+
+    @objc(addPrintings_Object:)
+    @NSManaged public func addToPrintings_(_ value: CMSet)
+
+    @objc(removePrintings_Object:)
+    @NSManaged public func removeFromPrintings_(_ value: CMSet)
+
+    @objc(addPrintings_:)
+    @NSManaged public func addToPrintings_(_ values: NSSet)
+
+    @objc(removePrintings_:)
+    @NSManaged public func removeFromPrintings_(_ values: NSSet)
+
+}
+
+// MARK: Generated accessors for rulings_
+extension CMCard {
+
+    @objc(addRulings_Object:)
+    @NSManaged public func addToRulings_(_ value: CMRuling)
+
+    @objc(removeRulings_Object:)
+    @NSManaged public func removeFromRulings_(_ value: CMRuling)
+
+    @objc(addRulings_:)
+    @NSManaged public func addToRulings_(_ values: NSSet)
+
+    @objc(removeRulings_:)
+    @NSManaged public func removeFromRulings_(_ values: NSSet)
 
 }
 
@@ -211,36 +228,19 @@ extension CMCard {
 
 }
 
-// MARK: Generated accessors for printings_
+// MARK: Generated accessors for variations_
 extension CMCard {
-    
-    @objc(addPrintings_Object:)
-    @NSManaged public func addToPrintings_(_ value: CMSet)
-    
-    @objc(removePrintings_Object:)
-    @NSManaged public func removeFromPrintings_(_ value: CMSet)
-    
-    @objc(addPrintings_:)
-    @NSManaged public func addToPrintings_(_ values: NSSet)
-    
-    @objc(removePrintings_:)
-    @NSManaged public func removeFromPrintings_(_ values: NSSet)
-    
-}
 
-// MARK: Generated accessors for rulings_
-extension CMCard {
-    
-    @objc(addRulings_Object:)
-    @NSManaged public func addToRulings_(_ value: CMRuling)
-    
-    @objc(removeRulings_Object:)
-    @NSManaged public func removeFromRulings_(_ value: CMRuling)
-    
-    @objc(addRulings_:)
-    @NSManaged public func addToRulings_(_ values: NSSet)
-    
-    @objc(removeRulings_:)
-    @NSManaged public func removeFromRulings_(_ values: NSSet)
-    
+    @objc(addVariations_Object:)
+    @NSManaged public func addToVariations_(_ value: CMCard)
+
+    @objc(removeVariations_Object:)
+    @NSManaged public func removeFromVariations_(_ value: CMCard)
+
+    @objc(addVariations_:)
+    @NSManaged public func addToVariations_(_ values: NSSet)
+
+    @objc(removeVariations_:)
+    @NSManaged public func removeFromVariations_(_ values: NSSet)
+
 }

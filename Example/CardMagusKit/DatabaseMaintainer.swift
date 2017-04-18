@@ -9,22 +9,32 @@
 import UIKit
 import CardMagusKit
 import DATAStack
+import Kanna
+import SSZipArchive
 import Sync
 
 class DatabaseMaintainer: NSObject {
     // MARK: - Shared Instance
-    open static let sharedInstance = DatabaseMaintainer()
+    static let sharedInstance = DatabaseMaintainer()
 
-    open func json2CoreData() {
+    func json2CoreData() {
         let dateStart = Date()
         
-        if let path = Bundle.main.path(forResource: "AllSetsArray-x", ofType: "json", inDirectory: "data") {
-            if FileManager.default.fileExists(atPath: path) {
-                let data = try! Data(contentsOf: URL(fileURLWithPath: path))
-                let notifName = NSNotification.Name.NSManagedObjectContextObjectsDidChange
+        if let path = Bundle.main.path(forResource: "AllSets-x.json", ofType: "zip", inDirectory: "data"),
+            let docsPath = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first {
+            
+            let jsonPath = "\(docsPath)/AllSets-x.json"
+            SSZipArchive.unzipFile(atPath: path, toDestination: docsPath)
+            
+            if FileManager.default.fileExists(atPath: jsonPath) {
+                let data = try! Data(contentsOf: URL(fileURLWithPath: jsonPath))
                 
-                if let dictionary = try! JSONSerialization.jsonObject(with: data, options: .mutableContainers) as? [[String: Any]] {
-                    setupDataStack()
+                if let jsonDictionary = try! JSONSerialization.jsonObject(with: data, options: .mutableContainers) as? [String: [String: Any]] {
+                    let notifName = NSNotification.Name.NSManagedObjectContextObjectsDidChange
+                    var dictionary = [[String: Any]]()
+                    for (_,value) in jsonDictionary {
+                        dictionary.append(value)
+                    }
                     
                     CardMagus.sharedInstance.dataStack?.performInNewBackgroundContext { backgroundContext in
                         NotificationCenter.default.addObserver(self, selector: #selector(DatabaseMaintainer.changeNotification(_:)), name: notifName, object: backgroundContext)
@@ -38,15 +48,63 @@ class DatabaseMaintainer: NSObject {
                                      completion:  { error in
                                         NotificationCenter.default.removeObserver(self, name:notifName, object: nil)
                                         
-                                        print("Updating Sets...")
+                                        // json
+                                        var dateEnd = Date()
+                                        var timeDifference = dateEnd.timeIntervalSince(dateStart)
+                                        print("Time Elapsed: \(dateStart) - \(dateEnd) = \(self.format(timeDifference))")
+                                        
+                                        // sets
+                                        var tmpDateStart = Date()
                                         self.updateSets()
-                                        print("Updating Cards...")
+                                        dateEnd = Date()
+                                        timeDifference = dateEnd.timeIntervalSince(tmpDateStart)
+                                        print("Time Elapsed: \(tmpDateStart) - \(dateEnd) = \(self.format(timeDifference))")
+                                        
+                                        // cards
+                                        tmpDateStart = Date()
                                         self.updateCards()
-                                        print("Updating Extra Info...")
-                                        self.updateExtraInfo()
-                                        let dateEnd = Date()
-                                        let timeDifference = dateEnd.timeIntervalSince(dateStart)
-                                        print("Time Elapsed: \(dateStart) - \(dateEnd) : \(timeDifference)")
+                                        dateEnd = Date()
+                                        timeDifference = dateEnd.timeIntervalSince(tmpDateStart)
+                                        print("Time Elapsed: \(tmpDateStart) - \(dateEnd) = \(self.format(timeDifference))")
+                                        
+                                        // variations
+                                        tmpDateStart = Date()
+                                        self.updateVariations()
+                                        dateEnd = Date()
+                                        timeDifference = dateEnd.timeIntervalSince(tmpDateStart)
+                                        print("Time Elapsed: \(tmpDateStart) - \(dateEnd) = \(self.format(timeDifference))")
+                                        
+                                         // printings
+                                        tmpDateStart = Date()
+                                        self.updatePrintings()
+                                        dateEnd = Date()
+                                        timeDifference = dateEnd.timeIntervalSince(tmpDateStart)
+                                        print("Time Elapsed: \(tmpDateStart) - \(dateEnd) = \(self.format(timeDifference))")
+                                        
+//                                        // rulings
+//                                        tmpDateStart = Date()
+//                                        self.updateRulings()
+//                                        dateEnd = Date()
+//                                        timeDifference = dateEnd.timeIntervalSince(tmpDateStart)
+//                                        print("Time Elapsed: \(tmpDateStart) - \(dateEnd) = \(self.format(timeDifference))")
+//                                        
+//                                        // foreign names
+//                                        tmpDateStart = Date()
+//                                        self.updateForeignNames()
+//                                        dateEnd = Date()
+//                                        timeDifference = dateEnd.timeIntervalSince(tmpDateStart)
+//                                        print("Time Elapsed: \(tmpDateStart) - \(dateEnd) = \(self.format(timeDifference))")
+                                        
+                                        // legalities
+                                        tmpDateStart = Date()
+                                        self.updateLegalities()
+                                        dateEnd = Date()
+                                        timeDifference = dateEnd.timeIntervalSince(tmpDateStart)
+                                        print("Time Elapsed: \(tmpDateStart) - \(dateEnd) = \(self.format(timeDifference))")
+                                        
+                                        dateEnd = Date()
+                                        timeDifference = dateEnd.timeIntervalSince(dateStart)
+                                        print("Total Time Elapsed: \(dateStart) - \(dateEnd) = \(self.format(timeDifference))")
                                         print("docsPath = \(NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0])")
                         })
                     }
@@ -68,8 +126,8 @@ class DatabaseMaintainer: NSObject {
         }
         
         if let sets = try! CardMagus.sharedInstance.dataStack?.mainContext.fetch(request) {
+            print("Updating sets: \(sets.count)")
             for set in sets {
-
                 // border
                 if let border = set.border {
                     let objectFinder = ["name": border] as [String: AnyObject]
@@ -102,14 +160,28 @@ class DatabaseMaintainer: NSObject {
                 
                 // booster
                 if let booster = set.booster {
-                    let booster_ = set.mutableSetValue(forKey: "booster_")
-                    
                     if let boosterArray = NSKeyedUnarchiver.unarchiveObject(with: booster as Data) as? [String] {
+                        var boosterDict = [CMBooster: Int]()
+                        
                         for booster in boosterArray {
                             let objectFinder = ["name": booster] as [String: AnyObject]
                             if let object = CardMagus.sharedInstance.findOrCreateObject("CMBooster", objectFinder: objectFinder) as? CMBooster {
                                 object.name = booster
-                                booster_.add(object)
+                                
+                                if let value = boosterDict[object] {
+                                    boosterDict[object] = value + 1
+                                } else {
+                                    boosterDict[object] = 1
+                                }
+                            }
+                        }
+                        
+                        for (key,value) in boosterDict {
+                            if let object = CardMagus.sharedInstance.findOrCreateObject("CMSetBooster", objectFinder: nil) as? CMSetBooster {
+                                object.booster = key
+                                object.set = set
+                                object.count = Int32(value)
+                                object.id = Int64("\(key)_\(set.code!)_\(value)".hashValue)
                             }
                         }
                     }
@@ -132,16 +204,30 @@ class DatabaseMaintainer: NSObject {
         let request:NSFetchRequest<CMCard> = CMCard.fetchRequest() as! NSFetchRequest<CMCard>
         
         if let cards = try! CardMagus.sharedInstance.dataStack?.mainContext.fetch(request) {
-            for card in cards {
+            print("Updating cards: \(cards.count)")
+            var cachedLayouts = [CMLayout]()
+            var cachedColors = [CMColor]()
+            var cachedCardTypes = [CMCardType]()
+            var cachedRarities = [CMRarity]()
+            var cachedArtists = [CMArtist]()
+            var cachedWatermarks = [CMWatermark]()
+            var cachedBorders = [CMBorder]()
             
+            for card in cards {
                 // layout
                 if let layout = card.layout {
-                    let objectFinder = ["name": layout] as [String: AnyObject]
-                    if let object = CardMagus.sharedInstance.findOrCreateObject("CMLayout", objectFinder: objectFinder) as? CMLayout {
-                        object.name = layout
-                        card.layout = nil
+                    if let object = cachedLayouts.first(where: { $0.name == layout }) {
                         card.layout_ = object
+                    } else {
+                        let objectFinder = ["name": layout] as [String: AnyObject]
+                        if let object = CardMagus.sharedInstance.findOrCreateObject("CMLayout", objectFinder: objectFinder) as? CMLayout {
+                            object.name = layout
+                            card.layout_ = object
+                            cachedLayouts.append(object)
+                        }
                     }
+                    
+                    card.layout = nil
                 }
                 
                 // colors
@@ -150,18 +236,21 @@ class DatabaseMaintainer: NSObject {
                     
                     if let colorsArray = NSKeyedUnarchiver.unarchiveObject(with: colors as Data) as? [String] {
                         for color in colorsArray {
-                            let objectFinder = ["name": color] as [String: AnyObject]
-                            if let object = CardMagus.sharedInstance.findOrCreateObject("CMColor", objectFinder: objectFinder) as? CMColor {
-                                object.name = color
-                                let index = color.index(color.startIndex, offsetBy: 1)
-                                var prefix = color.substring(to: index)
-                                if color == "Blue" {
-                                    prefix = "U"
-                                }
-                                object.symbol = prefix
-                                
-                                
+                            if let object = cachedColors.first(where: { $0.name == color }) {
                                 colors_.add(object)
+                            } else {
+                                let objectFinder = ["name": color] as [String: AnyObject]
+                                if let object = CardMagus.sharedInstance.findOrCreateObject("CMColor", objectFinder: objectFinder) as? CMColor {
+                                    object.name = color
+                                    let index = color.index(color.startIndex, offsetBy: 1)
+                                    var prefix = color.substring(to: index)
+                                    if color == "Blue" {
+                                        prefix = "U"
+                                    }
+                                    object.symbol = prefix
+                                    colors_.add(object)
+                                    cachedColors.append(object)
+                                }
                             }
                         }
                     }
@@ -172,13 +261,29 @@ class DatabaseMaintainer: NSObject {
                 // colorIdentity
                 if let colorIdentity = card.colorIdentity {
                     let colorIdentities_ = card.mutableSetValue(forKey: "colorIdentities_")
-                        if let coloridentityArray = NSKeyedUnarchiver.unarchiveObject(with: colorIdentity as Data) as? [String] {
-                        
+                    
+                    if let coloridentityArray = NSKeyedUnarchiver.unarchiveObject(with: colorIdentity as Data) as? [String] {
                         for symbol in coloridentityArray {
-                            let objectFinder = ["symbol": symbol] as [String: AnyObject]
-                            if let object = CardMagus.sharedInstance.findOrCreateObject("CMColor", objectFinder: objectFinder) as? CMColor {
-                                object.symbol = symbol
+                            if let object = cachedColors.first(where: { $0.symbol == symbol }) {
                                 colorIdentities_.add(object)
+                            } else {
+                                let objectFinder = ["symbol": colorIdentity] as [String: AnyObject]
+                                if let object = CardMagus.sharedInstance.findOrCreateObject("CMColor", objectFinder: objectFinder) as? CMColor {
+                                    if symbol == "B" {
+                                        object.name = "Black"
+                                    } else if symbol == "U" {
+                                        object.name = "Blue"
+                                    } else if symbol == "G" {
+                                        object.name = "Green"
+                                    } else if symbol == "R" {
+                                        object.name = "Red"
+                                    } else if symbol == "W" {
+                                        object.name = "White"
+                                    }
+                                    object.symbol = symbol
+                                    colorIdentities_.add(object)
+                                    cachedColors.append(object)
+                                }
                             }
                         }
                     }
@@ -188,12 +293,18 @@ class DatabaseMaintainer: NSObject {
                 
                 // type
                 if let type = card.type {
-                    let objectFinder = ["name": type] as [String: AnyObject]
-                    if let object = CardMagus.sharedInstance.findOrCreateObject("CMCardType", objectFinder: objectFinder) as? CMCardType {
-                        object.name = type
-                        card.type = nil
+                    if let object = cachedCardTypes.first(where: { $0.name == type }) {
                         card.type_ = object
+                    } else {
+                        let objectFinder = ["name": type] as [String: AnyObject]
+                        if let object = CardMagus.sharedInstance.findOrCreateObject("CMCardType", objectFinder: objectFinder) as? CMCardType {
+                            object.name = type
+                            card.type_ = object
+                            cachedCardTypes.append(object)
+                        }
                     }
+                    
+                    card.type = nil
                 }
                 
                 // supertypes
@@ -202,10 +313,15 @@ class DatabaseMaintainer: NSObject {
                     
                     if let supertypesArray = NSKeyedUnarchiver.unarchiveObject(with: supertypes as Data) as? [String] {
                         for supertype in supertypesArray {
-                            let objectFinder = ["name": supertype] as [String: AnyObject]
-                            if let object = CardMagus.sharedInstance.findOrCreateObject("CMCardType", objectFinder: objectFinder) as? CMCardType {
-                                object.name = supertype
+                            if let object = cachedCardTypes.first(where: { $0.name == supertype }) {
                                 supertypes_.add(object)
+                            } else {
+                                let objectFinder = ["name": supertype] as [String: AnyObject]
+                                if let object = CardMagus.sharedInstance.findOrCreateObject("CMCardType", objectFinder: objectFinder) as? CMCardType {
+                                    object.name = supertype
+                                    supertypes_.add(object)
+                                    cachedCardTypes.append(object)
+                                }
                             }
                         }
                     }
@@ -219,10 +335,15 @@ class DatabaseMaintainer: NSObject {
                     
                     if let typesArray = NSKeyedUnarchiver.unarchiveObject(with: types as Data) as? [String] {
                         for type in typesArray {
-                            let objectFinder = ["name": type] as [String: AnyObject]
-                            if let object = CardMagus.sharedInstance.findOrCreateObject("CMCardType", objectFinder: objectFinder) as? CMCardType {
-                                object.name = type
+                            if let object = cachedCardTypes.first(where: { $0.name == type }) {
                                 types_.add(object)
+                            } else {
+                                let objectFinder = ["name": type] as [String: AnyObject]
+                                if let object = CardMagus.sharedInstance.findOrCreateObject("CMCardType", objectFinder: objectFinder) as? CMCardType {
+                                    object.name = type
+                                    types_.add(object)
+                                    cachedCardTypes.append(object)
+                                }
                             }
                         }
                     }
@@ -236,10 +357,15 @@ class DatabaseMaintainer: NSObject {
                     
                     if let subtypesArray = NSKeyedUnarchiver.unarchiveObject(with: subtypes as Data) as? [String] {
                         for subtype in subtypesArray {
-                            let objectFinder = ["name": subtype] as [String: AnyObject]
-                            if let object = CardMagus.sharedInstance.findOrCreateObject("CMCardType", objectFinder: objectFinder) as? CMCardType {
-                                object.name = subtype
+                            if let object = cachedCardTypes.first(where: { $0.name == subtype }) {
                                 subtypes_.add(object)
+                            } else {
+                                let objectFinder = ["name": subtype] as [String: AnyObject]
+                                if let object = CardMagus.sharedInstance.findOrCreateObject("CMCardType", objectFinder: objectFinder) as? CMCardType {
+                                    object.name = subtype
+                                    subtypes_.add(object)
+                                    cachedCardTypes.append(object)
+                                }
                             }
                         }
                     }
@@ -249,42 +375,66 @@ class DatabaseMaintainer: NSObject {
                 
                 // rarity
                 if let rarity = card.rarity {
-                    let objectFinder = ["name": rarity] as [String: AnyObject]
-                    if let object = CardMagus.sharedInstance.findOrCreateObject("CMRarity", objectFinder: objectFinder) as? CMRarity {
-                        object.name = rarity
-                        card.rarity = nil
+                    if let object = cachedRarities.first(where: { $0.name == rarity }) {
                         card.rarity_ = object
+                    } else {
+                        let objectFinder = ["name": rarity] as [String: AnyObject]
+                        if let object = CardMagus.sharedInstance.findOrCreateObject("CMRarity", objectFinder: objectFinder) as? CMRarity {
+                            object.name = rarity
+                            card.rarity_ = object
+                            cachedRarities.append(object)
+                        }
                     }
+                    
+                    card.rarity = nil
                 }
                 
                 // artist
                 if let artist = card.artist {
-                    let objectFinder = ["name": artist] as [String: AnyObject]
-                    if let object = CardMagus.sharedInstance.findOrCreateObject("CMArtist", objectFinder: objectFinder) as? CMArtist {
-                        object.name = artist
-                        card.artist = nil
+                    if let object = cachedArtists.first(where: { $0.name == artist }) {
                         card.artist_ = object
+                    } else {
+                        let objectFinder = ["name": artist] as [String: AnyObject]
+                        if let object = CardMagus.sharedInstance.findOrCreateObject("CMArtist", objectFinder: objectFinder) as? CMArtist {
+                            object.name = artist
+                            card.artist_ = object
+                            cachedArtists.append(object)
+                        }
                     }
+                    
+                    card.artist = nil
                 }
                 
                 // watermark
                 if let watermark = card.watermark {
-                    let objectFinder = ["name": watermark] as [String: AnyObject]
-                    if let object = CardMagus.sharedInstance.findOrCreateObject("CMWatermark", objectFinder: objectFinder) as? CMWatermark {
-                        object.name = watermark
-                        card.watermark = nil
+                    if let object = cachedWatermarks.first(where: { $0.name == watermark }) {
                         card.watermark_ = object
+                    } else {
+                        let objectFinder = ["name": watermark] as [String: AnyObject]
+                        if let object = CardMagus.sharedInstance.findOrCreateObject("CMWatermark", objectFinder: objectFinder) as? CMWatermark {
+                            object.name = watermark
+                            card.watermark_ = object
+                            cachedWatermarks.append(object)
+                        }
                     }
+                    
+                    card.watermark = nil
                 }
                 
                 // border
                 if let border = card.border {
-                    let objectFinder = ["name": border] as [String: AnyObject]
-                    if let object = CardMagus.sharedInstance.findOrCreateObject("CMBorder", objectFinder: objectFinder) as? CMBorder {
-                        object.name = border
-                        card.border = nil
+                    if let object = cachedBorders.first(where: { $0.name == border }) {
                         card.border_ = object
+                    } else {
+                        let objectFinder = ["name": border] as [String: AnyObject]
+                        if let object = CardMagus.sharedInstance.findOrCreateObject("CMBorder", objectFinder: objectFinder) as? CMBorder {
+                            object.name = border
+                            card.border_ = object
+                            cachedBorders.append(object)
+                        }
                     }
+                    
+                    card.border = nil
                 }
                 
                 try! CardMagus.sharedInstance.dataStack?.mainContext.save()
@@ -292,41 +442,86 @@ class DatabaseMaintainer: NSObject {
         }
     }
 
-    func updateExtraInfo() {
-
+    func updateVariations() {
         let request:NSFetchRequest<CMCard> = CMCard.fetchRequest() as! NSFetchRequest<CMCard>
+        let predicate = NSPredicate(format: "variations != nil")
+        let sortDescriptors = [NSSortDescriptor(key: "set.releaseDate", ascending: true),
+                               NSSortDescriptor(key: "name", ascending: true)]
+        request.predicate = predicate
+        request.sortDescriptors = sortDescriptors
         
         if let cards = try! CardMagus.sharedInstance.dataStack?.mainContext.fetch(request) {
+            print("Updating variations: \(cards.count)")
+            
             for card in cards {
-                let code = card.set?.code ?? ""
-                print("\(card.name!) - (\(code))")
-        
-                // variations
                 if let variations = card.variations {
                     let variations_ = card.mutableSetValue(forKey: "variations_")
                     
                     if let variationsArray = NSKeyedUnarchiver.unarchiveObject(with: variations as Data) as? [Int] {
                         for variation in variationsArray {
-                            let objectFinder = ["multiverseid": variation] as [String: AnyObject]
-                            if let object = CardMagus.sharedInstance.findOrCreateObject("CMCard", objectFinder: objectFinder) as? CMCard {
+                            if let object = cards.first(where: { $0.multiverseid == Int64(variation) }) {
                                 variations_.add(object)
                             }
                         }
                     }
                     
                     card.variations = nil
+                    try! CardMagus.sharedInstance.dataStack?.mainContext.save()
                 }
-                
-                // rulings
+            }
+        }
+    }
+
+    func updatePrintings() {
+        let setRequest:NSFetchRequest<CMSet> = CMSet.fetchRequest() as! NSFetchRequest<CMSet>
+        let cardRequest:NSFetchRequest<CMCard> = CMCard.fetchRequest() as! NSFetchRequest<CMCard>
+        let predicate = NSPredicate(format: "printings != nil")
+        let sortDescriptors = [NSSortDescriptor(key: "set.releaseDate", ascending: true),
+                               NSSortDescriptor(key: "name", ascending: true)]
+        cardRequest.predicate = predicate
+        cardRequest.sortDescriptors = sortDescriptors
+        
+        if let cards = try! CardMagus.sharedInstance.dataStack?.mainContext.fetch(cardRequest),
+            let sets = try! CardMagus.sharedInstance.dataStack?.mainContext.fetch(setRequest) {
+            print("Updating printings: \(cards.count)")
+            
+            for card in cards {
+                if let printings = card.printings {
+                    let printings_ = card.mutableSetValue(forKey: "printings_")
+                    
+                    if let printingsArray = NSKeyedUnarchiver.unarchiveObject(with: printings as Data) as? [String] {
+                        for printing in printingsArray {
+                            if let object = sets.first(where: { $0.code == printing }) {
+                                printings_.add(object)
+                            }
+                        }
+                    }
+                    
+                    card.printings = nil
+                    try! CardMagus.sharedInstance.dataStack?.mainContext.save()
+                }
+            }
+        }
+    }
+
+    func updateRulings() {
+        let request:NSFetchRequest<CMCard> = CMCard.fetchRequest() as! NSFetchRequest<CMCard>
+        let predicate = NSPredicate(format: "rulings != nil")
+        let sortDescriptors = [NSSortDescriptor(key: "set.releaseDate", ascending: true),
+                               NSSortDescriptor(key: "name", ascending: true)]
+        request.predicate = predicate
+        request.sortDescriptors = sortDescriptors
+        
+        if let cards = try! CardMagus.sharedInstance.dataStack?.mainContext.fetch(request) {
+            print("Updating rulings: \(cards.count)")
+            
+            for card in cards {
                 if let rulings = card.rulings {
                     let rulings_ = card.mutableSetValue(forKey: "rulings_")
                     
                     if let rulingsArray = NSKeyedUnarchiver.unarchiveObject(with: rulings as Data) as? [[String: AnyObject]] {
                         for ruling in rulingsArray {
-                            let objectFinder = ["date": ruling["date"] as? String,
-                                                "text": ruling["text"] as? String,
-                                                "card.id": card.id!] as [String: AnyObject]
-                            if let object = CardMagus.sharedInstance.findOrCreateObject("CMRuling", objectFinder: objectFinder) as? CMRuling {
+                            if let object = CardMagus.sharedInstance.findOrCreateObject("CMRuling", objectFinder: nil) as? CMRuling {
                                 object.date = ruling["date"] as? String
                                 object.text = ruling["text"] as? String
                                 object.card = card
@@ -337,25 +532,45 @@ class DatabaseMaintainer: NSObject {
                     }
                     
                     card.rulings = nil
+                    try! CardMagus.sharedInstance.dataStack?.mainContext.save()
                 }
-                
-                // foreignNames
+            }
+        }
+    }
+    
+    func updateForeignNames() {
+        let request:NSFetchRequest<CMCard> = CMCard.fetchRequest() as! NSFetchRequest<CMCard>
+        let predicate = NSPredicate(format: "foreignNames != nil")
+        let sortDescriptors = [NSSortDescriptor(key: "set.releaseDate", ascending: true),
+                               NSSortDescriptor(key: "name", ascending: true)]
+        request.predicate = predicate
+        request.sortDescriptors = sortDescriptors
+        
+        if let cards = try! CardMagus.sharedInstance.dataStack?.mainContext.fetch(request) {
+            print("Updating foreign names: \(cards.count)")
+            var cachedLanguages = [CMLanguage]()
+            
+            for card in cards {
                 if let foreignNames = card.foreignNames {
                     let foreignNames_ = card.mutableSetValue(forKey: "foreignNames_")
                     
                     if let foreignNamesArray = NSKeyedUnarchiver.unarchiveObject(with: foreignNames as Data) as? [[String: AnyObject]] {
                         for foreignName in foreignNamesArray {
-                            var objectFinder = ["name": foreignName["language"]] as [String: AnyObject]
                             var language:CMLanguage?
-                            if let object = CardMagus.sharedInstance.findOrCreateObject("CMLanguage", objectFinder: objectFinder) as? CMLanguage {
+                            let name = foreignName["language"] as! String
+                            
+                            if let object = cachedLanguages.first(where: { $0.name == name }) {
                                 language = object
-                                language!.name = foreignName["language"] as? String
+                            } else {
+                                let objectFinder = ["name": name] as [String: AnyObject]
+                                if let object = CardMagus.sharedInstance.findOrCreateObject("CMLanguage", objectFinder: objectFinder) as? CMLanguage {
+                                    object.name = name
+                                    language = object
+                                    cachedLanguages.append(language!)
+                                }
                             }
                             
-                            objectFinder = ["name": foreignName["name"],
-                                            "multiverseid": foreignName["multiverseid"],
-                                            "language": language!] as [String: AnyObject]
-                            if let object = CardMagus.sharedInstance.findOrCreateObject("CMForeignName", objectFinder: objectFinder) as? CMForeignName {
+                            if let object = CardMagus.sharedInstance.findOrCreateObject("CMForeignName", objectFinder: nil) as? CMForeignName {
                                 object.name = foreignName["name"] as? String
                                 object.language = language
                                 object.card = card
@@ -372,49 +587,59 @@ class DatabaseMaintainer: NSObject {
                     }
                     
                     card.foreignNames = nil
+                    try! CardMagus.sharedInstance.dataStack?.mainContext.save()
                 }
-
-                // printings
-                if let printings = card.printings {
-                    let printings_ = card.mutableSetValue(forKey: "printings_")
-                    
-                    if let printingsArray = NSKeyedUnarchiver.unarchiveObject(with: printings as Data) as? [String] {
-                        for printing in printingsArray {
-                            let objectFinder = ["code": printing] as [String: AnyObject]
-                            if let object = CardMagus.sharedInstance.findOrCreateObject("CMSet", objectFinder: objectFinder) as? CMSet {
-                                printings_.add(object)
-                            }
-                        }
-                    }
-                    
-                    card.printings = nil
-                }
-                
-                // legalities
+            }
+        }
+    }
+    
+    func updateLegalities() {
+        let request:NSFetchRequest<CMCard> = CMCard.fetchRequest() as! NSFetchRequest<CMCard>
+        let predicate = NSPredicate(format: "legalities != nil")
+        let sortDescriptors = [NSSortDescriptor(key: "set.releaseDate", ascending: true),
+                               NSSortDescriptor(key: "name", ascending: true)]
+        request.predicate = predicate
+        request.sortDescriptors = sortDescriptors
+        
+        if let cards = try! CardMagus.sharedInstance.dataStack?.mainContext.fetch(request) {
+            print("Updating legalities: \(cards.count)")
+            var cachedFormats = [CMFormat]()
+            var cachedLegalities = [CMLegality]()
+            
+            for card in cards {
                 if let legalities = card.legalities {
                     let legalities_ = card.mutableSetValue(forKey: "cardLegalities_")
                     
                     if let legalitiesArray = NSKeyedUnarchiver.unarchiveObject(with: legalities as Data) as? [[String: AnyObject]] {
                         for legality in legalitiesArray {
+                            let formatName = legality["format"] as! String
+                            let legalName = legality["legality"] as! String
                             var format:CMFormat?
                             var legal:CMLegality?
                             
-                            var objectFinder = ["name": legality["format"]] as [String: AnyObject]
-                            if let object = CardMagus.sharedInstance.findOrCreateObject("CMFormat", objectFinder: objectFinder) as? CMFormat {
+                            if let object = cachedFormats.first(where: { $0.name == formatName }) {
                                 format = object
-                                format!.name = legality["format"] as? String
+                            } else {
+                                let objectFinder = ["name": formatName] as [String: AnyObject]
+                                if let object = CardMagus.sharedInstance.findOrCreateObject("CMFormat", objectFinder: objectFinder) as? CMFormat {
+                                    object.name = formatName
+                                    format = object
+                                    cachedFormats.append(format!)
+                                }
                             }
                             
-                            objectFinder = ["name": legality["legality"]] as [String: AnyObject]
-                            if let object = CardMagus.sharedInstance.findOrCreateObject("CMLegality", objectFinder: objectFinder) as? CMLegality {
+                            if let object = cachedLegalities.first(where: { $0.name == legalName }) {
                                 legal = object
-                                legal!.name = legality["legality"] as? String
+                            } else {
+                                let objectFinder = ["name": legalName] as [String: AnyObject]
+                                if let object = CardMagus.sharedInstance.findOrCreateObject("CMLegality", objectFinder: objectFinder) as? CMLegality {
+                                    object.name = legalName
+                                    legal = object
+                                    cachedLegalities.append(legal!)
+                                }
                             }
                             
-                            objectFinder = ["format": format!,
-                                            "legality": legal!,
-                                            "card": card] as [String: AnyObject]
-                            if let object = CardMagus.sharedInstance.findOrCreateObject("CMCardLegality", objectFinder: objectFinder) as? CMCardLegality {
+                            if let object = CardMagus.sharedInstance.findOrCreateObject("CMCardLegality", objectFinder: nil) as? CMCardLegality {
                                 object.format = format
                                 object.legality = legal
                                 object.card = card
@@ -425,31 +650,125 @@ class DatabaseMaintainer: NSObject {
                     }
                     
                     card.legalities = nil
+                    try! CardMagus.sharedInstance.dataStack?.mainContext.save()
                 }
             }
         }
     }
     
-    // MARK: private methods
+    func updateMCINumbers() {
+        let dateStart = Date()
+        
+        let request:NSFetchRequest<CMCard> = CMCard.fetchRequest() as! NSFetchRequest<CMCard>
+        let predicate = NSPredicate(format: "mciNumber == nil AND number == nil")
+        let sortDescriptors = [NSSortDescriptor(key: "set.releaseDate", ascending: true),
+                               NSSortDescriptor(key: "name", ascending: true)]
+        request.predicate = predicate
+        request.sortDescriptors = sortDescriptors
+        
+        if let cards = try! CardMagus.sharedInstance.dataStack?.mainContext.fetch(request) {
+            print("Updating mciNumbers: \(cards.count)")
+            var cachedMCISets = [String: [[String: Any]]]()
+            
+            for card in cards {
+                var array:[[String: Any]]?
+
+                if let a = cachedMCISets[card.set!.code!]  {
+                    array = a
+                } else {
+                    if let set = card.set {
+                        if let code = set.magicCardsInfoCode ?? set.code {
+                            if let url = URL(string: "http://magiccards.info/\(code)/en.html") {
+                                if let htmlDoc = HTML(url: url, encoding: .utf8) {
+                                    array = [[String: Any]]()
+                                    
+                                    // Search for nodes by XPath
+                                    for tr in htmlDoc.xpath("//tr[@class='even']") {
+                                        if let number = tr.xpath("td")[0].text,
+                                            let name = tr.xpath("td")[1].text {
+                                            array!.append(["name": name.replacingOccurrences(of: "Æ", with: "Ae")
+                                                                       .replacingOccurrences(of: "æ", with: "ae"),
+                                                           "number": number])
+                                        }
+                                    }
+                                    for tr in htmlDoc.xpath("//tr[@class='odd']") {
+                                        if let number = tr.xpath("td")[0].text,
+                                            let name = tr.xpath("td")[1].text {
+                                            array!.append(["name": name.replacingOccurrences(of: "Æ", with: "Ae")
+                                                                       .replacingOccurrences(of: "æ", with: "ae"),
+                                                           "number": number])
+                                        }
+                                    }
+                                    
+                                    cachedMCISets[card.set!.code!] = array
+                                }
+                            }
+                        }
+                    }
+                }
+
+                var index = 0
+                if let array = array {
+                    for a in array {
+                        if let name = a["name"] as? String,
+                            let number = a["number"] as? String {
+                            if name == card.name {
+                                card.mciNumber = number
+                                try! CardMagus.sharedInstance.dataStack?.mainContext.save()
+                                break
+                            }
+                        }
+                        index += 1
+                    }
+                }
+                
+                if array != nil {
+                    if index < array!.count {
+                        array!.remove(at: index)
+                        cachedMCISets[card.set!.code!] = array
+                    }
+                    
+//                    if array!.count == 0 {
+//                        cachedMCISets[card.set!.code!] = nil
+//                    }
+                }
+            }
+        }
+        
+        let dateEnd = Date()
+        let timeDifference = dateEnd.timeIntervalSince(dateStart)
+        print("Total Time Elapsed: \(dateStart) - \(dateEnd) = \(self.format(timeDifference))")
+        print("docsPath = \(NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0])")
+    }
+    
+    // MARK: Custom methods
     func changeNotification(_ notification: Notification) {
         if let updatedObjects = notification.userInfo?[NSUpdatedObjectsKey] {
-            print("updatedObjects: \((updatedObjects as AnyObject).count!)")
+            if let set = updatedObjects as? NSSet {
+                print("updatedObjects: \(set.count)")
+            }
         }
         if let deletedObjects = notification.userInfo?[NSDeletedObjectsKey] {
-            print("deletedObjects: \((deletedObjects as AnyObject).count!)")
+            if let set = deletedObjects as? NSSet {
+                print("deletedObjects: \(set.count)")
+            }
         }
         if let insertedObjects = notification.userInfo?[NSInsertedObjectsKey] {
-            print("insertedObjects: \((insertedObjects as AnyObject).count!)")
+            if let set = insertedObjects as? NSSet {
+                print("insertedObjects: \(set.count)")
+            }
         }
     }
     
-    func setupDataStack() {
-        guard let bundleURL = Bundle(for: CardMagus.self).url(forResource: "CardMagusKit", withExtension: "bundle") else { return }
-        guard let frameworkBundle = Bundle(url: bundleURL) else { return }
-        guard let momURL = frameworkBundle.url(forResource: "Card Magus", withExtension: "momd") else { return }
-        guard let objectModel = NSManagedObjectModel(contentsOf: momURL) else { return }
-        let dataStack = DATAStack(model: objectModel, storeType: .sqLite)
+    func format(_ interval: TimeInterval) -> String {
         
-        CardMagus.sharedInstance.dataStack = dataStack
+        if interval == 0 {
+            return "HH:mm:ss"
+        }
+        
+        let seconds = interval.truncatingRemainder(dividingBy: 60)
+        let minutes = (interval / 60).truncatingRemainder(dividingBy: 60)
+        let hours = (interval / 3600)
+        return String(format: "%.2d:%.2d:%.2d", Int(hours), Int(minutes), Int(seconds))
     }
 }

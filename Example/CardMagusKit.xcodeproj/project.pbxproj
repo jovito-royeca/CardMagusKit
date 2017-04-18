@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		118E17E21EA4BF300078E7DC /* SetsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118E17E01EA4BF300078E7DC /* SetsViewController.swift */; };
+		118E17E31EA4BF300078E7DC /* SetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118E17E11EA4BF300078E7DC /* SetViewController.swift */; };
+		118E17E51EA4BF380078E7DC /* DatabaseMaintainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118E17E41EA4BF380078E7DC /* DatabaseMaintainer.swift */; };
 		11EC4BC41E9DF0EC00500E2B /* data in Resources */ = {isa = PBXBuildFile; fileRef = 11EC4BC31E9DF0EC00500E2B /* data */; };
 		11EC4BC51E9DF0EC00500E2B /* data in Resources */ = {isa = PBXBuildFile; fileRef = 11EC4BC31E9DF0EC00500E2B /* data */; };
-		11EC4BC81E9DF67700500E2B /* DatabaseMaintainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EC4BC71E9DF67700500E2B /* DatabaseMaintainer.swift */; };
-		11EC4BC91E9DF67700500E2B /* DatabaseMaintainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EC4BC71E9DF67700500E2B /* DatabaseMaintainer.swift */; };
 		1851308A51303034761BF563 /* Pods_CardMagusKit_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7764D76179B13AA89C0718BD /* Pods_CardMagusKit_Tests.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
-		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
@@ -32,8 +32,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		118E17E01EA4BF300078E7DC /* SetsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetsViewController.swift; sourceTree = "<group>"; };
+		118E17E11EA4BF300078E7DC /* SetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetViewController.swift; sourceTree = "<group>"; };
+		118E17E41EA4BF380078E7DC /* DatabaseMaintainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseMaintainer.swift; sourceTree = "<group>"; };
+		118E17FF1EA59D2F0078E7DC /* CardMagusKit_Example-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CardMagusKit_Example-Bridging-Header.h"; sourceTree = "<group>"; };
+		118E18001EA59D2F0078E7DC /* CardMagusKit_Tests-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CardMagusKit_Tests-Bridging-Header.h"; sourceTree = "<group>"; };
 		11EC4BC31E9DF0EC00500E2B /* data */ = {isa = PBXFileReference; lastKnownFileType = folder; path = data; sourceTree = "<group>"; };
-		11EC4BC71E9DF67700500E2B /* DatabaseMaintainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseMaintainer.swift; sourceTree = "<group>"; };
 		1415460ACD9B30E912DE02C4 /* CardMagusKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = CardMagusKit.podspec; path = ../CardMagusKit.podspec; sourceTree = "<group>"; };
 		1ED29889080A776CF4E5FEBE /* Pods-CardMagusKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CardMagusKit_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CardMagusKit_Tests/Pods-CardMagusKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		1ED50F38CC96A0F7147138E6 /* Pods-CardMagusKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CardMagusKit_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CardMagusKit_Tests/Pods-CardMagusKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -42,7 +46,6 @@
 		607FACD01AFB9204008FA782 /* CardMagusKit_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CardMagusKit_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		607FACD71AFB9204008FA782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -75,10 +78,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		11E696EB1EA21F8500E38402 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				118E17E01EA4BF300078E7DC /* SetsViewController.swift */,
+				118E17E11EA4BF300078E7DC /* SetViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		11E696F11EA2405100E38402 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
+				607FACD91AFB9204008FA782 /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		11EC4BC61E9DF64300500E2B /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				11EC4BC71E9DF67700500E2B /* DatabaseMaintainer.swift */,
+				118E17E41EA4BF380078E7DC /* DatabaseMaintainer.swift */,
 			);
 			name = Utilities;
 			sourceTree = "<group>";
@@ -108,13 +129,12 @@
 			isa = PBXGroup;
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
+				11E696EB1EA21F8500E38402 /* Controller */,
 				11EC4BC31E9DF0EC00500E2B /* data */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
-				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
-				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
 				11EC4BC61E9DF64300500E2B /* Utilities */,
-				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				11E696F11EA2405100E38402 /* View */,
 			);
 			name = "Example for CardMagusKit";
 			path = CardMagusKit;
@@ -123,6 +143,8 @@
 		607FACD31AFB9204008FA782 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				118E17FF1EA59D2F0078E7DC /* CardMagusKit_Example-Bridging-Header.h */,
+				118E18001EA59D2F0078E7DC /* CardMagusKit_Tests-Bridging-Header.h */,
 				607FACD41AFB9204008FA782 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -354,7 +376,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		FD728DC0BC97278A5E0F747A /* [CP] Check Pods Manifest.lock */ = {
@@ -369,7 +391,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -379,9 +401,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				118E17E51EA4BF380078E7DC /* DatabaseMaintainer.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
-				11EC4BC81E9DF67700500E2B /* DatabaseMaintainer.swift in Sources */,
+				118E17E31EA4BF300078E7DC /* SetViewController.swift in Sources */,
+				118E17E21EA4BF300078E7DC /* SetsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -389,7 +412,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11EC4BC91E9DF67700500E2B /* DatabaseMaintainer.swift in Sources */,
 				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -516,12 +538,15 @@
 			baseConfigurationReference = EC877926D063E0F372B9D199 /* Pods-CardMagusKit_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = CardMagusKit/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CardMagusKit/CardMagusKit_Example-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -531,12 +556,14 @@
 			baseConfigurationReference = CED6B31FAFDD0092CC7FDE0D /* Pods-CardMagusKit_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = CardMagusKit/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CardMagusKit/CardMagusKit_Example-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -545,6 +572,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1ED29889080A776CF4E5FEBE /* Pods-CardMagusKit_Tests.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -557,6 +585,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CardMagusKit/CardMagusKit_Tests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -565,6 +595,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1ED50F38CC96A0F7147138E6 /* Pods-CardMagusKit_Tests.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -573,6 +604,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CardMagusKit/CardMagusKit_Tests-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

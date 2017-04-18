@@ -2,7 +2,7 @@
 //  CMRuling+CoreDataProperties.swift
 //  Pods
 //
-//  Created by Jovito Royeca on 13/04/2017.
+//  Created by Jovito Royeca on 15/04/2017.
 //
 //
 
@@ -16,8 +16,8 @@ extension CMRuling {
         return NSFetchRequest<CMRuling>(entityName: "CMRuling") as! NSFetchRequest<NSFetchRequestResult>
     }
 
-    @NSManaged public var id: Int64
     @NSManaged public var date: String?
+    @NSManaged public var id: Int64
     @NSManaged public var text: String?
     @NSManaged public var card: CMCard?
 

@@ -1,6 +1,6 @@
 {
   "name": "CardMagusKit",
-  "version": "0.8.0",
+  "version": "0.8.2",
   "summary": "Core Data and utilities for Card Magus.",
   "description": "Core Data classes, database, and utilities for Card Magus.",
   "homepage": "https://github.com/jovito-royeca/CardMagusKit",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/jovito-royeca/CardMagusKit.git",
-    "tag": "0.8.0"
+    "tag": "0.8.2"
   },
   "social_media_url": "https://twitter.com/JovitoRoyeca",
   "platforms": {
@@ -26,13 +26,17 @@
       "CardMagusKit/Classes/**/*"
     ]
   },
+  "resources": "CardMagusKit/Assets/**/*",
   "frameworks": [
     "UIKit",
     "MapKit",
     "Sync",
     "DATASource",
     "DATAStack",
-    "Networking"
+    "Networking",
+    "ReachabilitySwift",
+    "SSZipArchive",
+    "Kanna"
   ],
   "dependencies": {
     "Sync": [
@@ -45,6 +49,15 @@
       "~> 6"
     ],
     "Networking": [
+
+    ],
+    "ReachabilitySwift": [
+
+    ],
+    "SSZipArchive": [
+
+    ],
+    "Kanna": [
 
     ]
   }
