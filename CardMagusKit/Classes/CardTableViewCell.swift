@@ -61,7 +61,7 @@ open class CardTableViewCell: UITableViewCell {
     open func updateDataDisplay() {
         if let card = card {
             // thumbnail image
-            thumbnailImage.image = CardMagus.sharedInstance.imageFromBundle("/images/cardback-crop-hq.jpg")
+            thumbnailImage.image = CardMagus.sharedInstance.imageFromCache("/images/cardback-crop-hq.jpg")
             CardMagus.sharedInstance.downloadCardImage(card, cropImage: true, completion: { (c: CMCard, image: UIImage?, croppedImage: UIImage?, error: NSError?) in
                 if error == nil {
                     if self.card == c {
@@ -121,13 +121,13 @@ open class CardTableViewCell: UITableViewCell {
                         imageName = "96.png"
                     }
                     
-                    var image = CardMagus.sharedInstance.imageFromBundle("/images/mana/\(mana)/\(imageName)")
+                    var image = CardMagus.sharedInstance.imageFromCache("/images/mana/\(mana)/\(imageName)")
                     
                     // fix for dual manas
                     if image == nil {
                         if mana.characters.count > 1 {
                             let reversedMana = String(mana.characters.reversed())
-                            image = CardMagus.sharedInstance.imageFromBundle("/images/mana/\(reversedMana)/\(imageName)")
+                            image = CardMagus.sharedInstance.imageFromCache("/images/mana/\(reversedMana)/\(imageName)")
                         }
                     }
                     
@@ -160,7 +160,7 @@ open class CardTableViewCell: UITableViewCell {
                     prefix = "C"
                 }
                 
-                rarityImage.image = CardMagus.sharedInstance.imageFromBundle("/images/set/\(set.code!)/\(prefix)/32.png")
+                rarityImage.image = CardMagus.sharedInstance.imageFromCache("/images/set/\(set.code!)/\(prefix)/32.png")
                 setLabel.text = set.name
             }
         }

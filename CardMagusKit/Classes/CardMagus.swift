@@ -41,16 +41,12 @@ open class CardMagus: NSObject {
     /*
      * Example path: "/images/set/2ED/C/48.png"
      */
-    open func imageFromBundle(_ path: String) -> UIImage? {
-        let lastPath = (path as NSString).lastPathComponent
-        let dir = path.replacingOccurrences(of: lastPath, with: "")
-        let array = lastPath.components(separatedBy: ".")
-        let resource = array.first
-        let type = array.last
+    open func imageFromCache(_ path: String) -> UIImage? {
+        if let cachePath = NSSearchPathForDirectoriesInDomains(.cachesDirectory, .userDomainMask, true).first {
+            return UIImage(contentsOfFile: "\(cachePath)/\(path)")
+        }
         
-        let bundle = Bundle(for: CardMagus.self)
-        guard let bundlePath = bundle.path(forResource: resource, ofType: type, inDirectory: dir) else { return nil }
-        return UIImage(contentsOfFile: bundlePath)
+        return nil
     }
     
     open func nibFromBundle(_ name: String) -> UINib {
@@ -61,33 +57,28 @@ open class CardMagus: NSObject {
     open func setupResources() {
         copyDatabaseFile()
         loadCustomFonts()
+        unpackImagess()
     }
     
     func copyDatabaseFile() {
-        var willCopy = true
-        var docsPath:String?
-        var sourcePath:String?
-        var targetPath:String?
-
-        // Check if we have old files
-        let bundleName = Bundle.main.infoDictionary?["CFBundleName"] as? String
         let bundle = Bundle(for: CardMagus.self)
-        docsPath = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first
-        sourcePath = bundle.path(forResource: "Card Magus.sqlite", ofType: "zip")
-        targetPath = "\(docsPath!)/\(bundleName!).sqlite"
-        willCopy = !FileManager.default.fileExists(atPath: targetPath!)
         
-        // Check if we saved the version number
-        if let version = UserDefaults.standard.object(forKey: kMTGJSONVersionKey) as? String {
-            willCopy = version != kMTGJSONVersion
-        }
-        
-        if willCopy {
-            if let bundleName = bundleName,
-                let docsPath = docsPath,
-                let sourcePath = sourcePath,
-                let targetPath = targetPath {
-                
+        if let docsPath = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first,
+            let sourcePath = bundle.path(forResource: "Card Magus.sqlite", ofType: "zip"),
+            let bundleName = Bundle.main.infoDictionary?["CFBundleName"] as? String {
+            
+            var willCopy = true
+
+            // Check if we have old files
+            let targetPath = "\(docsPath)/\(bundleName).sqlite"
+            willCopy = !FileManager.default.fileExists(atPath: targetPath)
+            
+            // Check if we saved the version number
+            if let version = UserDefaults.standard.object(forKey: kMTGJSONVersionKey) as? String {
+                willCopy = version != kMTGJSONVersion
+            }
+            
+            if willCopy {
                 // Remove old database files
                 for file in try! FileManager.default.contentsOfDirectory(atPath: docsPath) {
                     let path = "\(docsPath)/\(file)"
@@ -116,24 +107,8 @@ open class CardMagus: NSObject {
     }
     
     func loadCustomFonts() {
-//        if let docsPath = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first {
-//            let targetPath = "\(docsPath)/fonts"
-//        
-//            if !FileManager.default.fileExists(atPath: targetPath) {
-//                let bundle = Bundle(for: CardMagus.self)
-//                
-//                try! FileManager.default.createDirectory(atPath: targetPath, withIntermediateDirectories: true, attributes: nil)
-//                
-//                if let urls = bundle.urls(forResourcesWithExtension: "ttf", subdirectory: "fonts") {
-//                    for url in urls {
-//                        let targetFile = "\(targetPath)/\(url.lastPathComponent)"
-//                        try! FileManager.default.copyItem(at: url, to: URL(fileURLWithPath: targetFile))
-//                    }
-//                }
-//            }
-//        }
-        
         let bundle = Bundle(for: CardMagus.self)
+        
         if let urls = bundle.urls(forResourcesWithExtension: "ttf", subdirectory: "fonts") {
             for url in urls {
                 let data = try! Data(contentsOf: url)
@@ -149,6 +124,17 @@ open class CardMagus: NSObject {
                     }
                 }
             }
+        }
+    }
+    
+    func unpackImagess() {
+        let bundle = Bundle(for: CardMagus.self)
+        
+        if let cachePath = NSSearchPathForDirectoriesInDomains(.cachesDirectory, .userDomainMask, true).first,
+            let sourcePath = bundle.path(forResource: "images", ofType: "zip") {
+            
+            // Unzip
+            SSZipArchive.unzipFile(atPath: sourcePath, toDestination: cachePath)
         }
     }
     
