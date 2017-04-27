@@ -14,13 +14,11 @@
 		046528DD0E87EB8FCD422CA8012F5519 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = 01451CE1269D6C5E5666C6D1B5DE0DD1 /* unzip.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		04D7CAFDF6AC640AE728E869F99BBC25 /* CMSet+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28037C1528BEA8ECDE5BFA4CD5B6C189 /* CMSet+CoreDataProperties.swift */; };
 		055F591D4407EB744D1D6D248A893110 /* entropy.c in Sources */ = {isa = PBXBuildFile; fileRef = 94D0B4004179D6D633702B83F122DEB2 /* entropy.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		05CDA8A9351F052D9CD2D8D2C5D5DC33 /* CardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 113241F88FFA6269B7E7FE6C8A4F0AE9 /* CardTableViewCell.xib */; };
 		05FE85B73C9386FD5C9CD8EB349CBE39 /* ReachabilitySwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E5368441046AD966057364E89A7D3E81 /* ReachabilitySwift-dummy.m */; };
 		06097C7BA34504019630D5DD02F28958 /* Kanna-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 45ACF357DE7AB223F8FD07B34B0B1BFD /* Kanna-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		06611BADF9471D0201A9A0A84AF46A2E /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1960F768A0ACC25F6BF23969B17CAFD9 /* JSON.swift */; };
 		06828A027B9C0CD22467124EFEE7C72C /* Matrix Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5BE09536599CC67C82C7C5578764B25D /* Matrix Bold.ttf */; };
 		0739FC39DBDD02A3C7563AAEC59BB945 /* CMSet+CoreDataProperties.swift in Resources */ = {isa = PBXBuildFile; fileRef = 28037C1528BEA8ECDE5BFA4CD5B6C189 /* CMSet+CoreDataProperties.swift */; };
-		08A789D665954AEF84630FF33DEC21A0 /* CardTableViewCell.swift in Resources */ = {isa = PBXBuildFile; fileRef = 166B682F85D108BA7CA749117D62B592 /* CardTableViewCell.swift */; };
 		08D6589B8AC073479FDD99E94BD82694 /* ZipArchive.h in Headers */ = {isa = PBXBuildFile; fileRef = E303A4750107CB90AE4AB6545CF7068E /* ZipArchive.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0955CC20CFAAFA1633EC6113F59AEBE3 /* CardMagusKit-Swift.h in Resources */ = {isa = PBXBuildFile; fileRef = 2D00C4313C27A427C4B60E6085842785 /* CardMagusKit-Swift.h */; };
 		0A9731C4B346F2951DD34134E87E8307 /* DATASourceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F640A048D58388B7FC21909EAAAAB61 /* DATASourceDelegate.swift */; };
@@ -28,6 +26,10 @@
 		0DA5FA1F4C39730A023BE5EF649C541A /* NSManagedObjectContext+Sync.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F561A125C1891176C246E15C366F51C /* NSManagedObjectContext+Sync.swift */; };
 		10C1FE6E8D5D6350BE8A1FB3FD81C05D /* CMSet+CoreDataClass.swift in Resources */ = {isa = PBXBuildFile; fileRef = E171FCB543B0D37B96C5A254A1D08CE4 /* CMSet+CoreDataClass.swift */; };
 		10C767A41DC908FE61CDB5B5174A585D /* fileenc.h in Headers */ = {isa = PBXBuildFile; fileRef = 248A04F395D8217328FA571B19AF5427 /* fileenc.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		115385C11EB191CB0037BB51 /* CardMagus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115385C01EB191CB0037BB51 /* CardMagus.swift */; };
+		115385C31EB191DB0037BB51 /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115385C21EB191DB0037BB51 /* NetworkingManager.swift */; };
+		115385C61EB191F50037BB51 /* CardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115385C41EB191F50037BB51 /* CardTableViewCell.swift */; };
+		115385C71EB191F50037BB51 /* CardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 115385C51EB191F50037BB51 /* CardTableViewCell.xib */; };
 		11BF50CF0BBA1893D41AB75D8BFF1D7F /* DATASource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333B586386D40DEF540B6583501CE248 /* DATASource.swift */; };
 		15ADEF9EABB54F3D90352CA7E23D0B46 /* Pods-CardMagusKit_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BAF2EFB35CFDCCF104C4E2A952B4A364 /* Pods-CardMagusKit_Tests-dummy.m */; };
 		15F8EE6B3617E816D35997E3629A6FC9 /* CMSetType+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929FF1D2D93292CE13434E9DE5C62557 /* CMSetType+CoreDataClass.swift */; };
@@ -52,7 +54,6 @@
 		2F3823FED7CB4DBCD506E7897068249B /* libxmlHTMLNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0B91CBAD9CF8D89DB324F7319E7F8C /* libxmlHTMLNode.swift */; };
 		2FA6B1D0219BB92C9007ABCF155A99F9 /* CMSetBooster+CoreDataProperties.swift in Resources */ = {isa = PBXBuildFile; fileRef = B95169067BD0F0A3D5165C5B51737911 /* CMSetBooster+CoreDataProperties.swift */; };
 		2FF910575D2BEC3318D0C3F8DDAA619E /* SSZipCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 23722CB71A6BCE01BF75395F6806DE7F /* SSZipCommon.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		305AC771E0FE94708852ABA74E34E2FF /* CardTableViewCell.xib in Sources */ = {isa = PBXBuildFile; fileRef = 113241F88FFA6269B7E7FE6C8A4F0AE9 /* CardTableViewCell.xib */; };
 		3169E89A4B4034279EC3B2F12E480620 /* SSZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = 754ED23D687CFB0D1DD25D3D233BB652 /* SSZipArchive.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		328BCAD137250FD75E441A1627EF5EA2 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB96BBADEB54B7AE90506368C09DCD41 /* Reachability.swift */; };
 		329914B61ADCB32284E99C0DB0473A4D /* Networking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C7DE5E6ABF3D544F99EC8ED329DE20C /* Networking.framework */; };
@@ -78,8 +79,6 @@
 		48D4C394AA538403C08E943508BD5304 /* hmac.h in Headers */ = {isa = PBXBuildFile; fileRef = 52287B8C8780D47E623B294E02168DCE /* hmac.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		4B7552C51DCD2BE73B26839B4A4E557B /* CMFormat+CoreDataClass.swift in Resources */ = {isa = PBXBuildFile; fileRef = BF1743DE0E63DDF033A788EE4020E98F /* CMFormat+CoreDataClass.swift */; };
 		4BBA05918FF24DA70AF27D453A25DB03 /* pwd2key.h in Headers */ = {isa = PBXBuildFile; fileRef = 2EDFE46F80BE6300D2ADD5B9B9B0DF21 /* pwd2key.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		4C5796B9C7907AACE37B22EB1DC91659 /* CardMagus.swift in Resources */ = {isa = PBXBuildFile; fileRef = 51C9265E0CBEF1AE60C5B46D191B99DE /* CardMagus.swift */; };
-		4F4A65CA6CE8D69C3A4D41FBB6C1F849 /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B702C74D53FB6B68FD16FA5D81D22D92 /* NetworkingManager.swift */; };
 		50B71E822A78CEE0C222E3F44140B71B /* CMRarity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EC8DD4522D05702E2629F0ACEFB55C /* CMRarity+CoreDataProperties.swift */; };
 		5179C8BDEF6D1394C37E69D1B2F968A5 /* CMWatermark+CoreDataClass.swift in Resources */ = {isa = PBXBuildFile; fileRef = 9B412FF4755D8B9E15BB15BAAA4E4F9D /* CMWatermark+CoreDataClass.swift */; };
 		5378540C405417F936892F587BE7B7C7 /* images.zip in Resources */ = {isa = PBXBuildFile; fileRef = C7654EDD16D08881CA1B98344CAF9D7A /* images.zip */; };
@@ -175,7 +174,6 @@
 		B0A438859CC0A0916E23C776C2D5BF85 /* Card Magus.xcdatamodeld in Resources */ = {isa = PBXBuildFile; fileRef = 2E93B6507E8B9D0F3F4CFA93F08DE566 /* Card Magus.xcdatamodeld */; };
 		B0C43C72382CEE443669A09A7E3A31F0 /* Sync.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21F3C183F567B611A5C745092467FFE1 /* Sync.framework */; };
 		B10120C2BCB9DAB9B9B15A573E0831C5 /* CMRarity+CoreDataProperties.swift in Resources */ = {isa = PBXBuildFile; fileRef = 09EC8DD4522D05702E2629F0ACEFB55C /* CMRarity+CoreDataProperties.swift */; };
-		B2A2F78E1CDD6F6638F830F833B3C2DB /* NetworkingManager.swift in Resources */ = {isa = PBXBuildFile; fileRef = B702C74D53FB6B68FD16FA5D81D22D92 /* NetworkingManager.swift */; };
 		B40462EF002A832FC50CB30FA6E491DB /* CMLayout+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546821DD8D8DF7E0C2D2B6EB3573C055 /* CMLayout+CoreDataProperties.swift */; };
 		B5616AD1F90C8310D3803E885F4B25EC /* ReachabilitySwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B952F94280400446B8B2337C5610FD59 /* ReachabilitySwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B5B1D57D4D6185BB8413F98C9EDE56E4 /* NSManagedObject+PropertyMapperHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = 58701A1DF72865E0A043C07B4F3AF967 /* NSManagedObject+PropertyMapperHelpers.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -207,7 +205,6 @@
 		CEA5DB01FF8EAE643C14A781E1F6E8A6 /* CMCard+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2AA98D172C1D16AEE3392968C58444C /* CMCard+CoreDataProperties.swift */; };
 		CF81A9941721696064872D4453EA3933 /* belerensmallcaps-bold-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 31BE4930607B873E68E882A1D6DB8AF2 /* belerensmallcaps-bold-webfont.ttf */; };
 		CFEB51AC51AF04155FBF664D43B366D4 /* CMRuling+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2290B0272BD08541744A4267C77F2D6 /* CMRuling+CoreDataProperties.swift */; };
-		D0EDDC5E5C8E87BC6D01F22765D9BDC4 /* CardMagus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C9265E0CBEF1AE60C5B46D191B99DE /* CardMagus.swift */; };
 		D265F2C0ADA169C4B0BC7E6BF3F7188D /* Networking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6245BF0CA93BD9B4C4CD35ADE6EDD111 /* Networking.framework */; };
 		D46309EC76527D5356BF474610590AA2 /* DATAStack.h in Headers */ = {isa = PBXBuildFile; fileRef = CB5CC553FC3871D76B6A4EBCCDEFCD72 /* DATAStack.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D55369CDDBB5974A5D5AD81446D60A29 /* CMSetBooster+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95169067BD0F0A3D5165C5B51737911 /* CMSetBooster+CoreDataProperties.swift */; };
@@ -235,7 +232,6 @@
 		F14FA075C1C7C33FC49941CDBC1023ED /* CMFormat+CoreDataProperties.swift in Resources */ = {isa = PBXBuildFile; fileRef = 9E2006DC421C6F414D0CC18AF945CAE0 /* CMFormat+CoreDataProperties.swift */; };
 		F194154BA5B53E918A6DC81EA645CE05 /* Sync.h in Headers */ = {isa = PBXBuildFile; fileRef = 060E342B0CE952FBEBDDEDC41E30857B /* Sync.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F269C1ED1B7B03C225AB02B6B2C80219 /* zip.h in Headers */ = {isa = PBXBuildFile; fileRef = FD883F10BBF9347E0B58454C1D9DA00A /* zip.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		F331807CA55D051ABF1EE334109E4006 /* CardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166B682F85D108BA7CA749117D62B592 /* CardTableViewCell.swift */; };
 		F4392644DA0555AEB2D66D942B546C78 /* Kanna.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 981AC0B13A865AF94B142B134774FAE7 /* Kanna.framework */; };
 		F5AFB2B6F6E56C0E29D8D1B2DA7BE692 /* CMCard+CoreDataClass.swift in Resources */ = {isa = PBXBuildFile; fileRef = B17C4C08E95FE27A54184558562D9571 /* CMCard+CoreDataClass.swift */; };
 		F6D0777B1EEABFA28729C9D7CC755023 /* NSEntityDescription+Sync.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66752EF3908841D91EA7477777B9AE19 /* NSEntityDescription+Sync.swift */; };
@@ -438,12 +434,14 @@
 		0E0E3E253311D8D518CEDE2077888699 /* CardMagusKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CardMagusKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EC45D51C053D1B06C74E3B69215980D /* brg_types.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = brg_types.h; path = SSZipArchive/aes/brg_types.h; sourceTree = "<group>"; };
 		0F61AD82FC4D7467C0A7B19E8AE0ECA2 /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Sources/Response.swift; sourceTree = "<group>"; };
-		113241F88FFA6269B7E7FE6C8A4F0AE9 /* CardTableViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = CardTableViewCell.xib; sourceTree = "<group>"; };
+		115385C01EB191CB0037BB51 /* CardMagus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardMagus.swift; sourceTree = "<group>"; };
+		115385C21EB191DB0037BB51 /* NetworkingManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
+		115385C41EB191F50037BB51 /* CardTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardTableViewCell.swift; sourceTree = "<group>"; };
+		115385C51EB191F50037BB51 /* CardTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardTableViewCell.xib; sourceTree = "<group>"; };
 		11EC95BBD6E9768CD1C2B7E0CDD00563 /* Networking-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Networking-dummy.m"; sourceTree = "<group>"; };
 		12B92E5518905C1A3908FF235F0EA31A /* CMSetBooster+CoreDataClass.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "CMSetBooster+CoreDataClass.swift"; sourceTree = "<group>"; };
 		143AE79A4E588CF3AD764821BEEDD376 /* Kanna.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Kanna.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		14F75F334A09B4357A6487FA0D804274 /* Pods-CardMagusKit_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CardMagusKit_Example-dummy.m"; sourceTree = "<group>"; };
-		166B682F85D108BA7CA749117D62B592 /* CardTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CardTableViewCell.swift; sourceTree = "<group>"; };
 		1796FF3DD073DD03EF195592ECA989AF /* Sync.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Sync.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1911A4B2356EEA7AED38F80A7BC4886A /* NetworkActivityIndicator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkActivityIndicator.swift; path = Sources/NetworkActivityIndicator.swift; sourceTree = "<group>"; };
 		19297C360B0E155A32F677E2364CBF30 /* brg_endian.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = brg_endian.h; path = SSZipArchive/aes/brg_endian.h; sourceTree = "<group>"; };
@@ -498,7 +496,6 @@
 		4DA0CFEDD5951DE5B080D7A00DED53C1 /* Sync-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Sync-prefix.pch"; sourceTree = "<group>"; };
 		4EAE6BA014D0A539A9AFF2082388E71A /* CMBooster+CoreDataProperties.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "CMBooster+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		504EE9D33119FA76FACBFCE60BC2E728 /* Sync+NSPersistentContainer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Sync+NSPersistentContainer.swift"; path = "Source/Sync/Sync+NSPersistentContainer.swift"; sourceTree = "<group>"; };
-		51C9265E0CBEF1AE60C5B46D191B99DE /* CardMagus.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CardMagus.swift; sourceTree = "<group>"; };
 		52287B8C8780D47E623B294E02168DCE /* hmac.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = hmac.h; path = SSZipArchive/aes/hmac.h; sourceTree = "<group>"; };
 		52BF229AFCB366D270886FCA37313FCD /* ioapi.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ioapi.h; path = SSZipArchive/minizip/ioapi.h; sourceTree = "<group>"; };
 		52CB877DA63B231BC21E412067068A03 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -589,7 +586,6 @@
 		B5B725FF61AB9D195C4707CB475BCA0F /* CMCardLegality+CoreDataProperties.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "CMCardLegality+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		B5E51E3D5B43B523099DC3055AF0BDBB /* Pods-CardMagusKit_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CardMagusKit_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		B691114BB38075B554329512A13017DF /* ReachabilitySwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ReachabilitySwift.xcconfig; sourceTree = "<group>"; };
-		B702C74D53FB6B68FD16FA5D81D22D92 /* NetworkingManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
 		B8FF9B6964FA822F959643F15A4A37E4 /* PropertyMapper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PropertyMapper.m; path = Source/PropertyMapper/PropertyMapper.m; sourceTree = "<group>"; };
 		B95169067BD0F0A3D5165C5B51737911 /* CMSetBooster+CoreDataProperties.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "CMSetBooster+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		B952F94280400446B8B2337C5610FD59 /* ReachabilitySwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ReachabilitySwift-umbrella.h"; sourceTree = "<group>"; };
@@ -1047,10 +1043,10 @@
 		B9C4A16F6E8CEBFA938E6D5EAE9C7F18 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				51C9265E0CBEF1AE60C5B46D191B99DE /* CardMagus.swift */,
+				115385C01EB191CB0037BB51 /* CardMagus.swift */,
 				2D00C4313C27A427C4B60E6085842785 /* CardMagusKit-Swift.h */,
-				166B682F85D108BA7CA749117D62B592 /* CardTableViewCell.swift */,
-				113241F88FFA6269B7E7FE6C8A4F0AE9 /* CardTableViewCell.xib */,
+				115385C41EB191F50037BB51 /* CardTableViewCell.swift */,
+				115385C51EB191F50037BB51 /* CardTableViewCell.xib */,
 				C5FF83CCB0E7A855017CC75585D36613 /* CMArtist+CoreDataClass.swift */,
 				0B96EDCAF9822604D05CB35E0B7AF77B /* CMArtist+CoreDataProperties.swift */,
 				73EA6BC96DC1A62E4D07B4E9AC452B6A /* CMBlock+CoreDataClass.swift */,
@@ -1089,7 +1085,7 @@
 				C55230449A374A214375AAFACFCE3001 /* CMSetType+CoreDataProperties.swift */,
 				9B412FF4755D8B9E15BB15BAAA4E4F9D /* CMWatermark+CoreDataClass.swift */,
 				314851608097ADB624639CCBE6F0ECD2 /* CMWatermark+CoreDataProperties.swift */,
-				B702C74D53FB6B68FD16FA5D81D22D92 /* NetworkingManager.swift */,
+				115385C21EB191DB0037BB51 /* NetworkingManager.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -1674,6 +1670,7 @@
 				BCD133FAA64EDA8BA28AD40CAF32EC3C /* fonts in Resources */,
 				97BCD2DB7F3A94C544EFABDC75B98CAA /* Goudy Medieval.ttf in Resources */,
 				03F4CFF456957FB4C792F2CC23E99A6C /* images.zip in Resources */,
+				115385C71EB191F50037BB51 /* CardTableViewCell.xib in Resources */,
 				26A9009B260B4DBE7DF556BF0CFB8071 /* Matrix Bold.ttf in Resources */,
 				537C3E8A172733AFC3B34902920CE445 /* MPlantin.ttf in Resources */,
 			);
@@ -1687,10 +1684,7 @@
 				CF81A9941721696064872D4453EA3933 /* belerensmallcaps-bold-webfont.ttf in Resources */,
 				B7E7322A9B07BD7A30C346A6868AAC33 /* Card Magus.sqlite.zip in Resources */,
 				B0A438859CC0A0916E23C776C2D5BF85 /* Card Magus.xcdatamodeld in Resources */,
-				4C5796B9C7907AACE37B22EB1DC91659 /* CardMagus.swift in Resources */,
 				0955CC20CFAAFA1633EC6113F59AEBE3 /* CardMagusKit-Swift.h in Resources */,
-				08A789D665954AEF84630FF33DEC21A0 /* CardTableViewCell.swift in Resources */,
-				05CDA8A9351F052D9CD2D8D2C5D5DC33 /* CardTableViewCell.xib in Resources */,
 				9A0074005E45D611337AB8F26D9B1D45 /* CMArtist+CoreDataClass.swift in Resources */,
 				6DF09057EAA1684BFC7A3A1053C6A1EB /* CMArtist+CoreDataProperties.swift in Resources */,
 				61EB5EE22F34ED9986E071B1D1D30BE9 /* CMBlock+CoreDataClass.swift in Resources */,
@@ -1734,7 +1728,6 @@
 				5378540C405417F936892F587BE7B7C7 /* images.zip in Resources */,
 				06828A027B9C0CD22467124EFEE7C72C /* Matrix Bold.ttf in Resources */,
 				CCDECDF04F1F484C44E77563C5BA06E3 /* MPlantin.ttf in Resources */,
-				B2A2F78E1CDD6F6638F830F833B3C2DB /* NetworkingManager.swift in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1762,10 +1755,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0B74F6C7E0C3E96FA7D561DEA6BA21F5 /* Card Magus.xcdatamodeld in Sources */,
-				D0EDDC5E5C8E87BC6D01F22765D9BDC4 /* CardMagus.swift in Sources */,
 				5AF88A7EDC786E483B2B2ABEFF5EA667 /* CardMagusKit-dummy.m in Sources */,
-				F331807CA55D051ABF1EE334109E4006 /* CardTableViewCell.swift in Sources */,
-				305AC771E0FE94708852ABA74E34E2FF /* CardTableViewCell.xib in Sources */,
 				3DEE8CB60BBE42DA7E89E6F5716479D8 /* CMArtist+CoreDataClass.swift in Sources */,
 				BE6BC607B52837DB4426989B260352B2 /* CMArtist+CoreDataProperties.swift in Sources */,
 				6AE4C0021E425F63D695B8D2CB616608 /* CMBlock+CoreDataClass.swift in Sources */,
@@ -1777,6 +1767,8 @@
 				46DD5E3E9798765588311307A4360E02 /* CMCard+CoreDataClass.swift in Sources */,
 				CEA5DB01FF8EAE643C14A781E1F6E8A6 /* CMCard+CoreDataProperties.swift in Sources */,
 				B6262AE0F684E7634F74A47463650C21 /* CMCardLegality+CoreDataClass.swift in Sources */,
+				115385C11EB191CB0037BB51 /* CardMagus.swift in Sources */,
+				115385C61EB191F50037BB51 /* CardTableViewCell.swift in Sources */,
 				B90F4FB4FCBD4AD867EEA8E6D09F7B11 /* CMCardLegality+CoreDataProperties.swift in Sources */,
 				AA27B8361EAF421C90C37AEA617D8671 /* CMCardType+CoreDataClass.swift in Sources */,
 				45E37ECB8B5C71CBFD10515B56206589 /* CMCardType+CoreDataProperties.swift in Sources */,
@@ -1790,6 +1782,7 @@
 				A6E898CA8106AB0E7E89E43F6A504C9F /* CMLanguage+CoreDataProperties.swift in Sources */,
 				5EBC4ACAD911CD5A9339FF2F43652709 /* CMLayout+CoreDataClass.swift in Sources */,
 				B40462EF002A832FC50CB30FA6E491DB /* CMLayout+CoreDataProperties.swift in Sources */,
+				115385C31EB191DB0037BB51 /* NetworkingManager.swift in Sources */,
 				AE79B38DFE35898531DB71489AE75A18 /* CMLegality+CoreDataClass.swift in Sources */,
 				BC5F718880C87180DF090707C8BABFE5 /* CMLegality+CoreDataProperties.swift in Sources */,
 				D9BDCDF5A755AE65BC047949BB7AC951 /* CMRarity+CoreDataClass.swift in Sources */,
@@ -1804,7 +1797,6 @@
 				FD7E48468C739D6AD865ABA913D0D14F /* CMSetType+CoreDataProperties.swift in Sources */,
 				FD53F932309642B989F72E09F1A55021 /* CMWatermark+CoreDataClass.swift in Sources */,
 				02425E080BF37B0D7E538EA7CF4623FD /* CMWatermark+CoreDataProperties.swift in Sources */,
-				4F4A65CA6CE8D69C3A4D41FBB6C1F849 /* NetworkingManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -102,6 +102,7 @@ class DatabaseMaintainer: NSObject {
                                         timeDifference = dateEnd.timeIntervalSince(tmpDateStart)
                                         print("Time Elapsed: \(tmpDateStart) - \(dateEnd) = \(self.format(timeDifference))")
                                         
+                                        
                                         dateEnd = Date()
                                         timeDifference = dateEnd.timeIntervalSince(dateStart)
                                         print("Total Time Elapsed: \(dateStart) - \(dateEnd) = \(self.format(timeDifference))")
