@@ -164,7 +164,7 @@ open class CardTableViewCell: UITableViewCell {
                 var setText = ""
                 
                 if let name = set.name,
-                    let number = card.mciNumber ?? card.number,
+                    let number = card.number ?? card.mciNumber,
                     let cards = set.cards {
                     setText += "\(name) (No. \(number)/\(cards.allObjects.count))"
                 }
