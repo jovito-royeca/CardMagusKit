@@ -728,10 +728,6 @@ class DatabaseMaintainer: NSObject {
                         array!.remove(at: index)
                         cachedMCISets[card.set!.code!] = array
                     }
-                    
-//                    if array!.count == 0 {
-//                        cachedMCISets[card.set!.code!] = nil
-//                    }
                 }
             }
         }

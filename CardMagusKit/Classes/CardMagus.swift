@@ -14,6 +14,8 @@ import Sync
 
 public let kMTGJSONVersion      = "3.8.4"
 public let kMTGJSONVersionKey   = "kMTGJSONVersionKey"
+public let kImagesVersion       = kMTGJSONVersion
+public let kImagesVersionKey    = "kImagesVersionKey"
 public let kCardImageSource     = "http://magiccards.info"
 public let kEightEditionRelease = "2003-07-28"
 
@@ -128,13 +130,32 @@ open class CardMagus: NSObject {
     }
     
     func unpackImagess() {
-        let bundle = Bundle(for: CardMagus.self)
-        
-        if let cachePath = NSSearchPathForDirectoriesInDomains(.cachesDirectory, .userDomainMask, true).first,
-            let sourcePath = bundle.path(forResource: "images", ofType: "zip") {
+        if let cachePath = NSSearchPathForDirectoriesInDomains(.cachesDirectory, .userDomainMask, true).first {
+            var willCopy = true
             
-            // Unzip
-            SSZipArchive.unzipFile(atPath: sourcePath, toDestination: cachePath)
+            let targetPath = "\(cachePath)/images"
+            willCopy = !FileManager.default.fileExists(atPath: targetPath)
+            
+            // Check if we saved the version number
+            if let version = UserDefaults.standard.object(forKey: kImagesVersionKey) as? String {
+                willCopy = version != kImagesVersion
+            }
+            
+            if willCopy {
+                let bundle = Bundle(for: CardMagus.self)
+                
+                // Remove old images dir
+                try! FileManager.default.removeItem(atPath: targetPath)
+                
+                if let sourcePath = bundle.path(forResource: "images", ofType: "zip") {
+                    // Unzip
+                    try! SSZipArchive.unzipFile(atPath: sourcePath, toDestination: cachePath, overwrite: true, password: nil)
+                    
+                    // Save the version
+                    UserDefaults.standard.set(kImagesVersion, forKey: kImagesVersionKey)
+                    UserDefaults.standard.synchronize()
+                }
+            }
         }
     }
     

@@ -20,10 +20,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         print("docsPath = \(NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0])")
         
-        DatabaseMaintainer.sharedInstance.json2CoreData()
+//        DatabaseMaintainer.sharedInstance.json2CoreData()
 //        DatabaseMaintainer.sharedInstance.updateMCINumbers()
-//        CardMagus.sharedInstance.setupResources()
-        
+        CardMagus.sharedInstance.setupResources()
         
         return true
     }
