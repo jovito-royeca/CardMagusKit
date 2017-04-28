@@ -77,16 +77,23 @@ class SetsViewController: UIViewController {
         var filteredSets:[CMSet]?
         var request:NSFetchRequest<NSFetchRequestResult>?
         
+        dataSource = getDataSource(nil)
+        
         if let text = searchController.searchBar.text {
             let count = text.characters.count
             let sets = dataSource!.all() as! [CMSet]
             
             if count > 0 {
                 filteredSets = sets.filter({
+                    let nameLower = $0.name!.lowercased()
+                    let codeLower = $0.code!.lowercased()
+                    let textLower = text.lowercased()
+                    
                     if count == 1 {
-                        return $0.name!.lowercased().hasPrefix(text.lowercased())
+                        return nameLower.hasPrefix(textLower)
                     } else {
-                        return $0.name!.lowercased().contains(text.lowercased())
+                        return nameLower.range(of: textLower) != nil ||
+                            codeLower.hasPrefix(textLower)
                     }
                 })
             } else {
