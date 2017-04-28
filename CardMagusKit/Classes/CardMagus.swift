@@ -247,29 +247,31 @@ open class CardMagus: NSObject {
     open func crop(_ image: UIImage, ofCard card: CMCard) -> UIImage? {
         if let dir = NSSearchPathForDirectoriesInDomains(.cachesDirectory, .userDomainMask, true).first {
             let path = "\(dir)/crop/\(card.set!.code!)"
-            let number = card.number ?? card.mciNumber
-            let cropPath = "\(path)/\(number!)-crop.jpg"
             
-            if FileManager.default.fileExists(atPath: cropPath) {
-                return UIImage(contentsOfFile: cropPath)
-            } else {
-                let width = image.size.width * 3/4
-                let rect = CGRect(x: (image.size.width-width) / 2,
-                                  y: isModern(card) ? 45 : 40,
-                                  width: width,
-                                  height: width-60)
+            if let number = card.number ?? card.mciNumber {
+                let cropPath = "\(path)/\(number)-crop.jpg"
                 
-                let imageRef = image.cgImage!.cropping(to: rect)
-                let croppedImage = UIImage(cgImage: imageRef!, scale: image.scale, orientation: image.imageOrientation)
-                
-                
-                // write to file
-                if !FileManager.default.fileExists(atPath: path)  {
-                    try! FileManager.default.createDirectory(atPath: path, withIntermediateDirectories: true, attributes: nil)
+                if FileManager.default.fileExists(atPath: cropPath) {
+                    return UIImage(contentsOfFile: cropPath)
+                } else {
+                    let width = image.size.width * 3/4
+                    let rect = CGRect(x: (image.size.width-width) / 2,
+                                      y: isModern(card) ? 45 : 40,
+                                      width: width,
+                                      height: width-60)
+                    
+                    let imageRef = image.cgImage!.cropping(to: rect)
+                    let croppedImage = UIImage(cgImage: imageRef!, scale: image.scale, orientation: image.imageOrientation)
+                    
+                    
+                    // write to file
+                    if !FileManager.default.fileExists(atPath: path)  {
+                        try! FileManager.default.createDirectory(atPath: path, withIntermediateDirectories: true, attributes: nil)
+                    }
+                    try! UIImageJPEGRepresentation(croppedImage, 1.0)?.write(to: URL(fileURLWithPath: cropPath))
+                    
+                    return UIImage(contentsOfFile: cropPath)
                 }
-                try! UIImageJPEGRepresentation(croppedImage, 1.0)?.write(to: URL(fileURLWithPath: cropPath))
-                
-                return UIImage(contentsOfFile: cropPath)
             }
         }
         
