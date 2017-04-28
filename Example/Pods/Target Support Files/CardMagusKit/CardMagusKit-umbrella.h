@@ -10,7 +10,6 @@
 #endif
 #endif
 
-#import "CardMagusKit-Swift.h"
 
 FOUNDATION_EXPORT double CardMagusKitVersionNumber;
 FOUNDATION_EXPORT const unsigned char CardMagusKitVersionString[];
