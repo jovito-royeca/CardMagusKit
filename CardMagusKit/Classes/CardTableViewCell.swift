@@ -161,7 +161,14 @@ open class CardTableViewCell: UITableViewCell {
                 }
                 
                 rarityImage.image = CardMagus.sharedInstance.imageFromCache("/images/set/\(set.code!)/\(prefix)/32.png")
-                setLabel.text = set.name
+                var setText = ""
+                
+                if let name = set.name,
+                    let number = card.mciNumber ?? card.number,
+                    let cards = set.cards {
+                    setText += "\(name) (No. \(number)/\(cards.allObjects.count))"
+                }
+                setLabel.text = setText
             }
         }
     }
