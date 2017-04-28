@@ -61,6 +61,8 @@ class SetsViewController: UIViewController {
                     cell.imageView?.image = image
                 } else if let image = CardMagus.sharedInstance.imageFromCache("/images/set/\(set.code!)/R/32.png") {
                     cell.imageView?.image = image
+                } else if let image = CardMagus.sharedInstance.imageFromCache("/images/set/\(set.code!)/M/32.png") {
+                    cell.imageView?.image = image
                 } else if let image = CardMagus.sharedInstance.imageFromCache("/images/other/blank/32.png") {
                     cell.imageView?.image = image
                 }

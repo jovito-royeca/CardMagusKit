@@ -145,7 +145,9 @@ open class CardMagus: NSObject {
                 let bundle = Bundle(for: CardMagus.self)
                 
                 // Remove old images dir
-                try! FileManager.default.removeItem(atPath: targetPath)
+                if FileManager.default.fileExists(atPath: targetPath) {
+                    try! FileManager.default.removeItem(atPath: targetPath)
+                }
                 
                 if let sourcePath = bundle.path(forResource: "images", ofType: "zip") {
                     // Unzip

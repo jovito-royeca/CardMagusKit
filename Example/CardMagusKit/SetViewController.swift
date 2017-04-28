@@ -29,6 +29,15 @@ class SetViewController: UIViewController {
         dataSource = getDataSource(nil)
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showCard" {
+            if let dest = segue.destination as? CardViewController,
+                let card = sender as? CMCard {
+                    dest.card = card
+            }
+        }
+    }
+
     // MARK: Custom methods
     func getDataSource(_ fetchRequest: NSFetchRequest<NSFetchRequestResult>?) -> DATASource? {
         var request:NSFetchRequest<NSFetchRequestResult>?
@@ -58,6 +67,12 @@ class SetViewController: UIViewController {
 
 // MARK: UITableViewDelegate
 extension SetViewController : UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let cards = dataSource!.all()
+        let card = cards[indexPath.row]
+        performSegue(withIdentifier: "showCard", sender: card)
+    }
+    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return kCardTableViewCellHeight
     }

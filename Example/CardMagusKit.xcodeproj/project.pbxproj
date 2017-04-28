@@ -10,6 +10,8 @@
 		115385C91EB192210037BB51 /* DatabaseMaintainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115385C81EB192210037BB51 /* DatabaseMaintainer.swift */; };
 		115385CC1EB1922C0037BB51 /* SetsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115385CA1EB1922C0037BB51 /* SetsViewController.swift */; };
 		115385CD1EB1922C0037BB51 /* SetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115385CB1EB1922C0037BB51 /* SetViewController.swift */; };
+		115385CF1EB2FC720037BB51 /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115385CE1EB2FC720037BB51 /* CardViewController.swift */; };
+		115385D01EB2FC720037BB51 /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115385CE1EB2FC720037BB51 /* CardViewController.swift */; };
 		11EC4BC41E9DF0EC00500E2B /* data in Resources */ = {isa = PBXBuildFile; fileRef = 11EC4BC31E9DF0EC00500E2B /* data */; };
 		11EC4BC51E9DF0EC00500E2B /* data in Resources */ = {isa = PBXBuildFile; fileRef = 11EC4BC31E9DF0EC00500E2B /* data */; };
 		1851308A51303034761BF563 /* Pods_CardMagusKit_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7764D76179B13AA89C0718BD /* Pods_CardMagusKit_Tests.framework */; };
@@ -35,6 +37,7 @@
 		115385C81EB192210037BB51 /* DatabaseMaintainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseMaintainer.swift; sourceTree = "<group>"; };
 		115385CA1EB1922C0037BB51 /* SetsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetsViewController.swift; sourceTree = "<group>"; };
 		115385CB1EB1922C0037BB51 /* SetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetViewController.swift; sourceTree = "<group>"; };
+		115385CE1EB2FC720037BB51 /* CardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
 		118E17FF1EA59D2F0078E7DC /* CardMagusKit_Example-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CardMagusKit_Example-Bridging-Header.h"; sourceTree = "<group>"; };
 		118E18001EA59D2F0078E7DC /* CardMagusKit_Tests-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CardMagusKit_Tests-Bridging-Header.h"; sourceTree = "<group>"; };
 		11EC4BC31E9DF0EC00500E2B /* data */ = {isa = PBXFileReference; lastKnownFileType = folder; path = data; sourceTree = "<group>"; };
@@ -83,6 +86,7 @@
 			children = (
 				115385CA1EB1922C0037BB51 /* SetsViewController.swift */,
 				115385CB1EB1922C0037BB51 /* SetViewController.swift */,
+				115385CE1EB2FC720037BB51 /* CardViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -404,6 +408,7 @@
 				115385C91EB192210037BB51 /* DatabaseMaintainer.swift in Sources */,
 				115385CD1EB1922C0037BB51 /* SetViewController.swift in Sources */,
 				115385CC1EB1922C0037BB51 /* SetsViewController.swift in Sources */,
+				115385CF1EB2FC720037BB51 /* CardViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -412,6 +417,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				115385D01EB2FC720037BB51 /* CardViewController.swift in Sources */,
 				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
