@@ -48,20 +48,24 @@ extension CardViewController : UITableViewDataSource {
             if let c = tableView.dequeueReusableCell(withIdentifier: "ImageCell") {
                 if let imageView = c.viewWithTag(100) as? UIImageView,
                     let card = card {
-                    imageView.image = CardMagus.sharedInstance.imageFromCache("/images/cardback-hq.jpg")
                     c.backgroundColor = UIColor(patternImage: CardMagus.sharedInstance.imageFromCache("/images/Gray_Patterned_BG.jpg")!)
                     
-                    CardMagus.sharedInstance.downloadCardImage(card, cropImage: true, completion: { (c: CMCard, image: UIImage?, croppedImage: UIImage?, error: NSError?) in
-                        if error == nil {
-                            UIView.transition(with: imageView,
-                                              duration: 1.0,
-                                              options: .transitionFlipFromRight,
-                                              animations: {
-                                                imageView.image = image
-                                            },
-                                              completion: nil)
-                        }
-                    })
+                    if let cardImage = CardMagus.sharedInstance.cardImage(card) {
+                        imageView.image = cardImage
+                    } else {
+                        imageView.image = CardMagus.sharedInstance.imageFromCache("/images/cardback-hq.jpg")
+                        CardMagus.sharedInstance.downloadCardImage(card, cropImage: true, completion: { (c: CMCard, image: UIImage?, croppedImage: UIImage?, error: NSError?) in
+                            if error == nil {
+                                UIView.transition(with: imageView,
+                                                  duration: 1.0,
+                                                  options: .transitionFlipFromRight,
+                                                  animations: {
+                                                    imageView.image = image
+                                                },
+                                                  completion: nil)
+                            }
+                        })
+                    }
 
                 }
                 

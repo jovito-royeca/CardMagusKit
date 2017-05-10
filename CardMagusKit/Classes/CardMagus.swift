@@ -279,4 +279,28 @@ open class CardMagus: NSObject {
         
         return nil
     }
+    
+    open func cardImage(_ card: CMCard) -> UIImage? {
+        if let url = urlOfCard(card) {
+            return NetworkingManager.sharedInstance.localImageFromURL(url)
+        } else {
+            return nil
+        }
+    }
+    
+    open func croppedImage(_ card: CMCard) -> UIImage? {
+        if let dir = NSSearchPathForDirectoriesInDomains(.cachesDirectory, .userDomainMask, true).first {
+            let path = "\(dir)/crop/\(card.set!.code!)"
+            
+            if let number = card.number ?? card.mciNumber {
+                let cropPath = "\(path)/\(number)-crop.jpg"
+                
+                if FileManager.default.fileExists(atPath: cropPath) {
+                    return UIImage(contentsOfFile: cropPath)
+                }
+            }
+        }
+        
+        return nil
+    }
 }

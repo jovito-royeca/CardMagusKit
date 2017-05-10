@@ -127,6 +127,24 @@ class NetworkingManager: NSObject {
         })
     }
     
+    func localImageFromURL(_ url: URL) -> UIImage? {
+        let networker = networking(forUrl: url)
+        var path = url.path
+        
+        if let query = url.query {
+            path += "?\(query)"
+        }
+        
+        do {
+            let destinationURL = try networker.destinationURL(for: path)
+            if FileManager.default.fileExists(atPath: destinationURL.path) {
+                return UIImage(contentsOfFile: destinationURL.path)
+            }
+        } catch {}
+        
+        return nil
+    }
+    
     func downloadFile(_ url: URL, completionHandler: @escaping (Data?, NSError?) -> Void) {
         let networker = networking(forUrl: url)
         let path = url.path

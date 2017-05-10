@@ -61,20 +61,24 @@ open class CardTableViewCell: UITableViewCell {
     open func updateDataDisplay() {
         if let card = card {
             // thumbnail image
-            thumbnailImage.image = CardMagus.sharedInstance.imageFromCache("/images/cardback-crop-hq.jpg")
-            CardMagus.sharedInstance.downloadCardImage(card, cropImage: true, completion: { (c: CMCard, image: UIImage?, croppedImage: UIImage?, error: NSError?) in
-                if error == nil {
-                    if self.card == c {
-                        UIView.transition(with: self.thumbnailImage,
-                                          duration: 1.0,
-                                          options: .transitionCrossDissolve,
-                                          animations: {
-                                              self.thumbnailImage.image = croppedImage
-                                          },
-                                          completion: nil)
+            if let croppedImage = CardMagus.sharedInstance.croppedImage(card) {
+                thumbnailImage.image = croppedImage
+            } else {
+                thumbnailImage.image = CardMagus.sharedInstance.imageFromCache("/images/cardback-crop-hq.jpg")
+                CardMagus.sharedInstance.downloadCardImage(card, cropImage: true, completion: { (c: CMCard, image: UIImage?, croppedImage: UIImage?, error: NSError?) in
+                    if error == nil {
+                        if self.card == c {
+                            UIView.transition(with: self.thumbnailImage,
+                                              duration: 1.0,
+                                              options: .transitionCrossDissolve,
+                                              animations: {
+                                                  self.thumbnailImage.image = croppedImage
+                                              },
+                                              completion: nil)
+                        }
                     }
-                }
-            })
+                })
+            }
             
             // card name
             nameLabel.text = card.name
