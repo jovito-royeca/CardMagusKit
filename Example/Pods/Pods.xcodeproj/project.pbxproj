@@ -21,50 +21,50 @@
 		0B74F6C7E0C3E96FA7D561DEA6BA21F5 /* Card Magus.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2E93B6507E8B9D0F3F4CFA93F08DE566 /* Card Magus.xcdatamodeld */; };
 		0DA5FA1F4C39730A023BE5EF649C541A /* NSManagedObjectContext+Sync.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F561A125C1891176C246E15C366F51C /* NSManagedObjectContext+Sync.swift */; };
 		10C767A41DC908FE61CDB5B5174A585D /* fileenc.h in Headers */ = {isa = PBXBuildFile; fileRef = 248A04F395D8217328FA571B19AF5427 /* fileenc.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		113F80F51EC2118500CBCB35 /* CardMagus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113F80CA1EC2118500CBCB35 /* CardMagus.swift */; };
+		113F80F61EC2118500CBCB35 /* CardMagusKit-Swift.h in Headers */ = {isa = PBXBuildFile; fileRef = 113F80CB1EC2118500CBCB35 /* CardMagusKit-Swift.h */; };
+		113F80F71EC2118500CBCB35 /* CardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113F80CC1EC2118500CBCB35 /* CardTableViewCell.swift */; };
+		113F80F81EC2118500CBCB35 /* CardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 113F80CD1EC2118500CBCB35 /* CardTableViewCell.xib */; };
+		113F80F91EC2118500CBCB35 /* CMArtist+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113F80CE1EC2118500CBCB35 /* CMArtist+CoreDataClass.swift */; };
+		113F80FA1EC2118500CBCB35 /* CMArtist+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113F80CF1EC2118500CBCB35 /* CMArtist+CoreDataProperties.swift */; };
+		113F80FB1EC2118500CBCB35 /* CMBlock+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113F80D01EC2118500CBCB35 /* CMBlock+CoreDataClass.swift */; };
+		113F80FC1EC2118500CBCB35 /* CMBlock+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113F80D11EC2118500CBCB35 /* CMBlock+CoreDataProperties.swift */; };
+		113F80FD1EC2118500CBCB35 /* CMBooster+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113F80D21EC2118500CBCB35 /* CMBooster+CoreDataClass.swift */; };
+		113F80FE1EC2118500CBCB35 /* CMBooster+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113F80D31EC2118500CBCB35 /* CMBooster+CoreDataProperties.swift */; };
+		113F80FF1EC2118500CBCB35 /* CMBorder+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113F80D41EC2118500CBCB35 /* CMBorder+CoreDataClass.swift */; };
+		113F81001EC2118500CBCB35 /* CMBorder+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113F80D51EC2118500CBCB35 /* CMBorder+CoreDataProperties.swift */; };
+		113F81011EC2118500CBCB35 /* CMCard+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113F80D61EC2118500CBCB35 /* CMCard+CoreDataClass.swift */; };
+		113F81021EC2118500CBCB35 /* CMCard+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113F80D71EC2118500CBCB35 /* CMCard+CoreDataProperties.swift */; };
+		113F81031EC2118500CBCB35 /* CMCardLegality+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113F80D81EC2118500CBCB35 /* CMCardLegality+CoreDataClass.swift */; };
+		113F81041EC2118500CBCB35 /* CMCardLegality+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113F80D91EC2118500CBCB35 /* CMCardLegality+CoreDataProperties.swift */; };
+		113F81051EC2118500CBCB35 /* CMCardType+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113F80DA1EC2118500CBCB35 /* CMCardType+CoreDataClass.swift */; };
+		113F81061EC2118500CBCB35 /* CMCardType+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113F80DB1EC2118500CBCB35 /* CMCardType+CoreDataProperties.swift */; };
+		113F81071EC2118500CBCB35 /* CMColor+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113F80DC1EC2118500CBCB35 /* CMColor+CoreDataClass.swift */; };
+		113F81081EC2118500CBCB35 /* CMColor+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113F80DD1EC2118500CBCB35 /* CMColor+CoreDataProperties.swift */; };
+		113F81091EC2118500CBCB35 /* CMForeignName+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113F80DE1EC2118500CBCB35 /* CMForeignName+CoreDataClass.swift */; };
+		113F810A1EC2118500CBCB35 /* CMForeignName+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113F80DF1EC2118500CBCB35 /* CMForeignName+CoreDataProperties.swift */; };
+		113F810B1EC2118500CBCB35 /* CMFormat+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113F80E01EC2118500CBCB35 /* CMFormat+CoreDataClass.swift */; };
+		113F810C1EC2118500CBCB35 /* CMFormat+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113F80E11EC2118500CBCB35 /* CMFormat+CoreDataProperties.swift */; };
+		113F810D1EC2118500CBCB35 /* CMLanguage+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113F80E21EC2118500CBCB35 /* CMLanguage+CoreDataClass.swift */; };
+		113F810E1EC2118500CBCB35 /* CMLanguage+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113F80E31EC2118500CBCB35 /* CMLanguage+CoreDataProperties.swift */; };
+		113F810F1EC2118500CBCB35 /* CMLayout+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113F80E41EC2118500CBCB35 /* CMLayout+CoreDataClass.swift */; };
+		113F81101EC2118500CBCB35 /* CMLayout+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113F80E51EC2118500CBCB35 /* CMLayout+CoreDataProperties.swift */; };
+		113F81111EC2118500CBCB35 /* CMLegality+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113F80E61EC2118500CBCB35 /* CMLegality+CoreDataClass.swift */; };
+		113F81121EC2118500CBCB35 /* CMLegality+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113F80E71EC2118500CBCB35 /* CMLegality+CoreDataProperties.swift */; };
+		113F81131EC2118500CBCB35 /* CMRarity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113F80E81EC2118500CBCB35 /* CMRarity+CoreDataClass.swift */; };
+		113F81141EC2118500CBCB35 /* CMRarity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113F80E91EC2118500CBCB35 /* CMRarity+CoreDataProperties.swift */; };
+		113F81151EC2118500CBCB35 /* CMRuling+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113F80EA1EC2118500CBCB35 /* CMRuling+CoreDataClass.swift */; };
+		113F81161EC2118500CBCB35 /* CMRuling+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113F80EB1EC2118500CBCB35 /* CMRuling+CoreDataProperties.swift */; };
+		113F81171EC2118500CBCB35 /* CMSet+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113F80EC1EC2118500CBCB35 /* CMSet+CoreDataClass.swift */; };
+		113F81181EC2118500CBCB35 /* CMSet+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113F80ED1EC2118500CBCB35 /* CMSet+CoreDataProperties.swift */; };
+		113F81191EC2118500CBCB35 /* CMSetBooster+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113F80EE1EC2118500CBCB35 /* CMSetBooster+CoreDataClass.swift */; };
+		113F811A1EC2118500CBCB35 /* CMSetBooster+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113F80EF1EC2118500CBCB35 /* CMSetBooster+CoreDataProperties.swift */; };
+		113F811B1EC2118500CBCB35 /* CMSetType+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113F80F01EC2118500CBCB35 /* CMSetType+CoreDataClass.swift */; };
+		113F811C1EC2118500CBCB35 /* CMSetType+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113F80F11EC2118500CBCB35 /* CMSetType+CoreDataProperties.swift */; };
+		113F811D1EC2118500CBCB35 /* CMWatermark+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113F80F21EC2118500CBCB35 /* CMWatermark+CoreDataClass.swift */; };
+		113F811E1EC2118500CBCB35 /* CMWatermark+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113F80F31EC2118500CBCB35 /* CMWatermark+CoreDataProperties.swift */; };
+		113F811F1EC2118500CBCB35 /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113F80F41EC2118500CBCB35 /* NetworkingManager.swift */; };
 		11BF50CF0BBA1893D41AB75D8BFF1D7F /* DATASource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333B586386D40DEF540B6583501CE248 /* DATASource.swift */; };
-		11CD71641EB73B4400C43299 /* CardMagus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CD71391EB73B4400C43299 /* CardMagus.swift */; };
-		11CD71651EB73B4400C43299 /* CardMagusKit-Swift.h in Headers */ = {isa = PBXBuildFile; fileRef = 11CD713A1EB73B4400C43299 /* CardMagusKit-Swift.h */; };
-		11CD71661EB73B4400C43299 /* CardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CD713B1EB73B4400C43299 /* CardTableViewCell.swift */; };
-		11CD71671EB73B4400C43299 /* CardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11CD713C1EB73B4400C43299 /* CardTableViewCell.xib */; };
-		11CD71681EB73B4400C43299 /* CMArtist+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CD713D1EB73B4400C43299 /* CMArtist+CoreDataClass.swift */; };
-		11CD71691EB73B4400C43299 /* CMArtist+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CD713E1EB73B4400C43299 /* CMArtist+CoreDataProperties.swift */; };
-		11CD716A1EB73B4400C43299 /* CMBlock+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CD713F1EB73B4400C43299 /* CMBlock+CoreDataClass.swift */; };
-		11CD716B1EB73B4400C43299 /* CMBlock+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CD71401EB73B4400C43299 /* CMBlock+CoreDataProperties.swift */; };
-		11CD716C1EB73B4400C43299 /* CMBooster+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CD71411EB73B4400C43299 /* CMBooster+CoreDataClass.swift */; };
-		11CD716D1EB73B4400C43299 /* CMBooster+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CD71421EB73B4400C43299 /* CMBooster+CoreDataProperties.swift */; };
-		11CD716E1EB73B4400C43299 /* CMBorder+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CD71431EB73B4400C43299 /* CMBorder+CoreDataClass.swift */; };
-		11CD716F1EB73B4400C43299 /* CMBorder+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CD71441EB73B4400C43299 /* CMBorder+CoreDataProperties.swift */; };
-		11CD71701EB73B4400C43299 /* CMCard+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CD71451EB73B4400C43299 /* CMCard+CoreDataClass.swift */; };
-		11CD71711EB73B4400C43299 /* CMCard+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CD71461EB73B4400C43299 /* CMCard+CoreDataProperties.swift */; };
-		11CD71721EB73B4400C43299 /* CMCardLegality+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CD71471EB73B4400C43299 /* CMCardLegality+CoreDataClass.swift */; };
-		11CD71731EB73B4400C43299 /* CMCardLegality+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CD71481EB73B4400C43299 /* CMCardLegality+CoreDataProperties.swift */; };
-		11CD71741EB73B4400C43299 /* CMCardType+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CD71491EB73B4400C43299 /* CMCardType+CoreDataClass.swift */; };
-		11CD71751EB73B4400C43299 /* CMCardType+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CD714A1EB73B4400C43299 /* CMCardType+CoreDataProperties.swift */; };
-		11CD71761EB73B4400C43299 /* CMColor+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CD714B1EB73B4400C43299 /* CMColor+CoreDataClass.swift */; };
-		11CD71771EB73B4400C43299 /* CMColor+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CD714C1EB73B4400C43299 /* CMColor+CoreDataProperties.swift */; };
-		11CD71781EB73B4400C43299 /* CMForeignName+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CD714D1EB73B4400C43299 /* CMForeignName+CoreDataClass.swift */; };
-		11CD71791EB73B4400C43299 /* CMForeignName+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CD714E1EB73B4400C43299 /* CMForeignName+CoreDataProperties.swift */; };
-		11CD717A1EB73B4400C43299 /* CMFormat+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CD714F1EB73B4400C43299 /* CMFormat+CoreDataClass.swift */; };
-		11CD717B1EB73B4400C43299 /* CMFormat+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CD71501EB73B4400C43299 /* CMFormat+CoreDataProperties.swift */; };
-		11CD717C1EB73B4400C43299 /* CMLanguage+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CD71511EB73B4400C43299 /* CMLanguage+CoreDataClass.swift */; };
-		11CD717D1EB73B4400C43299 /* CMLanguage+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CD71521EB73B4400C43299 /* CMLanguage+CoreDataProperties.swift */; };
-		11CD717E1EB73B4400C43299 /* CMLayout+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CD71531EB73B4400C43299 /* CMLayout+CoreDataClass.swift */; };
-		11CD717F1EB73B4400C43299 /* CMLayout+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CD71541EB73B4400C43299 /* CMLayout+CoreDataProperties.swift */; };
-		11CD71801EB73B4400C43299 /* CMLegality+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CD71551EB73B4400C43299 /* CMLegality+CoreDataClass.swift */; };
-		11CD71811EB73B4400C43299 /* CMLegality+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CD71561EB73B4400C43299 /* CMLegality+CoreDataProperties.swift */; };
-		11CD71821EB73B4400C43299 /* CMRarity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CD71571EB73B4400C43299 /* CMRarity+CoreDataClass.swift */; };
-		11CD71831EB73B4400C43299 /* CMRarity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CD71581EB73B4400C43299 /* CMRarity+CoreDataProperties.swift */; };
-		11CD71841EB73B4400C43299 /* CMRuling+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CD71591EB73B4400C43299 /* CMRuling+CoreDataClass.swift */; };
-		11CD71851EB73B4400C43299 /* CMRuling+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CD715A1EB73B4400C43299 /* CMRuling+CoreDataProperties.swift */; };
-		11CD71861EB73B4400C43299 /* CMSet+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CD715B1EB73B4400C43299 /* CMSet+CoreDataClass.swift */; };
-		11CD71871EB73B4400C43299 /* CMSet+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CD715C1EB73B4400C43299 /* CMSet+CoreDataProperties.swift */; };
-		11CD71881EB73B4400C43299 /* CMSetBooster+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CD715D1EB73B4400C43299 /* CMSetBooster+CoreDataClass.swift */; };
-		11CD71891EB73B4400C43299 /* CMSetBooster+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CD715E1EB73B4400C43299 /* CMSetBooster+CoreDataProperties.swift */; };
-		11CD718A1EB73B4400C43299 /* CMSetType+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CD715F1EB73B4400C43299 /* CMSetType+CoreDataClass.swift */; };
-		11CD718B1EB73B4400C43299 /* CMSetType+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CD71601EB73B4400C43299 /* CMSetType+CoreDataProperties.swift */; };
-		11CD718C1EB73B4400C43299 /* CMWatermark+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CD71611EB73B4400C43299 /* CMWatermark+CoreDataClass.swift */; };
-		11CD718D1EB73B4400C43299 /* CMWatermark+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CD71621EB73B4400C43299 /* CMWatermark+CoreDataProperties.swift */; };
-		11CD718E1EB73B4400C43299 /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CD71631EB73B4400C43299 /* NetworkingManager.swift */; };
 		15ADEF9EABB54F3D90352CA7E23D0B46 /* Pods-CardMagusKit_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BAF2EFB35CFDCCF104C4E2A952B4A364 /* Pods-CardMagusKit_Tests-dummy.m */; };
 		16964F43D9E3E4F155DD318319242CC6 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = 28BB4B70F8C8A3BE09CC64550D21187C /* zip.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		17FF8CC90E6CDC91932005B5682976BB /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92D10AB484F34EA5FB58B4D5FD5FE895 /* CoreData.framework */; };
@@ -393,49 +393,49 @@
 		0E0E3E253311D8D518CEDE2077888699 /* CardMagusKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CardMagusKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EC45D51C053D1B06C74E3B69215980D /* brg_types.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = brg_types.h; path = SSZipArchive/aes/brg_types.h; sourceTree = "<group>"; };
 		0F61AD82FC4D7467C0A7B19E8AE0ECA2 /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Sources/Response.swift; sourceTree = "<group>"; };
-		11CD71391EB73B4400C43299 /* CardMagus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardMagus.swift; sourceTree = "<group>"; };
-		11CD713A1EB73B4400C43299 /* CardMagusKit-Swift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CardMagusKit-Swift.h"; sourceTree = "<group>"; };
-		11CD713B1EB73B4400C43299 /* CardTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardTableViewCell.swift; sourceTree = "<group>"; };
-		11CD713C1EB73B4400C43299 /* CardTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardTableViewCell.xib; sourceTree = "<group>"; };
-		11CD713D1EB73B4400C43299 /* CMArtist+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CMArtist+CoreDataClass.swift"; sourceTree = "<group>"; };
-		11CD713E1EB73B4400C43299 /* CMArtist+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CMArtist+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		11CD713F1EB73B4400C43299 /* CMBlock+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CMBlock+CoreDataClass.swift"; sourceTree = "<group>"; };
-		11CD71401EB73B4400C43299 /* CMBlock+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CMBlock+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		11CD71411EB73B4400C43299 /* CMBooster+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CMBooster+CoreDataClass.swift"; sourceTree = "<group>"; };
-		11CD71421EB73B4400C43299 /* CMBooster+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CMBooster+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		11CD71431EB73B4400C43299 /* CMBorder+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CMBorder+CoreDataClass.swift"; sourceTree = "<group>"; };
-		11CD71441EB73B4400C43299 /* CMBorder+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CMBorder+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		11CD71451EB73B4400C43299 /* CMCard+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CMCard+CoreDataClass.swift"; sourceTree = "<group>"; };
-		11CD71461EB73B4400C43299 /* CMCard+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CMCard+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		11CD71471EB73B4400C43299 /* CMCardLegality+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CMCardLegality+CoreDataClass.swift"; sourceTree = "<group>"; };
-		11CD71481EB73B4400C43299 /* CMCardLegality+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CMCardLegality+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		11CD71491EB73B4400C43299 /* CMCardType+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CMCardType+CoreDataClass.swift"; sourceTree = "<group>"; };
-		11CD714A1EB73B4400C43299 /* CMCardType+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CMCardType+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		11CD714B1EB73B4400C43299 /* CMColor+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CMColor+CoreDataClass.swift"; sourceTree = "<group>"; };
-		11CD714C1EB73B4400C43299 /* CMColor+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CMColor+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		11CD714D1EB73B4400C43299 /* CMForeignName+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CMForeignName+CoreDataClass.swift"; sourceTree = "<group>"; };
-		11CD714E1EB73B4400C43299 /* CMForeignName+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CMForeignName+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		11CD714F1EB73B4400C43299 /* CMFormat+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CMFormat+CoreDataClass.swift"; sourceTree = "<group>"; };
-		11CD71501EB73B4400C43299 /* CMFormat+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CMFormat+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		11CD71511EB73B4400C43299 /* CMLanguage+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CMLanguage+CoreDataClass.swift"; sourceTree = "<group>"; };
-		11CD71521EB73B4400C43299 /* CMLanguage+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CMLanguage+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		11CD71531EB73B4400C43299 /* CMLayout+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CMLayout+CoreDataClass.swift"; sourceTree = "<group>"; };
-		11CD71541EB73B4400C43299 /* CMLayout+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CMLayout+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		11CD71551EB73B4400C43299 /* CMLegality+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CMLegality+CoreDataClass.swift"; sourceTree = "<group>"; };
-		11CD71561EB73B4400C43299 /* CMLegality+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CMLegality+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		11CD71571EB73B4400C43299 /* CMRarity+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CMRarity+CoreDataClass.swift"; sourceTree = "<group>"; };
-		11CD71581EB73B4400C43299 /* CMRarity+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CMRarity+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		11CD71591EB73B4400C43299 /* CMRuling+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CMRuling+CoreDataClass.swift"; sourceTree = "<group>"; };
-		11CD715A1EB73B4400C43299 /* CMRuling+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CMRuling+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		11CD715B1EB73B4400C43299 /* CMSet+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CMSet+CoreDataClass.swift"; sourceTree = "<group>"; };
-		11CD715C1EB73B4400C43299 /* CMSet+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CMSet+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		11CD715D1EB73B4400C43299 /* CMSetBooster+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CMSetBooster+CoreDataClass.swift"; sourceTree = "<group>"; };
-		11CD715E1EB73B4400C43299 /* CMSetBooster+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CMSetBooster+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		11CD715F1EB73B4400C43299 /* CMSetType+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CMSetType+CoreDataClass.swift"; sourceTree = "<group>"; };
-		11CD71601EB73B4400C43299 /* CMSetType+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CMSetType+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		11CD71611EB73B4400C43299 /* CMWatermark+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CMWatermark+CoreDataClass.swift"; sourceTree = "<group>"; };
-		11CD71621EB73B4400C43299 /* CMWatermark+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CMWatermark+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		11CD71631EB73B4400C43299 /* NetworkingManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
+		113F80CA1EC2118500CBCB35 /* CardMagus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardMagus.swift; sourceTree = "<group>"; };
+		113F80CB1EC2118500CBCB35 /* CardMagusKit-Swift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CardMagusKit-Swift.h"; sourceTree = "<group>"; };
+		113F80CC1EC2118500CBCB35 /* CardTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardTableViewCell.swift; sourceTree = "<group>"; };
+		113F80CD1EC2118500CBCB35 /* CardTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardTableViewCell.xib; sourceTree = "<group>"; };
+		113F80CE1EC2118500CBCB35 /* CMArtist+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CMArtist+CoreDataClass.swift"; sourceTree = "<group>"; };
+		113F80CF1EC2118500CBCB35 /* CMArtist+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CMArtist+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		113F80D01EC2118500CBCB35 /* CMBlock+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CMBlock+CoreDataClass.swift"; sourceTree = "<group>"; };
+		113F80D11EC2118500CBCB35 /* CMBlock+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CMBlock+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		113F80D21EC2118500CBCB35 /* CMBooster+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CMBooster+CoreDataClass.swift"; sourceTree = "<group>"; };
+		113F80D31EC2118500CBCB35 /* CMBooster+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CMBooster+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		113F80D41EC2118500CBCB35 /* CMBorder+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CMBorder+CoreDataClass.swift"; sourceTree = "<group>"; };
+		113F80D51EC2118500CBCB35 /* CMBorder+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CMBorder+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		113F80D61EC2118500CBCB35 /* CMCard+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CMCard+CoreDataClass.swift"; sourceTree = "<group>"; };
+		113F80D71EC2118500CBCB35 /* CMCard+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CMCard+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		113F80D81EC2118500CBCB35 /* CMCardLegality+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CMCardLegality+CoreDataClass.swift"; sourceTree = "<group>"; };
+		113F80D91EC2118500CBCB35 /* CMCardLegality+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CMCardLegality+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		113F80DA1EC2118500CBCB35 /* CMCardType+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CMCardType+CoreDataClass.swift"; sourceTree = "<group>"; };
+		113F80DB1EC2118500CBCB35 /* CMCardType+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CMCardType+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		113F80DC1EC2118500CBCB35 /* CMColor+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CMColor+CoreDataClass.swift"; sourceTree = "<group>"; };
+		113F80DD1EC2118500CBCB35 /* CMColor+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CMColor+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		113F80DE1EC2118500CBCB35 /* CMForeignName+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CMForeignName+CoreDataClass.swift"; sourceTree = "<group>"; };
+		113F80DF1EC2118500CBCB35 /* CMForeignName+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CMForeignName+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		113F80E01EC2118500CBCB35 /* CMFormat+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CMFormat+CoreDataClass.swift"; sourceTree = "<group>"; };
+		113F80E11EC2118500CBCB35 /* CMFormat+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CMFormat+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		113F80E21EC2118500CBCB35 /* CMLanguage+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CMLanguage+CoreDataClass.swift"; sourceTree = "<group>"; };
+		113F80E31EC2118500CBCB35 /* CMLanguage+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CMLanguage+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		113F80E41EC2118500CBCB35 /* CMLayout+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CMLayout+CoreDataClass.swift"; sourceTree = "<group>"; };
+		113F80E51EC2118500CBCB35 /* CMLayout+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CMLayout+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		113F80E61EC2118500CBCB35 /* CMLegality+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CMLegality+CoreDataClass.swift"; sourceTree = "<group>"; };
+		113F80E71EC2118500CBCB35 /* CMLegality+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CMLegality+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		113F80E81EC2118500CBCB35 /* CMRarity+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CMRarity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		113F80E91EC2118500CBCB35 /* CMRarity+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CMRarity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		113F80EA1EC2118500CBCB35 /* CMRuling+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CMRuling+CoreDataClass.swift"; sourceTree = "<group>"; };
+		113F80EB1EC2118500CBCB35 /* CMRuling+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CMRuling+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		113F80EC1EC2118500CBCB35 /* CMSet+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CMSet+CoreDataClass.swift"; sourceTree = "<group>"; };
+		113F80ED1EC2118500CBCB35 /* CMSet+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CMSet+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		113F80EE1EC2118500CBCB35 /* CMSetBooster+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CMSetBooster+CoreDataClass.swift"; sourceTree = "<group>"; };
+		113F80EF1EC2118500CBCB35 /* CMSetBooster+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CMSetBooster+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		113F80F01EC2118500CBCB35 /* CMSetType+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CMSetType+CoreDataClass.swift"; sourceTree = "<group>"; };
+		113F80F11EC2118500CBCB35 /* CMSetType+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CMSetType+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		113F80F21EC2118500CBCB35 /* CMWatermark+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CMWatermark+CoreDataClass.swift"; sourceTree = "<group>"; };
+		113F80F31EC2118500CBCB35 /* CMWatermark+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CMWatermark+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		113F80F41EC2118500CBCB35 /* NetworkingManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
 		11EC95BBD6E9768CD1C2B7E0CDD00563 /* Networking-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Networking-dummy.m"; sourceTree = "<group>"; };
 		143AE79A4E588CF3AD764821BEEDD376 /* Kanna.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Kanna.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		14F75F334A09B4357A6487FA0D804274 /* Pods-CardMagusKit_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CardMagusKit_Example-dummy.m"; sourceTree = "<group>"; };
@@ -1004,49 +1004,49 @@
 		B9C4A16F6E8CEBFA938E6D5EAE9C7F18 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				11CD71391EB73B4400C43299 /* CardMagus.swift */,
-				11CD713A1EB73B4400C43299 /* CardMagusKit-Swift.h */,
-				11CD713B1EB73B4400C43299 /* CardTableViewCell.swift */,
-				11CD713C1EB73B4400C43299 /* CardTableViewCell.xib */,
-				11CD713D1EB73B4400C43299 /* CMArtist+CoreDataClass.swift */,
-				11CD713E1EB73B4400C43299 /* CMArtist+CoreDataProperties.swift */,
-				11CD713F1EB73B4400C43299 /* CMBlock+CoreDataClass.swift */,
-				11CD71401EB73B4400C43299 /* CMBlock+CoreDataProperties.swift */,
-				11CD71411EB73B4400C43299 /* CMBooster+CoreDataClass.swift */,
-				11CD71421EB73B4400C43299 /* CMBooster+CoreDataProperties.swift */,
-				11CD71431EB73B4400C43299 /* CMBorder+CoreDataClass.swift */,
-				11CD71441EB73B4400C43299 /* CMBorder+CoreDataProperties.swift */,
-				11CD71451EB73B4400C43299 /* CMCard+CoreDataClass.swift */,
-				11CD71461EB73B4400C43299 /* CMCard+CoreDataProperties.swift */,
-				11CD71471EB73B4400C43299 /* CMCardLegality+CoreDataClass.swift */,
-				11CD71481EB73B4400C43299 /* CMCardLegality+CoreDataProperties.swift */,
-				11CD71491EB73B4400C43299 /* CMCardType+CoreDataClass.swift */,
-				11CD714A1EB73B4400C43299 /* CMCardType+CoreDataProperties.swift */,
-				11CD714B1EB73B4400C43299 /* CMColor+CoreDataClass.swift */,
-				11CD714C1EB73B4400C43299 /* CMColor+CoreDataProperties.swift */,
-				11CD714D1EB73B4400C43299 /* CMForeignName+CoreDataClass.swift */,
-				11CD714E1EB73B4400C43299 /* CMForeignName+CoreDataProperties.swift */,
-				11CD714F1EB73B4400C43299 /* CMFormat+CoreDataClass.swift */,
-				11CD71501EB73B4400C43299 /* CMFormat+CoreDataProperties.swift */,
-				11CD71511EB73B4400C43299 /* CMLanguage+CoreDataClass.swift */,
-				11CD71521EB73B4400C43299 /* CMLanguage+CoreDataProperties.swift */,
-				11CD71531EB73B4400C43299 /* CMLayout+CoreDataClass.swift */,
-				11CD71541EB73B4400C43299 /* CMLayout+CoreDataProperties.swift */,
-				11CD71551EB73B4400C43299 /* CMLegality+CoreDataClass.swift */,
-				11CD71561EB73B4400C43299 /* CMLegality+CoreDataProperties.swift */,
-				11CD71571EB73B4400C43299 /* CMRarity+CoreDataClass.swift */,
-				11CD71581EB73B4400C43299 /* CMRarity+CoreDataProperties.swift */,
-				11CD71591EB73B4400C43299 /* CMRuling+CoreDataClass.swift */,
-				11CD715A1EB73B4400C43299 /* CMRuling+CoreDataProperties.swift */,
-				11CD715B1EB73B4400C43299 /* CMSet+CoreDataClass.swift */,
-				11CD715C1EB73B4400C43299 /* CMSet+CoreDataProperties.swift */,
-				11CD715D1EB73B4400C43299 /* CMSetBooster+CoreDataClass.swift */,
-				11CD715E1EB73B4400C43299 /* CMSetBooster+CoreDataProperties.swift */,
-				11CD715F1EB73B4400C43299 /* CMSetType+CoreDataClass.swift */,
-				11CD71601EB73B4400C43299 /* CMSetType+CoreDataProperties.swift */,
-				11CD71611EB73B4400C43299 /* CMWatermark+CoreDataClass.swift */,
-				11CD71621EB73B4400C43299 /* CMWatermark+CoreDataProperties.swift */,
-				11CD71631EB73B4400C43299 /* NetworkingManager.swift */,
+				113F80CA1EC2118500CBCB35 /* CardMagus.swift */,
+				113F80CB1EC2118500CBCB35 /* CardMagusKit-Swift.h */,
+				113F80CC1EC2118500CBCB35 /* CardTableViewCell.swift */,
+				113F80CD1EC2118500CBCB35 /* CardTableViewCell.xib */,
+				113F80CE1EC2118500CBCB35 /* CMArtist+CoreDataClass.swift */,
+				113F80CF1EC2118500CBCB35 /* CMArtist+CoreDataProperties.swift */,
+				113F80D01EC2118500CBCB35 /* CMBlock+CoreDataClass.swift */,
+				113F80D11EC2118500CBCB35 /* CMBlock+CoreDataProperties.swift */,
+				113F80D21EC2118500CBCB35 /* CMBooster+CoreDataClass.swift */,
+				113F80D31EC2118500CBCB35 /* CMBooster+CoreDataProperties.swift */,
+				113F80D41EC2118500CBCB35 /* CMBorder+CoreDataClass.swift */,
+				113F80D51EC2118500CBCB35 /* CMBorder+CoreDataProperties.swift */,
+				113F80D61EC2118500CBCB35 /* CMCard+CoreDataClass.swift */,
+				113F80D71EC2118500CBCB35 /* CMCard+CoreDataProperties.swift */,
+				113F80D81EC2118500CBCB35 /* CMCardLegality+CoreDataClass.swift */,
+				113F80D91EC2118500CBCB35 /* CMCardLegality+CoreDataProperties.swift */,
+				113F80DA1EC2118500CBCB35 /* CMCardType+CoreDataClass.swift */,
+				113F80DB1EC2118500CBCB35 /* CMCardType+CoreDataProperties.swift */,
+				113F80DC1EC2118500CBCB35 /* CMColor+CoreDataClass.swift */,
+				113F80DD1EC2118500CBCB35 /* CMColor+CoreDataProperties.swift */,
+				113F80DE1EC2118500CBCB35 /* CMForeignName+CoreDataClass.swift */,
+				113F80DF1EC2118500CBCB35 /* CMForeignName+CoreDataProperties.swift */,
+				113F80E01EC2118500CBCB35 /* CMFormat+CoreDataClass.swift */,
+				113F80E11EC2118500CBCB35 /* CMFormat+CoreDataProperties.swift */,
+				113F80E21EC2118500CBCB35 /* CMLanguage+CoreDataClass.swift */,
+				113F80E31EC2118500CBCB35 /* CMLanguage+CoreDataProperties.swift */,
+				113F80E41EC2118500CBCB35 /* CMLayout+CoreDataClass.swift */,
+				113F80E51EC2118500CBCB35 /* CMLayout+CoreDataProperties.swift */,
+				113F80E61EC2118500CBCB35 /* CMLegality+CoreDataClass.swift */,
+				113F80E71EC2118500CBCB35 /* CMLegality+CoreDataProperties.swift */,
+				113F80E81EC2118500CBCB35 /* CMRarity+CoreDataClass.swift */,
+				113F80E91EC2118500CBCB35 /* CMRarity+CoreDataProperties.swift */,
+				113F80EA1EC2118500CBCB35 /* CMRuling+CoreDataClass.swift */,
+				113F80EB1EC2118500CBCB35 /* CMRuling+CoreDataProperties.swift */,
+				113F80EC1EC2118500CBCB35 /* CMSet+CoreDataClass.swift */,
+				113F80ED1EC2118500CBCB35 /* CMSet+CoreDataProperties.swift */,
+				113F80EE1EC2118500CBCB35 /* CMSetBooster+CoreDataClass.swift */,
+				113F80EF1EC2118500CBCB35 /* CMSetBooster+CoreDataProperties.swift */,
+				113F80F01EC2118500CBCB35 /* CMSetType+CoreDataClass.swift */,
+				113F80F11EC2118500CBCB35 /* CMSetType+CoreDataProperties.swift */,
+				113F80F21EC2118500CBCB35 /* CMWatermark+CoreDataClass.swift */,
+				113F80F31EC2118500CBCB35 /* CMWatermark+CoreDataProperties.swift */,
+				113F80F41EC2118500CBCB35 /* NetworkingManager.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -1265,7 +1265,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F9B5798FF85737771BAB3DA179FD300 /* CardMagusKit-umbrella.h in Headers */,
-				11CD71651EB73B4400C43299 /* CardMagusKit-Swift.h in Headers */,
+				113F80F61EC2118500CBCB35 /* CardMagusKit-Swift.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1622,7 +1622,7 @@
 				BCD133FAA64EDA8BA28AD40CAF32EC3C /* fonts in Resources */,
 				97BCD2DB7F3A94C544EFABDC75B98CAA /* Goudy Medieval.ttf in Resources */,
 				03F4CFF456957FB4C792F2CC23E99A6C /* images.zip in Resources */,
-				11CD71671EB73B4400C43299 /* CardTableViewCell.xib in Resources */,
+				113F80F81EC2118500CBCB35 /* CardTableViewCell.xib in Resources */,
 				26A9009B260B4DBE7DF556BF0CFB8071 /* Matrix Bold.ttf in Resources */,
 				537C3E8A172733AFC3B34902920CE445 /* MPlantin.ttf in Resources */,
 			);
@@ -1667,49 +1667,49 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11CD717B1EB73B4400C43299 /* CMFormat+CoreDataProperties.swift in Sources */,
-				11CD717E1EB73B4400C43299 /* CMLayout+CoreDataClass.swift in Sources */,
-				11CD716C1EB73B4400C43299 /* CMBooster+CoreDataClass.swift in Sources */,
-				11CD716A1EB73B4400C43299 /* CMBlock+CoreDataClass.swift in Sources */,
-				11CD71841EB73B4400C43299 /* CMRuling+CoreDataClass.swift in Sources */,
-				11CD718E1EB73B4400C43299 /* NetworkingManager.swift in Sources */,
-				11CD71731EB73B4400C43299 /* CMCardLegality+CoreDataProperties.swift in Sources */,
-				11CD71691EB73B4400C43299 /* CMArtist+CoreDataProperties.swift in Sources */,
-				11CD71831EB73B4400C43299 /* CMRarity+CoreDataProperties.swift in Sources */,
-				11CD71881EB73B4400C43299 /* CMSetBooster+CoreDataClass.swift in Sources */,
-				11CD716B1EB73B4400C43299 /* CMBlock+CoreDataProperties.swift in Sources */,
-				11CD718D1EB73B4400C43299 /* CMWatermark+CoreDataProperties.swift in Sources */,
-				11CD71781EB73B4400C43299 /* CMForeignName+CoreDataClass.swift in Sources */,
+				113F810C1EC2118500CBCB35 /* CMFormat+CoreDataProperties.swift in Sources */,
+				113F810F1EC2118500CBCB35 /* CMLayout+CoreDataClass.swift in Sources */,
+				113F80FD1EC2118500CBCB35 /* CMBooster+CoreDataClass.swift in Sources */,
+				113F80FB1EC2118500CBCB35 /* CMBlock+CoreDataClass.swift in Sources */,
+				113F81151EC2118500CBCB35 /* CMRuling+CoreDataClass.swift in Sources */,
+				113F811F1EC2118500CBCB35 /* NetworkingManager.swift in Sources */,
+				113F81041EC2118500CBCB35 /* CMCardLegality+CoreDataProperties.swift in Sources */,
+				113F80FA1EC2118500CBCB35 /* CMArtist+CoreDataProperties.swift in Sources */,
+				113F81141EC2118500CBCB35 /* CMRarity+CoreDataProperties.swift in Sources */,
+				113F81191EC2118500CBCB35 /* CMSetBooster+CoreDataClass.swift in Sources */,
+				113F80FC1EC2118500CBCB35 /* CMBlock+CoreDataProperties.swift in Sources */,
+				113F811E1EC2118500CBCB35 /* CMWatermark+CoreDataProperties.swift in Sources */,
+				113F81091EC2118500CBCB35 /* CMForeignName+CoreDataClass.swift in Sources */,
 				0B74F6C7E0C3E96FA7D561DEA6BA21F5 /* Card Magus.xcdatamodeld in Sources */,
-				11CD71641EB73B4400C43299 /* CardMagus.swift in Sources */,
-				11CD71871EB73B4400C43299 /* CMSet+CoreDataProperties.swift in Sources */,
-				11CD718C1EB73B4400C43299 /* CMWatermark+CoreDataClass.swift in Sources */,
-				11CD718B1EB73B4400C43299 /* CMSetType+CoreDataProperties.swift in Sources */,
-				11CD717D1EB73B4400C43299 /* CMLanguage+CoreDataProperties.swift in Sources */,
-				11CD71701EB73B4400C43299 /* CMCard+CoreDataClass.swift in Sources */,
+				113F80F51EC2118500CBCB35 /* CardMagus.swift in Sources */,
+				113F81181EC2118500CBCB35 /* CMSet+CoreDataProperties.swift in Sources */,
+				113F811D1EC2118500CBCB35 /* CMWatermark+CoreDataClass.swift in Sources */,
+				113F811C1EC2118500CBCB35 /* CMSetType+CoreDataProperties.swift in Sources */,
+				113F810E1EC2118500CBCB35 /* CMLanguage+CoreDataProperties.swift in Sources */,
+				113F81011EC2118500CBCB35 /* CMCard+CoreDataClass.swift in Sources */,
 				5AF88A7EDC786E483B2B2ABEFF5EA667 /* CardMagusKit-dummy.m in Sources */,
-				11CD71681EB73B4400C43299 /* CMArtist+CoreDataClass.swift in Sources */,
-				11CD71851EB73B4400C43299 /* CMRuling+CoreDataProperties.swift in Sources */,
-				11CD716D1EB73B4400C43299 /* CMBooster+CoreDataProperties.swift in Sources */,
-				11CD717F1EB73B4400C43299 /* CMLayout+CoreDataProperties.swift in Sources */,
-				11CD717A1EB73B4400C43299 /* CMFormat+CoreDataClass.swift in Sources */,
-				11CD71751EB73B4400C43299 /* CMCardType+CoreDataProperties.swift in Sources */,
-				11CD71721EB73B4400C43299 /* CMCardLegality+CoreDataClass.swift in Sources */,
-				11CD71821EB73B4400C43299 /* CMRarity+CoreDataClass.swift in Sources */,
-				11CD71741EB73B4400C43299 /* CMCardType+CoreDataClass.swift in Sources */,
-				11CD71801EB73B4400C43299 /* CMLegality+CoreDataClass.swift in Sources */,
-				11CD71791EB73B4400C43299 /* CMForeignName+CoreDataProperties.swift in Sources */,
-				11CD71771EB73B4400C43299 /* CMColor+CoreDataProperties.swift in Sources */,
-				11CD718A1EB73B4400C43299 /* CMSetType+CoreDataClass.swift in Sources */,
-				11CD717C1EB73B4400C43299 /* CMLanguage+CoreDataClass.swift in Sources */,
-				11CD71861EB73B4400C43299 /* CMSet+CoreDataClass.swift in Sources */,
-				11CD71891EB73B4400C43299 /* CMSetBooster+CoreDataProperties.swift in Sources */,
-				11CD71661EB73B4400C43299 /* CardTableViewCell.swift in Sources */,
-				11CD71711EB73B4400C43299 /* CMCard+CoreDataProperties.swift in Sources */,
-				11CD71811EB73B4400C43299 /* CMLegality+CoreDataProperties.swift in Sources */,
-				11CD71761EB73B4400C43299 /* CMColor+CoreDataClass.swift in Sources */,
-				11CD716E1EB73B4400C43299 /* CMBorder+CoreDataClass.swift in Sources */,
-				11CD716F1EB73B4400C43299 /* CMBorder+CoreDataProperties.swift in Sources */,
+				113F80F91EC2118500CBCB35 /* CMArtist+CoreDataClass.swift in Sources */,
+				113F81161EC2118500CBCB35 /* CMRuling+CoreDataProperties.swift in Sources */,
+				113F80FE1EC2118500CBCB35 /* CMBooster+CoreDataProperties.swift in Sources */,
+				113F81101EC2118500CBCB35 /* CMLayout+CoreDataProperties.swift in Sources */,
+				113F810B1EC2118500CBCB35 /* CMFormat+CoreDataClass.swift in Sources */,
+				113F81061EC2118500CBCB35 /* CMCardType+CoreDataProperties.swift in Sources */,
+				113F81031EC2118500CBCB35 /* CMCardLegality+CoreDataClass.swift in Sources */,
+				113F81131EC2118500CBCB35 /* CMRarity+CoreDataClass.swift in Sources */,
+				113F81051EC2118500CBCB35 /* CMCardType+CoreDataClass.swift in Sources */,
+				113F81111EC2118500CBCB35 /* CMLegality+CoreDataClass.swift in Sources */,
+				113F810A1EC2118500CBCB35 /* CMForeignName+CoreDataProperties.swift in Sources */,
+				113F81081EC2118500CBCB35 /* CMColor+CoreDataProperties.swift in Sources */,
+				113F811B1EC2118500CBCB35 /* CMSetType+CoreDataClass.swift in Sources */,
+				113F810D1EC2118500CBCB35 /* CMLanguage+CoreDataClass.swift in Sources */,
+				113F81171EC2118500CBCB35 /* CMSet+CoreDataClass.swift in Sources */,
+				113F811A1EC2118500CBCB35 /* CMSetBooster+CoreDataProperties.swift in Sources */,
+				113F80F71EC2118500CBCB35 /* CardTableViewCell.swift in Sources */,
+				113F81021EC2118500CBCB35 /* CMCard+CoreDataProperties.swift in Sources */,
+				113F81121EC2118500CBCB35 /* CMLegality+CoreDataProperties.swift in Sources */,
+				113F81071EC2118500CBCB35 /* CMColor+CoreDataClass.swift in Sources */,
+				113F80FF1EC2118500CBCB35 /* CMBorder+CoreDataClass.swift in Sources */,
+				113F81001EC2118500CBCB35 /* CMBorder+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

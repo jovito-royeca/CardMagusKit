@@ -12,7 +12,7 @@ import SSZipArchive
 import Sync
 
 
-public let kMTGJSONVersion      = "3.8.4"
+public let kMTGJSONVersion      = "3.8.5"
 public let kMTGJSONVersionKey   = "kMTGJSONVersionKey"
 public let kImagesVersion       = kMTGJSONVersion
 public let kImagesVersionKey    = "kImagesVersionKey"
@@ -59,7 +59,7 @@ open class CardMagus: NSObject {
     open func setupResources() {
         copyDatabaseFile()
         loadCustomFonts()
-        unpackImagess()
+        unpackImages()
     }
     
     func copyDatabaseFile() {
@@ -129,7 +129,7 @@ open class CardMagus: NSObject {
         }
     }
     
-    func unpackImagess() {
+    func unpackImages() {
         if let cachePath = NSSearchPathForDirectoriesInDomains(.cachesDirectory, .userDomainMask, true).first {
             var willCopy = true
             
