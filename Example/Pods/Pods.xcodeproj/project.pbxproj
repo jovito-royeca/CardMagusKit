@@ -1578,7 +1578,16 @@
 				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0700;
 				TargetAttributes = {
+					613E27CD254A2DFC40D63F048CE830E3 = {
+						LastSwiftMigration = 0830;
+					};
 					7E53A61A9908AE81EDCE3A82951A777E = {
+						LastSwiftMigration = 0830;
+					};
+					8B409EA1256BD9DAD8CE6B74A0CF14D7 = {
+						LastSwiftMigration = 0830;
+					};
+					989E6D2BE26D9781DD5569B6D025A05B = {
 						LastSwiftMigration = 0830;
 					};
 				};

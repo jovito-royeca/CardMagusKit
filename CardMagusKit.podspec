@@ -38,8 +38,8 @@ Core Data classes, database, and utilities for Card Magus.
   }
   s.resources = 'CardMagusKit/Assets/**/*'
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-s.frameworks = 'UIKit', 'MapKit', 'Sync', 'DATASource', 'DATAStack', 'Networking', 'ReachabilitySwift', 'SSZipArchive', 'Kanna'
+#  s.public_header_files = 'Pod/Classes/**/*.h'
+  s.frameworks = 'UIKit', 'MapKit', 'Sync', 'DATASource', 'DATAStack', 'Networking', 'ReachabilitySwift', 'SSZipArchive', 'Kanna'
   s.dependency 'Sync'
   s.dependency 'DATASource'
   s.dependency 'DATAStack', '~> 6'
