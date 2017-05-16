@@ -24,7 +24,6 @@
 		110229C31ECA91770074CD57 /* CardMagus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110229981ECA91770074CD57 /* CardMagus.swift */; };
 		110229C41ECA91770074CD57 /* CardMagusKit-Swift.h in Headers */ = {isa = PBXBuildFile; fileRef = 110229991ECA91770074CD57 /* CardMagusKit-Swift.h */; };
 		110229C51ECA91770074CD57 /* CardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1102299A1ECA91770074CD57 /* CardTableViewCell.swift */; };
-		110229C61ECA91770074CD57 /* CardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1102299B1ECA91770074CD57 /* CardTableViewCell.xib */; };
 		110229C71ECA91770074CD57 /* CMArtist+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1102299C1ECA91770074CD57 /* CMArtist+CoreDataClass.swift */; };
 		110229C81ECA91770074CD57 /* CMArtist+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1102299D1ECA91770074CD57 /* CMArtist+CoreDataProperties.swift */; };
 		110229C91ECA91770074CD57 /* CMBlock+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1102299E1ECA91770074CD57 /* CMBlock+CoreDataClass.swift */; };
@@ -64,6 +63,7 @@
 		110229EB1ECA91770074CD57 /* CMWatermark+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110229C01ECA91770074CD57 /* CMWatermark+CoreDataClass.swift */; };
 		110229EC1ECA91770074CD57 /* CMWatermark+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110229C11ECA91770074CD57 /* CMWatermark+CoreDataProperties.swift */; };
 		110229ED1ECA91770074CD57 /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110229C21ECA91770074CD57 /* NetworkingManager.swift */; };
+		110229EF1ECAAC7B0074CD57 /* CardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 110229EE1ECAAC7B0074CD57 /* CardTableViewCell.xib */; };
 		11BF50CF0BBA1893D41AB75D8BFF1D7F /* DATASource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333B586386D40DEF540B6583501CE248 /* DATASource.swift */; };
 		15ADEF9EABB54F3D90352CA7E23D0B46 /* Pods-CardMagusKit_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BAF2EFB35CFDCCF104C4E2A952B4A364 /* Pods-CardMagusKit_Tests-dummy.m */; };
 		16964F43D9E3E4F155DD318319242CC6 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = 28BB4B70F8C8A3BE09CC64550D21187C /* zip.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
@@ -396,7 +396,6 @@
 		110229981ECA91770074CD57 /* CardMagus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardMagus.swift; sourceTree = "<group>"; };
 		110229991ECA91770074CD57 /* CardMagusKit-Swift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CardMagusKit-Swift.h"; sourceTree = "<group>"; };
 		1102299A1ECA91770074CD57 /* CardTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardTableViewCell.swift; sourceTree = "<group>"; };
-		1102299B1ECA91770074CD57 /* CardTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardTableViewCell.xib; sourceTree = "<group>"; };
 		1102299C1ECA91770074CD57 /* CMArtist+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CMArtist+CoreDataClass.swift"; sourceTree = "<group>"; };
 		1102299D1ECA91770074CD57 /* CMArtist+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CMArtist+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		1102299E1ECA91770074CD57 /* CMBlock+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CMBlock+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -436,6 +435,7 @@
 		110229C01ECA91770074CD57 /* CMWatermark+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CMWatermark+CoreDataClass.swift"; sourceTree = "<group>"; };
 		110229C11ECA91770074CD57 /* CMWatermark+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CMWatermark+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		110229C21ECA91770074CD57 /* NetworkingManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
+		110229EE1ECAAC7B0074CD57 /* CardTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardTableViewCell.xib; sourceTree = "<group>"; };
 		11EC95BBD6E9768CD1C2B7E0CDD00563 /* Networking-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Networking-dummy.m"; sourceTree = "<group>"; };
 		143AE79A4E588CF3AD764821BEEDD376 /* Kanna.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Kanna.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		14F75F334A09B4357A6487FA0D804274 /* Pods-CardMagusKit_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CardMagusKit_Example-dummy.m"; sourceTree = "<group>"; };
@@ -875,6 +875,7 @@
 		642B25A6F2AC549BA44CB5AC925C8BA0 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				110229EE1ECAAC7B0074CD57 /* CardTableViewCell.xib */,
 				2E93B6507E8B9D0F3F4CFA93F08DE566 /* Card Magus.xcdatamodeld */,
 				7111D1002133B1B8E808B4680D751055 /* Card Magus.sqlite.zip */,
 				76DE54CD2C5FD11FBA5985B181D0D537 /* fonts */,
@@ -1007,7 +1008,6 @@
 				110229981ECA91770074CD57 /* CardMagus.swift */,
 				110229991ECA91770074CD57 /* CardMagusKit-Swift.h */,
 				1102299A1ECA91770074CD57 /* CardTableViewCell.swift */,
-				1102299B1ECA91770074CD57 /* CardTableViewCell.xib */,
 				1102299C1ECA91770074CD57 /* CMArtist+CoreDataClass.swift */,
 				1102299D1ECA91770074CD57 /* CMArtist+CoreDataProperties.swift */,
 				1102299E1ECA91770074CD57 /* CMBlock+CoreDataClass.swift */,
@@ -1631,7 +1631,7 @@
 				BCD133FAA64EDA8BA28AD40CAF32EC3C /* fonts in Resources */,
 				97BCD2DB7F3A94C544EFABDC75B98CAA /* Goudy Medieval.ttf in Resources */,
 				03F4CFF456957FB4C792F2CC23E99A6C /* images.zip in Resources */,
-				110229C61ECA91770074CD57 /* CardTableViewCell.xib in Resources */,
+				110229EF1ECAAC7B0074CD57 /* CardTableViewCell.xib in Resources */,
 				26A9009B260B4DBE7DF556BF0CFB8071 /* Matrix Bold.ttf in Resources */,
 				537C3E8A172733AFC3B34902920CE445 /* MPlantin.ttf in Resources */,
 			);
