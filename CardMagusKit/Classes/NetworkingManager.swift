@@ -20,7 +20,7 @@ enum HTTPMethod: String {
 typealias NetworkingResult = (_ result: [[String : Any]], _ error: NSError?) -> Void
 
 class NetworkingManager: NSObject {
-    var networkers = [String: Any]()
+//    var networkers = [String: Any]()
     let reachability = Reachability()!
     
     func doOperation(_ baseUrl: String,
@@ -179,14 +179,17 @@ class NetworkingManager: NSObject {
     // MARK: Private methods
     fileprivate func networking(forBaseUrl url: String) -> Networking {
         var networker:Networking?
-        
-        if let n = networkers[url] as? Networking {
-            networker = n
-        } else {
-            let newN = Networking(baseURL: url, configurationType: .default)
-            networkers[url] = newN
-            networker = newN
-        }
+//
+//        if let n = networkers[url] as? Networking {
+//            networker = n
+//        } else {
+//            let newN = Networking(baseURL: url, configurationType: .default)
+//            
+//            networkers[url] = newN
+//            networker = newN
+//        }
+//
+        networker = Networking(baseURL: url, configurationType: .default)
         
         return networker!
     }
@@ -201,14 +204,16 @@ class NetworkingManager: NSObject {
             baseUrl.append(host)
         }
         
-        if let n = networkers[baseUrl] as? Networking {
-            networker = n
-        } else {
-            let newN = Networking(baseURL: baseUrl, configurationType: .default)
-            networkers[baseUrl] = newN
-            networker = newN
-        }
+//        if let n = networkers[baseUrl] as? Networking {
+//            networker = n
+//        } else {
+//            let newN = Networking(baseURL: baseUrl, configurationType: .default)
+//            
+//            networkers[baseUrl] = newN
+//            networker = newN
+//        }
         
+        networker = Networking(baseURL: baseUrl, configurationType: .default)
         return networker!
     }
     
