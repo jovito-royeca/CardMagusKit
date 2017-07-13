@@ -21,7 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         print("docsPath = \(NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0])")
         
         CardMagus.sharedInstance.setupResources(willCopyDatabaseFile: true, willLoadCustomFonts: true)
-        DatabaseMaintainer.sharedInstance.json2CoreData()
+//        DatabaseMaintainer.sharedInstance.json2CoreData()
 //        DatabaseMaintainer.sharedInstance.updateMCINumbers()
         
         return true
