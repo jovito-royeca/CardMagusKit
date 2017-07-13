@@ -38,6 +38,10 @@ open class CardTableViewCell: UITableViewCell {
         nameLabel.adjustsFontSizeToFitWidth = true
         typeLabel.adjustsFontSizeToFitWidth = true
         setLabel.adjustsFontSizeToFitWidth = true
+        
+        // add round corners
+        thumbnailImage.layer.cornerRadius = thumbnailImage.frame.height / 6
+        thumbnailImage.layer.masksToBounds = true
     }
 
     override open func setSelected(_ selected: Bool, animated: Bool) {
