@@ -63,10 +63,13 @@ class SetsViewController: UIViewController {
                     cell.imageView?.image = image
                 } else if let image = CardMagus.sharedInstance.imageFromFramework("/images/set/\(set.code!)/M/32.png") {
                     cell.imageView?.image = image
+                } else if let image = CardMagus.sharedInstance.imageFromFramework("/images/set/\(set.code!)/S/32.png") {
+                    cell.imageView?.image = image
                 } else if let image = CardMagus.sharedInstance.imageFromFramework("/images/other/blank/32.png") {
                     cell.imageView?.image = image
                 }
                 
+                cell.imageView?.contentMode = .scaleAspectFit
                 cell.textLabel?.text = set.name
                 cell.detailTextLabel?.text = "\(set.code!) / \(set.cards!.allObjects.count) cards / Released: \(set.releaseDate!)"
             }
