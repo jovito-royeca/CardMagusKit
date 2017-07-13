@@ -57,13 +57,13 @@ class SetsViewController: UIViewController {
         let dataSource = DATASource(tableView: tableView, cellIdentifier: "Cell", fetchRequest: request!, mainContext: CardMagus.sharedInstance.dataStack!.mainContext, configuration: { cell, item, indexPath in
             if let set = item as? CMSet {
             
-                if let image = CardMagus.sharedInstance.imageFromCache("/images/set/\(set.code!)/C/32.png") {
+                if let image = CardMagus.sharedInstance.imageFromFramework("/images/set/\(set.code!)/C/32.png") {
                     cell.imageView?.image = image
-                } else if let image = CardMagus.sharedInstance.imageFromCache("/images/set/\(set.code!)/R/32.png") {
+                } else if let image = CardMagus.sharedInstance.imageFromFramework("/images/set/\(set.code!)/R/32.png") {
                     cell.imageView?.image = image
-                } else if let image = CardMagus.sharedInstance.imageFromCache("/images/set/\(set.code!)/M/32.png") {
+                } else if let image = CardMagus.sharedInstance.imageFromFramework("/images/set/\(set.code!)/M/32.png") {
                     cell.imageView?.image = image
-                } else if let image = CardMagus.sharedInstance.imageFromCache("/images/other/blank/32.png") {
+                } else if let image = CardMagus.sharedInstance.imageFromFramework("/images/other/blank/32.png") {
                     cell.imageView?.image = image
                 }
                 

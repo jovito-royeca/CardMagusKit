@@ -8,7 +8,7 @@ target 'CardMagusKit_Example' do
 
     pod 'Sync'#, '~> 2'
   	pod 'DATASource'#, '~> 5.8'
-	pod 'DATAStack', '~> 6'
+	pod 'DATAStack'#, '~> 6'
     pod 'Kanna', '~> 2.1.0'
 	pod 'Networking'
     pod 'ReachabilitySwift'

@@ -16,7 +16,12 @@ import Sync
 class DatabaseMaintainer: NSObject {
     // MARK: - Shared Instance
     static let sharedInstance = DatabaseMaintainer()
-
+    
+    // MARK: Constants
+//    let setCodesForProcessing:[String]? = ["LEA", "8ED", "M15"]
+    let setCodesForProcessing:[String]? = nil
+    let printMilestone = 1000
+    
     func json2CoreData() {
         let dateStart = Date()
         
@@ -32,8 +37,22 @@ class DatabaseMaintainer: NSObject {
                 if let jsonDictionary = try! JSONSerialization.jsonObject(with: data, options: .mutableContainers) as? [String: [String: Any]] {
                     let notifName = NSNotification.Name.NSManagedObjectContextObjectsDidChange
                     var dictionary = [[String: Any]]()
-                    for (_,value) in jsonDictionary {
-                        dictionary.append(value)
+                    for (key,value) in jsonDictionary {
+                        var bWillAdd = false
+                        
+                        if let setCodesForProcessing = setCodesForProcessing {
+                            for setCode in setCodesForProcessing {
+                                if key == setCode {
+                                    bWillAdd = true
+                                }
+                            }
+                        } else {
+                            bWillAdd = true
+                        }
+                        
+                        if bWillAdd {
+                            dictionary.append(value)
+                        }
                     }
                     
                     CardMagus.sharedInstance.dataStack?.performInNewBackgroundContext { backgroundContext in
@@ -81,13 +100,13 @@ class DatabaseMaintainer: NSObject {
                                         timeDifference = dateEnd.timeIntervalSince(tmpDateStart)
                                         print("Time Elapsed: \(tmpDateStart) - \(dateEnd) = \(self.format(timeDifference))")
                                         
-//                                        // rulings
-//                                        tmpDateStart = Date()
-//                                        self.updateRulings()
-//                                        dateEnd = Date()
-//                                        timeDifference = dateEnd.timeIntervalSince(tmpDateStart)
-//                                        print("Time Elapsed: \(tmpDateStart) - \(dateEnd) = \(self.format(timeDifference))")
-//                                        
+                                        // rulings
+                                        tmpDateStart = Date()
+                                        self.updateRulings()
+                                        dateEnd = Date()
+                                        timeDifference = dateEnd.timeIntervalSince(tmpDateStart)
+                                        print("Time Elapsed: \(tmpDateStart) - \(dateEnd) = \(self.format(timeDifference))")
+//
 //                                        // foreign names
 //                                        tmpDateStart = Date()
 //                                        self.updateForeignNames()
@@ -205,7 +224,6 @@ class DatabaseMaintainer: NSObject {
         let request:NSFetchRequest<CMCard> = CMCard.fetchRequest() as! NSFetchRequest<CMCard>
         
         if let cards = try! CardMagus.sharedInstance.dataStack?.mainContext.fetch(request) {
-            print("Updating cards: \(cards.count)")
             var cachedLayouts = [CMLayout]()
             var cachedColors = [CMColor]()
             var cachedCardTypes = [CMCardType]()
@@ -213,6 +231,9 @@ class DatabaseMaintainer: NSObject {
             var cachedArtists = [CMArtist]()
             var cachedWatermarks = [CMWatermark]()
             var cachedBorders = [CMBorder]()
+            
+            var count = 0
+            print("Updating cards: \(count)/\(cards.count) \(Date())")
             
             for card in cards {
                 // layout
@@ -439,7 +460,14 @@ class DatabaseMaintainer: NSObject {
                 }
                 
                 try! CardMagus.sharedInstance.dataStack?.mainContext.save()
+                
+                count += 1
+                if count % printMilestone == 0 {
+                    print("Updating cards: \(count)/\(cards.count) \(Date())")
+                }
             }
+            
+            print("Updating cards: \(count)/\(cards.count) \(Date())")
         }
     }
 
@@ -452,7 +480,8 @@ class DatabaseMaintainer: NSObject {
         request.sortDescriptors = sortDescriptors
         
         if let cards = try! CardMagus.sharedInstance.dataStack?.mainContext.fetch(request) {
-            print("Updating variations: \(cards.count)")
+            var count = 0
+            print("Updating variations: \(count)/\(cards.count) \(Date())")
             
             for card in cards {
                 if let variations = card.variations {
@@ -469,7 +498,14 @@ class DatabaseMaintainer: NSObject {
                     card.variations = nil
                     try! CardMagus.sharedInstance.dataStack?.mainContext.save()
                 }
+                
+                count += 1
+                if count % printMilestone == 0 {
+                    print("Updating variations: \(count)/\(cards.count) \(Date())")
+                }
             }
+            
+            print("Updating variations: \(count)/\(cards.count) \(Date())")
         }
     }
 
@@ -484,7 +520,9 @@ class DatabaseMaintainer: NSObject {
         
         if let cards = try! CardMagus.sharedInstance.dataStack?.mainContext.fetch(cardRequest),
             let sets = try! CardMagus.sharedInstance.dataStack?.mainContext.fetch(setRequest) {
-            print("Updating printings: \(cards.count)")
+            
+            var count = 0
+            print("Updating printings: \(count)/\(cards.count) \(Date())")
             
             for card in cards {
                 if let printings = card.printings {
@@ -501,7 +539,14 @@ class DatabaseMaintainer: NSObject {
                     card.printings = nil
                     try! CardMagus.sharedInstance.dataStack?.mainContext.save()
                 }
+                
+                count += 1
+                if count % printMilestone == 0 {
+                    print("Updating printings: \(count)/\(cards.count) \(Date())")
+                }
             }
+            
+            print("Updating printings: \(count)/\(cards.count) \(Date())")
         }
     }
 
@@ -514,7 +559,9 @@ class DatabaseMaintainer: NSObject {
         request.sortDescriptors = sortDescriptors
         
         if let cards = try! CardMagus.sharedInstance.dataStack?.mainContext.fetch(request) {
-            print("Updating rulings: \(cards.count)")
+            
+            var count = 0
+            print("Updating rulings: \(count)/\(cards.count) \(Date())")
             
             for card in cards {
                 if let rulings = card.rulings {
@@ -535,7 +582,14 @@ class DatabaseMaintainer: NSObject {
                     card.rulings = nil
                     try! CardMagus.sharedInstance.dataStack?.mainContext.save()
                 }
+                
+                count += 1
+                if count % printMilestone == 0 {
+                    print("Updating rulings: \(count)/\(cards.count) \(Date())")
+                }
             }
+            
+            print("Updating rulings: \(count)/\(cards.count) \(Date())")
         }
     }
     
@@ -548,8 +602,10 @@ class DatabaseMaintainer: NSObject {
         request.sortDescriptors = sortDescriptors
         
         if let cards = try! CardMagus.sharedInstance.dataStack?.mainContext.fetch(request) {
-            print("Updating foreign names: \(cards.count)")
             var cachedLanguages = [CMLanguage]()
+            
+            var count = 0
+            print("Updating foreign names: \(count)/\(cards.count) \(Date())")
             
             for card in cards {
                 if let foreignNames = card.foreignNames {
@@ -590,7 +646,14 @@ class DatabaseMaintainer: NSObject {
                     card.foreignNames = nil
                     try! CardMagus.sharedInstance.dataStack?.mainContext.save()
                 }
+                
+                count += 1
+                if count % printMilestone == 0 {
+                    print("Updating foreign names: \(count)/\(cards.count) \(Date())")
+                }
             }
+            
+            print("Updating foreign names: \(count)/\(cards.count) \(Date())")
         }
     }
     
@@ -603,9 +666,11 @@ class DatabaseMaintainer: NSObject {
         request.sortDescriptors = sortDescriptors
         
         if let cards = try! CardMagus.sharedInstance.dataStack?.mainContext.fetch(request) {
-            print("Updating legalities: \(cards.count)")
             var cachedFormats = [CMFormat]()
             var cachedLegalities = [CMLegality]()
+            
+            var count = 0
+            print("Updating legalities: \(count)/\(cards.count) \(Date())")
             
             for card in cards {
                 if let legalities = card.legalities {
@@ -653,7 +718,14 @@ class DatabaseMaintainer: NSObject {
                     card.legalities = nil
                     try! CardMagus.sharedInstance.dataStack?.mainContext.save()
                 }
+                
+                count += 1
+                if count % printMilestone == 0 {
+                    print("Updating legalities: \(count)/\(cards.count) \(Date())")
+                }
             }
+            
+            print("Updating legalities: \(count)/\(cards.count) \(Date())")
         }
     }
     
@@ -668,8 +740,10 @@ class DatabaseMaintainer: NSObject {
         request.sortDescriptors = sortDescriptors
         
         if let cards = try! CardMagus.sharedInstance.dataStack?.mainContext.fetch(request) {
-            print("Updating mciNumbers: \(cards.count)")
             var cachedMCISets = [String: [[String: Any]]]()
+            
+            var count = 0
+            print("Updating MCI Numbers: \(count)/\(cards.count) \(Date())")
             
             for card in cards {
                 var array:[[String: Any]]?
@@ -729,7 +803,14 @@ class DatabaseMaintainer: NSObject {
                         cachedMCISets[card.set!.code!] = array
                     }
                 }
+                
+                count += 1
+                if count % printMilestone == 0 {
+                    print("Updating MCI Numbers: \(count)/\(cards.count) \(Date())")
+                }
             }
+            
+            print("Updating MCI Numbers: \(count)/\(cards.count) \(Date())")
         }
         
         let dateEnd = Date()

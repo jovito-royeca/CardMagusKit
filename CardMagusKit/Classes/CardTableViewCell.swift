@@ -64,7 +64,7 @@ open class CardTableViewCell: UITableViewCell {
             if let croppedImage = CardMagus.sharedInstance.croppedImage(card) {
                 thumbnailImage.image = croppedImage
             } else {
-                thumbnailImage.image = CardMagus.sharedInstance.imageFromCache("/images/cardback-crop-hq.jpg")
+                thumbnailImage.image = CardMagus.sharedInstance.imageFromFramework("/images/cardback-crop-hq.jpg")
                 CardMagus.sharedInstance.downloadCardImage(card, cropImage: true, completion: { (c: CMCard, image: UIImage?, croppedImage: UIImage?, error: NSError?) in
                     if error == nil {
                         if self.card == c {
@@ -89,16 +89,33 @@ open class CardTableViewCell: UITableViewCell {
                 
                 if let m15Date = formatter.date(from: "2014-07-18"),
                     let setReleaseDate = formatter.date(from: releaseDate) {
+                    
+                    var shadowColor:UIColor?
+                    var shadowOffset = CGSize(width: 0, height: -1)
+                    
                     if setReleaseDate.compare(m15Date) == .orderedSame ||
                         setReleaseDate.compare(m15Date) == .orderedDescending {
                         nameLabel.font = magic2015Font
                         typeLabel.font = magic2015FontSmall
                         setLabel.font = magic2015FontSmall
+                        
                     } else {
                         nameLabel.font = isModern ? eightEditionFont : preEightEditionFont
                         typeLabel.font = isModern ? eightEditionFontSmall : preEightEditionFontSmall
                         setLabel.font = isModern ? eightEditionFontSmall : preEightEditionFontSmall
+                     
+                        if !isModern {
+                            shadowColor = UIColor.darkGray
+                            shadowOffset = CGSize(width: 1, height: 1)
+                        }
                     }
+                    
+                    nameLabel.shadowColor = shadowColor
+                    nameLabel.shadowOffset = shadowOffset
+//                    typeLabel.shadowColor = shadowColor
+//                    typeLabel.shadowOffset = shadowOffset
+//                    setLabel.shadowColor = shadowColor
+//                    setLabel.shadowOffset = shadowOffset
                 }
             }
             
@@ -125,13 +142,13 @@ open class CardTableViewCell: UITableViewCell {
                         imageName = "96.png"
                     }
                     
-                    var image = CardMagus.sharedInstance.imageFromCache("/images/mana/\(mana)/\(imageName)")
+                    var image = CardMagus.sharedInstance.imageFromFramework("/images/mana/\(mana)/\(imageName)")
                     
                     // fix for dual manas
                     if image == nil {
                         if mana.characters.count > 1 {
                             let reversedMana = String(mana.characters.reversed())
-                            image = CardMagus.sharedInstance.imageFromCache("/images/mana/\(reversedMana)/\(imageName)")
+                            image = CardMagus.sharedInstance.imageFromFramework("/images/mana/\(reversedMana)/\(imageName)")
                         }
                     }
                     
@@ -164,7 +181,7 @@ open class CardTableViewCell: UITableViewCell {
                     prefix = "C"
                 }
                 
-                rarityImage.image = CardMagus.sharedInstance.imageFromCache("/images/set/\(set.code!)/\(prefix)/32.png")
+                rarityImage.image = CardMagus.sharedInstance.imageFromFramework("/images/set/\(set.code!)/\(prefix)/32.png")
 //                var setText = ""
                 
 //                if let name = set.name,

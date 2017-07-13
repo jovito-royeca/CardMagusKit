@@ -7,12 +7,12 @@
 //
 
 import UIKit
-import DATAStack
+import DATASource
 import SSZipArchive
 import Sync
 
 
-public let kMTGJSONVersion      = "3.8.5"
+public let kMTGJSONVersion      = "3.8.7"
 public let kMTGJSONVersionKey   = "kMTGJSONVersionKey"
 public let kImagesVersion       = kMTGJSONVersion
 public let kImagesVersionKey    = "kImagesVersionKey"
@@ -25,15 +25,15 @@ open class CardMagus: NSObject {
     open static let sharedInstance = CardMagus()
     
     // MARK: Variables
-    fileprivate var _dataStack:DATAStack?
-    open var dataStack:DATAStack? {
+    fileprivate var _dataStack:DataStack?
+    open var dataStack:DataStack? {
         get {
             if _dataStack == nil {
                 guard let bundleURL = Bundle(for: CardMagus.self).url(forResource: "CardMagusKit", withExtension: "bundle") else { return nil }
                 guard let bundle = Bundle(url: bundleURL) else { return nil }
                 guard let momURL = bundle.url(forResource: "Card Magus", withExtension: "momd") else { return nil }
                 guard let objectModel = NSManagedObjectModel(contentsOf: momURL) else { return nil }
-                _dataStack = DATAStack(model: objectModel, storeType: .sqLite)
+                _dataStack = DataStack(model: objectModel, storeType: .sqLite)
             }
             return _dataStack
         }
@@ -43,9 +43,30 @@ open class CardMagus: NSObject {
     /*
      * Example path: "/images/set/2ED/C/48.png"
      */
-    open func imageFromCache(_ path: String) -> UIImage? {
-        if let cachePath = NSSearchPathForDirectoriesInDomains(.cachesDirectory, .userDomainMask, true).first {
-            return UIImage(contentsOfFile: "\(cachePath)/\(path)")
+//    open func imageFromCache(_ path: String) -> UIImage? {
+//        if let cachePath = NSSearchPathForDirectoriesInDomains(.cachesDirectory, .userDomainMask, true).first {
+//            return UIImage(contentsOfFile: "\(cachePath)/\(path)")
+//        }
+//        
+//        return nil
+//    }
+    
+    /*
+     * Example path: "/images/set/2ED/C/48.png"
+     */
+    open func imageFromFramework(_ path: String) -> UIImage? {
+        let bundle = Bundle(for: CardMagus.self)
+        
+        let lastIndexOf = path.range(of: "/", options: .backwards, range: nil, locale: nil)?.lowerBound
+        let subdir = path.substring(to: lastIndexOf!)
+        let name = path.components(separatedBy: "/").last
+        let resource = name?.components(separatedBy: ".").first
+        let ext = name?.components(separatedBy: ".").last
+        
+        
+        if let url = bundle.url(forResource: resource, withExtension: ext, subdirectory: subdir) {
+            let data = try! Data(contentsOf: url)
+            return UIImage(data: data)
         }
         
         return nil
@@ -56,10 +77,13 @@ open class CardMagus: NSObject {
         return UINib(nibName: name, bundle: bundle)
     }
     
-    open func setupResources() {
-        copyDatabaseFile()
-        loadCustomFonts()
-        unpackImages()
+    open func setupResources(willCopyDatabaseFile: Bool, willLoadCustomFonts: Bool) {
+        if willCopyDatabaseFile {
+            copyDatabaseFile()
+        }
+        if willLoadCustomFonts {
+            loadCustomFonts()
+        }
     }
     
     func copyDatabaseFile() {
