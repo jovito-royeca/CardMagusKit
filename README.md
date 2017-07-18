@@ -1,22 +1,25 @@
-# CardMagusKit
+# DEPRECATED
+This project is deprecated and no longer maintained. See successor project: [ManaKit](https://github.com/jovito-royeca/ManaKit).
+
+# <strike>CardMagusKit</strike>
 
 [![CI Status](http://img.shields.io/travis/jovito-royeca/CardMagusKit.svg?style=flat)](https://travis-ci.org/jovito-royeca/CardMagusKit)
 [![Version](https://img.shields.io/cocoapods/v/CardMagusKit.svg?style=flat)](http://cocoapods.org/pods/CardMagusKit)
 [![License](https://img.shields.io/cocoapods/l/CardMagusKit.svg?style=flat)](http://cocoapods.org/pods/CardMagusKit)
 [![Platform](https://img.shields.io/cocoapods/p/CardMagusKit.svg?style=flat)](http://cocoapods.org/pods/CardMagusKit)
 
-Core Data and utilities for Card Magus.
+<strike>Core Data and utilities for Card Magus.</strike>
 
-## Example
+## <strike>Example</strike>
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+<strike>To run the example project, clone the repo, and run `pod install` from the Example directory first.</strike>
 
-## Requirements
+## <strike>Requirements</strike>
 
-## Installation
+## <strike>Installation</strike>
 
-CardMagusKit is available through [CocoaPods](http://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+<strike>CardMagusKit is available through [CocoaPods](http://cocoapods.org). To install
+it, simply add the following line to your Podfile:</strike>
 
 ```ruby
 pod "CardMagusKit"
